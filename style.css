@@ -1,0 +1,111 @@
+
+*{
+    text-decoration: none;
+    color: black;
+ }
+:root {
+    --regular-text: 16px; 
+    --big-title:  35px;
+    --medium-title: 18px;
+    --small-title: 14px;
+    --by-author-text: 10px;
+    --by-author-text-color: gray;
+}
+
+
+p {
+    font-size: var(--regular-text);
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+
+.h2-style {
+    font-size: var(--big-title);
+}
+
+.nav-link-style {
+    font-size: var(--small-title);
+    font-family: "";
+    font-weight: 400;
+}
+
+ .nav-link-style:hover {
+    color: red;
+    border-bottom: 3px solid red;
+ }
+
+ .mega-menu-section-list {
+    font-size: var(--small-title);
+ }
+
+ .mega-menu-section-list:hover {
+    text-decoration: none;
+    color: gray;
+ }
+
+ .subscribe-popup {
+    font-size: 26px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ footer{
+    background-color: black;
+    }
+.white-button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    height: 42px;
+}
+ .white-button > a {
+    border: 1px solid black;
+    padding: 5px 30px 5px 30px;
+    color: rgb(0, 0, 0);
+    margin: 3px;
+    text-decoration: none;
+} 
+
+.white-button:hover {
+    background-color: red;
+    border: white;
+}
+
+.white-button > a:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+.black-button {
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px;
+    height: 42px;
+    
+}
+
+.black-button > a {
+    border: 1px solid white;
+    padding: 5px 30px 5px 30px;
+    color: white;
+    margin: 3PX;
+    text-decoration: none;
+}
+
+.black-button:hover {
+    background-color: red;
+    border: red;
+}
