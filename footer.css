@@ -1,0 +1,96 @@
+footer{
+    background-color: var(--primary-color);
+    }
+    footer a, footer h3, footer p, footer h4{
+        color: var(--invert-primary-color);
+    }
+    footer section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    
+    }
+    footer a, footer button{
+        display: block;
+    }
+    footer .mini-container1{
+        display: flex;
+        gap: 10px;
+        
+    }
+    footer img{
+        width: calc(100vw/5);
+    }
+
+    footer .abs{
+        float: left;
+    }
+    .float-right{
+        float: right;
+    }
+        
+    footer> section div{
+        padding: 10px;
+        /* border-right: solid white 1px; */
+    }
+    footer button{
+        width: 100%;
+        max-width: 100%;
+        
+    }
+    
+.white-button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    height: 42px;
+}
+ .white-button > a {
+    border: 1px solid black;
+    padding: 5px 30px 5px 30px;
+    color: rgb(0, 0, 0);
+    margin: 3px;
+    text-decoration: none;
+} 
+
+.white-button:hover {
+    background-color: red;
+    border: white;
+}
+
+.white-button > a:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+.black-button {
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px;
+    height: 42px;
+    
+}
+
+.black-button > a {
+    border: 1px solid white;
+    padding: 5px 30px 5px 30px;
+    color: white;
+    margin: 3PX;
+    text-decoration: none;
+}
+
+.black-button:hover {
+    background-color: red;
+    border: red;
+}
+.footer-container{
+    display: flex;
+} 
+.footer-form{
+    display: flex;
+
+}
+footer-form{
+
+}
