@@ -4,9 +4,17 @@
     --medium-title: 18px;
     --small-title: 14px;
     --by-author-text: 10px;
-             /* COLORS */
+        /* COLORS */
     --primary-color: black;
     --invert-primary-color: white;
     --secondary-color: gray;
     --tertiary-color: #D71920;
+        /* width images */
+    --regular-width-image: 16px; 
+    --big-width-image:  35px;
+    --medium-width-image: 18px;
+    --small-width-image: 14px;
+    
 }
+     
+    
