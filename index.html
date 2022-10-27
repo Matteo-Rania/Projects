@@ -11,8 +11,8 @@
     <nav> <!--menù-->
         <div class="menu-wrapper flex-column"> <!--Header navbar-->
 
-            <div class="nav-top flex-row"> <!--Upper part-->
-                <div class="nav-top-container">
+            <div class="nav-top flex desktop-only"> <!--Upper part-->
+                <div class="nav-top-container flex">
                     <div class="nav-top-link"> <!--Links left-->
                         <div class="nav-top-link-href">
                             <a href="#">Rs Shop</a>
@@ -26,7 +26,7 @@
                     <div class="nav-top-logo"> <!--Central logo-->
                         <div class="top-logo-container">
                             <a href="#">
-                                <img src="" alt="Rolling Stone logo">
+                                <img src="./res/Rolling_Stone_2019.svg" alt="Rolling Stone logo">
                             </a>
                         </div>
                     </div>
@@ -65,8 +65,8 @@
                 </div>
             </div>
 
-            <div class="nav-bottom flex-row"> <!--Lower part || it becomes sticky after scroll and main menu in small screen-->
-                <div class="nav-bottom-container">
+            <div class="nav-bottom flex"> <!--Lower part || it becomes sticky after scroll and main menu in small screen-->
+                <div class="nav-bottom-container flex">
                     <div class="mega-menu-button-container"> <!--Mega menu button-->
 
                         <div class="menu-button">
@@ -219,15 +219,15 @@
                         </div>
                     </div>
             
-                    <div class="nav-bottom-logo" hidden> <!-- STICKY & SMALL SCREEN - Central logo-->
-                        <div class="sticky-menu-container">
+                    <div class="nav-bottom-logo mobile-only"> <!-- STICKY & SMALL SCREEN - Central logo-->
+                        <div class="bottom-logo-container">
                             <a href="#">
-                                <img src="" alt="Rolling Stone logo">
+                                <img src="./res/Rolling_Stone_2019.svg" alt="Rolling Stone logo">
                             </a>
                         </div>
                     </div>
 
-                    <div class="nav-bottom-link"> <!--links-->
+                    <div class="nav-bottom-link desktop-only"> <!--links-->
                         <div class="nav-bottom-link-href">
                             <a href="#">Music</a>
                         </div>
@@ -261,7 +261,7 @@
                         </div>
                     </div>
 
-                    <div class="sticky-menu-links"> <!-- STICKY & SMALL SCREEN menu links-->
+                    <div class="sticky-menu-link mobile-only"> <!-- STICKY & SMALL SCREEN menu links-->
                         <div class="sticky-menu-link-href">
                             <a href="#">Got a tip?</a> 
                         </div>

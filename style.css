@@ -13,23 +13,34 @@ nav{
     width: 100vw;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row {
-    display: flex;
+/*re-usable*/
+.flex {
+    display: flex !important;
     flex-direction: row;
 }
 
+.flex-column {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.mobile-only{
+    display: none !important;
+}
+
+.desktop-only{
+    display: block;
+}
+
+/*MENU*/
 .menu-wrapper{
     width: 100%;
 }
 
+/*MENU - TOP & BOTTOM LAYOUT*/
 .nav-top, .nav-bottom{
     width: 100%;
-    padding: .75rem;
+    padding: .5rem;
     justify-content: center;
 }
 
@@ -41,8 +52,41 @@ nav{
     height: 2.75rem;
 }
 
+/*MENU - TOP & BOTTOM CONTAINER LAYOUT*/
 .nav-top-container, .nav-bottom-container{
     width: 100%;
     max-width: var(--max-width);
+    justify-content: space-between;
+    align-items: stretch;
 }
 
+/*MENU - TOP & BOTTOM - SECTIONS LAYOUT*/
+.nav-top-link, .nav-top-auth { /*Left & Right*/
+    width: 25%;
+}
+
+.nav-top-logo { /*Center*/
+    max-width: 50%;
+    flex: 1;
+}
+
+.mega-menu-button-container, .nav-bottom-searchbar-container, .sticky-menu-link { /*Left & Right*/
+    width: 25%;
+}
+
+.nav-bottom-logo, .nav-bottom-link { /*Center*/
+    max-width: 50%;
+    flex: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .mobile-only{
+        display: block;
+    }
+
+    .desktop-only{
+        display: none !important;
+    }
+
+}
