@@ -1,32 +1,40 @@
 *{
     text-decoration: none;
     color: var(--primary-color);
+    box-sizing: border-box;
  }
  body{
-    max-width: 1235px;
+    max-width: var(--max-width);
     margin: auto;
  }
  p {
     font-size: var(--regular-text);
 }
 
-a:hover {
+
+
+a:hover{
     color: var(--secondary-color);
     text-decoration: underline;
 }
 
+img{
+   width: 100%;
+   height: auto;
+}
 
 .h2-style {
     font-size: var(--big-title);
 }
 
-.nav-link-style {
+.nav-bottom-link-href a {
     font-size: var(--small-title);
     font-family: "";
     font-weight: 400;
 }
 
- .nav-link-style:hover {
+ .nav-bottom-link-href a:hover {
+    text-decoration: none;
     color: var(--tertiary-color);
     border-bottom: 3px solid var(--tertiary-color);
  }

@@ -1,16 +1,11 @@
-:root {
-    --max-width: 78.75rem;
-}
-
 *{
-    border: solid 1px red; /*Just while editing css*/
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 nav{
-    width: 100vw;
+    width: 100%;
 }
 
 /*re-usable*/
@@ -78,6 +73,60 @@ nav{
     max-width: 50%;
     flex: 1;
 }
+
+/*TOP PART*/
+
+.nav-top-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-top-logo{
+    align-items: center;
+}
+.top-logo-container {
+    width: 100%;
+    height: 100%;
+    max-width: 80%;
+}
+
+.top-logo-container .logo{
+    filter: 
+        drop-shadow(1px 1px white)
+        drop-shadow(4px 2px rgb(0, 0, 0, .25));
+}
+.nav-top-link{
+    align-items: flex-start;
+}
+.nav-top-auth{
+    align-items: flex-end;
+}
+.nav-top-link-href {
+    position: relative;
+}
+.subscribe-box {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*BOTTOM PART*/
+.nav-bottom-link{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
