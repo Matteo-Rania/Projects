@@ -1,0 +1,9 @@
+link del menù - Georgia (c'è già)
+
+font principale (paragrafi, snippet di articoli etc) - Georgia 
+
+titoli "piccoli" - Publico Headline Bold (in fonts)
+
+titoli "grandi" - Publico Banner Ultra (in fonts)
+
+sopratitolini (tipo exlusive) - Graphik Semibold (in fonts/Graphik-Font-Family)
