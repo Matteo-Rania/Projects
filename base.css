@@ -42,6 +42,9 @@ a:hover {
  .subscribe-popup {
     font-size: 26px;
  }
+ .flex{
+   display: flex;
+ }
 @media (max-width: 1259px){
 
 }

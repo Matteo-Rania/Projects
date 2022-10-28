@@ -1,7 +1,8 @@
-footer{
+footer section:first-of-type{
     background-color: var(--primary-color);
+
     }
-    footer a, footer h3, footer p, footer h4{
+    footer a, footer h3, footer p, footer h4, footer span{
         color: var(--invert-primary-color);
     }
     footer section{
@@ -11,13 +12,13 @@ footer{
         gap: 10px;
     
     }
-    footer a, footer button{
+    footer .mini-container1 a, footer .mini-container1 button{
         display: block;
     }
     footer .mini-container1{
         display: flex;
         gap: 10px;
-        
+        border-bottom: 1px solid white
     }
     footer img{
         width: calc(100vw/5);
@@ -34,7 +35,7 @@ footer{
         padding: 10px;
         /* border-right: solid white 1px; */
     }
-    footer button{
+    footer  .minicontainer1 button{
         width: 100%;
         max-width: 100%;
         
@@ -92,6 +93,7 @@ footer{
     display: flex;
 
 }
-footer-form{
-    
+footer-form label{
+    text-decoration: none;
+
 }
