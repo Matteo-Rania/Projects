@@ -1,8 +1,8 @@
 @import url(variables.css);
 @import url(base.css);
-@import url(section2.css);
-@import url(header.css);
+@import url(section.css);
 @import url(main.css);
-@import url(footer.css);
 @import url(menu-layout.css);
 @import url(body1.css);
+@import url(section2.css);
+@import url(footer.css);
