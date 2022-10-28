@@ -1,5 +1,10 @@
+
+
 .body1-wrapper {
     margin-top: 1.5rem;
+    max-width: var(--max-width);
+    margin: auto;
+    padding-top: 1.5rem;
 }
 
 .body1-articles {
