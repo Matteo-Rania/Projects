@@ -35,11 +35,12 @@ footer section:first-of-type{
         padding: 10px;
         /* border-right: solid white 1px; */
     }
-    footer  .minicontainer1 button{
+    .footer-button button{
         width: 100%;
         max-width: 100%;
-        
+        min-width: 100%;
     }
+        
     
 .white-button {
     background-color: rgb(255, 255, 255);
@@ -93,7 +94,19 @@ footer section:first-of-type{
     display: flex;
 
 }
-footer-form label{
-    text-decoration: none;
+.footer-form input{
+    border: none;
+    border-bottom: 1px solid var(--trasparent-white);
+    background-color: black;
+    color: black;
 
+}
+.footer-form button{
+    background-color: black;
+    color: white;
+}
+.footer-form > .form-1 button{
+    border-bottom: 1px solid var(--trasparent-white);
+    border-top: 1px solid var(--trasparent-white);
+    padding: 2px;
 }
