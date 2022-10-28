@@ -1,4 +1,12 @@
 .body2 {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
+    max-width: var(--max-width);
+    margin: auto;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.sideMenu {
+   grid-column: 1/5;
 }
