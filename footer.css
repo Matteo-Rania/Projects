@@ -30,7 +30,7 @@ footer{
         float: right;
     }
         
-    footer> section div{
+    footer > section div{
         padding: 10px;
         /* border-right: solid white 1px; */
     }
@@ -86,11 +86,12 @@ footer{
 }
 .footer-container{
     display: flex;
-} 
+}
+
 .footer-form{
     display: flex;
 
 }
 footer-form{
-
+    
 }

@@ -5,9 +5,6 @@
     margin: 0;
     box-sizing: border-box;
  }
- /* body{
-    max-width: 1235px;
- } */
  p {
     font-size: var(--regular-text);
 }
