@@ -147,6 +147,7 @@ nav{
     visibility: visible;
     background-color: white;
     border: solid 2px black;
+    color: var(--primary-color);
     transition: ease-out .2s;
 }
 
