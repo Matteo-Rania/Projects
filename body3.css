@@ -1,0 +1,4 @@
+.recommends-section {
+    max-width: var(--max-width);
+    margin: auto;
+}
