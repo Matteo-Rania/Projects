@@ -14,6 +14,24 @@
     --regular-width-image: 16px; 
     --big-width-image:  35px;
     --medium-width-image: 18px;
-    --small-width-image: 14px;  
+    --small-width-image: 14px;
+    --big-title: Publico Banner;
+    --title: Publico Headline;
+    --label: Graphik Semibold;
+    --generic-text: Georgia;
 }
-    
+
+@font-face {
+    font-family: Publico Banner;
+    src: url(./fonts/Publico\ Banner\ Web\ Ultra\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Publico Headline;
+    src: url(./fonts/Publico\ Headline\ Web\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Graphik Semibold;
+    src: url(./fonts/Graphik-Font-Family/GraphikMedium.otf);
+}
