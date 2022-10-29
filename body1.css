@@ -19,10 +19,84 @@
     border-right: solid 1px black;
     border-left: solid 1px black;
 }
+.body1-left-news {
+    margin-bottom: 2rem;
+}
+.body1-news-label {
+    font-size: 11px;
+    font-family: var(--label);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.body1-left-news-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: var(--title);
+    text-transform: capitalize;
+    margin-top: .5rem;
+}
+
+.body1-left-news-description {
+    font-size: 13px;
+    font-family: var(--generic-text);
+    margin-top: .5rem;
+}
+
+.body1-left-news-author {
+    font-size: 11px;
+    font-family: var(--generic-text);
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    margin-top: .5rem;
+}
 
 .body1-center {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    align-items: center;
+}
+
+.body1-center-image {
+    height: 26.75rem;
+    max-width: 40rem;
+}
+.body1-center-news-label-container {
+    background-color: white;
+    padding: 1rem;
+    transform: translateY(-50%);
+}
+.body1-center-news-label {
+    font-size: 15px;
+    font-family: var(--label);
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    border-bottom: solid 5px black;
+    padding-bottom: 2px;
+}
+.body1-center-title{
+    font-size: 38px;
+    line-height: 42px;
+    font-family: var(--big-title);
+    text-transform: capitalize;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.body1-center-description {
+    font-size: 16px;
+    font-family: var(--generic-text);
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.body1-center-author {
+    font-size: 13px;
+    font-family: var(--generic-text);
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    margin-top: .5rem;
 }
 
 .body1-right > :first-child {
@@ -34,7 +108,23 @@
     padding-bottom: 2rem;
     border-top: solid 1px black;
 }
-
+.body1-right-story-image {
+    margin-bottom: .5rem;
+}
+.body1-right-story-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: var(--title);
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+.body1-right-story-author{
+    font-size: 13px;
+    letter-spacing: 1.7px;
+    font-family: var(--generic-text);
+    text-transform: uppercase;
+    margin-top: .5rem;
+}
 .body1-showcase {
     height: 8.75rem;
     padding-top: 1rem;
