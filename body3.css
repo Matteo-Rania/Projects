@@ -173,9 +173,9 @@
     content: " ";
     display: block;
     position: absolute;
-    top: -9px;
+    top: -10px;
     left: 0;
-    height: 4px;
+    height: 5px;
     width: 100%;
     background-color: black;
 }
@@ -196,4 +196,139 @@
     font-size: 13px;
     text-transform: uppercase;
     margin-left: 2ch;
+}
+
+/*===================*/
+/*REPORTS            */
+/*===================*/
+
+.reports {
+    height: 20rem;
+    width: 100%;
+
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+
+    position: relative;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+}
+
+/*Top second border*/
+.reports::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+}
+
+.rolling-report {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    justify-content: space-between;
+    max-width: 15rem;
+}
+
+.rolling-report h2 {
+    font-size: 36px;
+    font-family: var(--big-title);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.rolling-report h2 span {
+    color: var(--tertiary-color);
+}
+
+.rolling-report .image-wrapper {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.rolling-report .image-wrapper img {
+    object-fit: contain;
+}
+
+.rolling-report .divider-small {
+    display: block;
+    height: 1px;
+    width: 30px;
+    background-color: black ;
+}
+
+.report-article-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    flex: 1;
+    width: 100%;
+    transform: translateX(2rem);
+}
+
+.report-article .image-wrapper{
+    height: 8.75rem;
+    width: auto;
+    overflow: hidden;
+}
+
+.report-article:last-child {
+    border-right: none;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.report-article:not(:last-child) {
+    border-right: solid 1px black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.report-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.report-article h3 {
+    font-size: 16px;
+    font-family: var(--title);
+    margin-top: 1.5rem;
+    line-height: 20px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.report-more-button {
+    height: 34px;
+    width: 85px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.report-more-button button {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: solid 1px black;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: var(--generic-text);
+    cursor: pointer;
+}
+
+.report-more-button button span {
+    margin-left: 1ch;
 }
