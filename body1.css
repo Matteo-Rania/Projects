@@ -22,7 +22,9 @@
 .body1-left-news {
     margin-bottom: 2rem;
 }
-.body1-news-label {
+
+/*Labels style*/
+.body1-news-label, .body1-bottom-card-label {
     font-size: 11px;
     font-family: var(--label);
     text-decoration: underline;
@@ -166,4 +168,9 @@
     border-left: solid 1px black;
 }
 
-
+.body1-bottom-card-title {
+    font-size: 16px;
+    font-family: var(--generic-text);
+    line-height: 20px;
+    margin-top: .5rem;
+}
