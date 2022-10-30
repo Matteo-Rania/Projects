@@ -107,7 +107,8 @@ nav{
     right: 0;
     padding-top: 30px;
 
-    z-index: 100;
+    z-index: 200;
+    pointer-events: none;
 }
 .subscribe-box-content{
     background-color: transparent;
@@ -145,6 +146,7 @@ nav{
 
 .nav-top-subscribe:hover .subscribe-box-content {
     visibility: visible;
+    pointer-events: auto;
     background-color: white;
     border: solid 2px black;
     color: var(--primary-color);
@@ -245,6 +247,7 @@ nav{
 }
 
 .mega-menu-button {
+    opacity: 1;
     position: relative;
     display: flex;
     justify-content: center;
@@ -254,7 +257,9 @@ nav{
     cursor: pointer;
     border: solid 2px black;
     border-radius: 50%;
+    transition: ease-in-out .3s;
 }
+
 .mega-menu-button__burger {
     width: 13px;
     height: 2px;
@@ -289,13 +294,88 @@ nav{
   .mega-menu-button.open .mega-menu-button__burger::after {
     transform: rotate(-45deg) translateY(0px);
 }
+
+.mega-menu-button:hover {
+    opacity: .5 !important;
+    transition: ease-in-out .3s;
+}
+
 .mega-menu {
-    visibility: hidden;
+    opacity: 0;
+
+    width: 100%;
+    height: 100vh;
+
     position: absolute;
+    top: 3.15rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+
+    justify-content: center;
+
+    background-color: transparent;
+    backdrop-filter: blur(0px) brightness(1) contrast(1);
+
+    transition: .3s ease-in-out;
+    transition-delay: .6s;
+
+    z-index: 100;
 }
+/*PREVENT SCROLLING WHEN MEGAMENU IS OPEN*/
+body:has(.mega-menu-button.open){
+    overflow-y: hidden;
+}
+
+
+.mega-menu-window-margin-right {
+    min-width: 1%;
+    max-width: 15%;
+}
+
+.mega-menu-window-container {
+    max-width: var(--max-width);
+    flex-basis: 100%;
+}
+
 .mega-menu-button.open + .mega-menu {
-    visibility: visible;
+    opacity: 1;
+    cursor: auto;
+    pointer-events: auto;
+
+    background-color: rgb(0, 0, 0, .5);
+    backdrop-filter: blur(5px) brightness(.75) contrast(.75);
+
+    transition: .3s ease-in-out;
 }
+
+.mega-menu-window {
+    max-height: 0rem;
+    max-width: 32.5rem;
+
+    background-color: white;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    border-bottom: solid 0px black;
+    box-shadow: 2px 4px 4px rgb(0, 0, 0, .25);
+    color: transparent;
+    
+    transition: max-height .3s ease-in-out, color .3s ease-in-out, border-bottom .3s;
+    transition-delay: .3s, 0s, 0s;
+}
+
+.mega-menu-button.open + .mega-menu .mega-menu-window {
+    max-width: 32.5rem;
+    max-height: 43.75rem;
+
+    border-bottom: solid 2px black;
+    color: black;
+    
+    transition: max-height .3s ease-in-out, color .3s ease-in-out, border-bottom .3s;
+    transition-delay: .3s, .6s, .3s;
+}
+
 
 
 
