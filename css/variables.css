@@ -23,15 +23,15 @@
 
 @font-face {
     font-family: Publico Banner;
-    src: url(./fonts/Publico\ Banner\ Web\ Ultra\ Regular.ttf);
+    src: url(../fonts/Publico\ Banner\ Web\ Ultra\ Regular.ttf);
 }
 
 @font-face {
     font-family: Publico Headline;
-    src: url(./fonts/Publico\ Headline\ Web\ Bold.ttf);
+    src: url(../fonts/Publico\ Headline\ Web\ Bold.ttf);
 }
 
 @font-face {
     font-family: Graphik;
-    src: url(./fonts/Graphik-Font-Family/GraphikRegular.otf);
+    src: url(../fonts/Graphik-Font-Family/GraphikRegular.otf);
 }
