@@ -1,13 +1,15 @@
 *{
     text-decoration: none;
-    color: var(--primary-color);
+    color: inherit /*var(--primary-color);*/;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
  }
+
+ /* (disabilito perché molti p variano di dimensione -Nico
  p {
     font-size: var(--regular-text);
-}
+}*/
 
 
 
@@ -44,15 +46,6 @@ img {
     transition: ease-out .2s;
  }
 
- .mega-menu-section-list {
-    font-size: var(--small-title);
- }
-
- .mega-menu-section-list:hover {
-    text-decoration: none;
-    color: var(--secondary-color);
- }
-
  .subscribe-popup {
     font-size: 26px;
  }
@@ -71,10 +64,6 @@ img {
 
 .body1-left h3, .secondaryNews h3, .title h3 {
    font-size: var(--primary-color);
-}
-
-.body1-left a {
-   font-size: var(--by-author-text);
 }
 
 .body1-container h2,.secondaryNews h4,.body1-bottom h2, .titlepost h4 {
@@ -104,7 +93,7 @@ img {
    font-size: 20px;
 }
 
-.secondaryNews h5, .body1-left p, .description p {
+.secondaryNews h5, .description p {
    font-size: 13px; 
 }
 
