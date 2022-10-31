@@ -46,15 +46,6 @@ img {
     transition: ease-out .2s;
  }
 
- .mega-menu-section-list {
-    font-size: var(--small-title);
- }
-
- .mega-menu-section-list:hover {
-    text-decoration: none;
-    color: var(--secondary-color);
- }
-
  .subscribe-popup {
     font-size: 26px;
  }
@@ -125,12 +116,4 @@ img {
 .flex-column {
    display: flex !important;
    flex-direction: column;
-}
-
-.mobile-only{
-   display: none !important;
-}
-
-.desktop-only{
-   display: block;
 }

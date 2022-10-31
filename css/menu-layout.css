@@ -16,6 +16,14 @@ nav{
     width: 100%;
 }
 
+.mobile-only{
+    display: none !important;
+ }
+ 
+ .desktop-only{
+    display: block;
+ }
+
 /*MENU - TOP & BOTTOM LAYOUT*/
 .nav-top, .nav-bottom{
     width: 100%;
@@ -351,7 +359,7 @@ body:has(.mega-menu-button.open){
 }
 
 .mega-menu-window {
-    max-height: 0rem;
+    height: 0rem;
     max-width: 32.5rem;
 
     background-color: white;
@@ -361,21 +369,72 @@ body:has(.mega-menu-button.open){
     box-shadow: 2px 4px 4px rgb(0, 0, 0, .25);
     color: transparent;
     
-    transition: max-height .3s ease-in-out, color .3s ease-in-out, border-bottom .3s;
-    transition-delay: .3s, 0s, 0s;
+    transition: height .3s ease-in-out, border-bottom .3s;
+    transition-delay: .3s, 0s;
 }
 
 .mega-menu-button.open + .mega-menu .mega-menu-window {
     max-width: 32.5rem;
-    max-height: 43.75rem;
+    height: 43.75rem;
 
     border-bottom: solid 2px black;
     color: black;
     
-    transition: max-height .3s ease-in-out, color .3s ease-in-out, border-bottom .3s;
-    transition-delay: .3s, .6s, .3s;
+    transition: height .3s ease-in-out, border-bottom .3s;
+    transition-delay: .3s, .3s;
 }
 
+.mega-menu .mega-menu-window > * {
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.mega-menu-button.open + .mega-menu .mega-menu-window > * {
+    opacity: 1;
+    transition: .3s ease-in-out;
+    transition-delay: .6s;
+}
+.mega-menu-content {
+    height: 34rem;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.mega-menu-footer {
+    min-height: 9.75rem;
+}
+.mega-menu-link {
+    display: flex;
+    flex-direction: column;
+    max-width: 33.33%;
+
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    box-shadow: 1px 0 black; /*to create vertical dividers responsivly*/
+}
+.gallery, .shop, .council {
+    flex: 1;
+}
+
+.mega-menu-section-title-box {
+    border-bottom: solid 1px black;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+.mega-menu-section-title {
+    font-size: 13px;
+    letter-spacing: 1.7px;
+    font-family: var(--generic-text);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.mega-menu-section-list {
+    list-style: none;
+}
 
 
 
@@ -399,6 +458,15 @@ body:has(.mega-menu-button.open){
 
     .desktop-only{
         display: none !important;
+    }
+
+    .mega-menu-content {
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
+
+    .mega-menu-link {
+        max-width: 100%;
     }
 
 }  
