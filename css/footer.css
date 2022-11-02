@@ -1,6 +1,5 @@
 footer .container-1{
-    border: 2px solid white;
-    padding-top: 50px;
+    border: 3px solid white;
 }
 footer{
     background-color: var(--primary-color);
@@ -9,26 +8,47 @@ footer{
     }
     footer a, footer h3, footer p, footer h4, footer span{
         color: var(--invert-primary-color);
-        line-height: 4ch;
+        line-height: 3.5ch;
 
     }
-    footer section{
+    footer .container-2{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-    
+        border: 1px solid white;
+        margin: 10px;
     }
     footer .mini-container1 a, footer .mini-container1 button{
         display: block;
     }
     footer .mini-container1{
         display: flex;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--trasparent-white);
         flex-direction: row;
-        justify-content: space-between;
+        gap: 90px;
+       
+
+    }
+    .bbottom{
+        border-bottom: 2px solid white;
+        margin-bottom: 5px;
+
+    
+    }
+    .rollingstone{
+        padding-left: 20px;
+    ;
+    }
+    .legal{
+        padding-left: 20px;
+    }
+    .follow{
+        padding-left: 20px;
     }
     footer img{
-        width: calc(100vw/5);
+        width: 300px;
+        height: 400px;
+        margin-top: 50px;
+        margin-left: 10px;
     }
 
     footer .abs{
@@ -43,8 +63,7 @@ footer{
         /* border-right: solid white 1px; */
     }
     .footer-button button{
-        width: 100%;
-        max-width: 100%;
+        width: 140%;
         min-width: 100%;
         margin: 20px 0;
     }
@@ -96,15 +115,17 @@ footer{
 .footer-form{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 80px;
     margin-top: 10px;
+    border-top: 1px solid var(--trasparent-white);
 
 }
 .footer-form input{
     border: none;
     border-bottom: 1px solid var(--trasparent-white);
     background-color: black;
-    color: black;
+    color: black;   
+    width: 300px;
 }
 
 .form-1 h4{ 
@@ -126,9 +147,33 @@ footer{
 .footer-form > .form-1 button{
     border-bottom: 1px solid var(--trasparent-white);
     border-top: 1px solid var(--trasparent-white);
+    padding-top: 5px ;
 }
 .border{
     border-left: 1px solid white;
+
+}
+.end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+}   
+.end img{
+    width:100px ;
+}
+.end .dropdown{
+    margin-top: 40px;
+    padding-right: 40px;
+    
+}
+.align{
+    margin-top: 40px;
+    font-size: 10px;
+    font-family: var(--label);
+}
+.gap10{
+    gap: 10px;
 }
 @media (max-width: 1259px){
     .footer-image{

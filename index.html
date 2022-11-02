@@ -9,15 +9,15 @@
 </head>
 <body>
     <nav> <!--menù-->
-        <div class="menu-wrapper"> <!--Header navbar-->
+        <div class="menu-wrapper flex-column"> <!--Header navbar-->
 
-            <div class="nav-top"> <!--Upper part-->
-                <div class="nav-top-container">
+            <div class="nav-top flex desktop-only"> <!--Upper part-->
+                <div class="nav-top-container flex">
                     <div class="nav-top-link"> <!--Links left-->
                         <div class="nav-top-link-href">
                             <a href="#">Rs Shop</a>
                         </div>
-                        <div class="nav-divider-small dir-left">
+                        <div class="nav-divider-small">
                         </div>
                         <div class="nav-top-link-href">
                             <a href="#">Got a tip?</a>
@@ -26,7 +26,7 @@
                     <div class="nav-top-logo"> <!--Central logo-->
                         <div class="top-logo-container">
                             <a href="#">
-                                <img src="" alt="Rolling Stone logo">
+                                <img src="./res/Rolling_Stone_2019.svg" alt="Rolling Stone logo" class="logo">
                             </a>
                         </div>
                     </div>
@@ -34,30 +34,30 @@
                         <div class="nav-top-link-href">
                             <a href="#">Log in</a>
                         </div>
-                        <div class="nav-divider-small dir-right">
+                        <div class="nav-divider-small">
                         </div>
                         <div class="nav-top-link-href">
                             <div class="nav-top-subscribe"> <!--Subscribe link-->
                                 <a href="#">Subscribe</a>
-                            </div>
-                            <div class="subscribe-box"> <!--Subscription banner when "subscribe" is hovered-->
-                                <div class="subscribe-box-content">
-                                    <div class="last-cover">
-                                        <img src="" alt="Rolling Stone Magazine Cover ##/##">
+                                <div class="subscribe-box"> <!--Subscription banner when "subscribe" is hovered-->
+                                    <div class="subscribe-box-content">
+                                        <div class="last-cover">
+                                            <img src="" alt="Rolling Stone Magazine Cover ##/##">
+                                        </div>
+                                        <div class="subscribe-caption">
+                                            <div class="caption-title">
+                                                <h4>Journalism That Matters.<br>
+                                                Music That Inspires.</h4>
+                                            </div>
+                                            <div class="caption-subtitle">
+                                                <p>Subscriptions from just $7.99 a month.</p>
+                                            </div>
+                                            <div class="subscription-button">
+                                                <a href="#" class="button">See my options</a>
+                                            </div>
+                                        </div>
+    
                                     </div>
-                                    <div class="subscribe-caption">
-                                        <div class="caption-title">
-                                            <h4>Journalism That Matters.<br>
-                                            Music That Inspires.</h4>
-                                        </div>
-                                        <div class="caption-subtitle">
-                                            <p>Subscriptions from just $7.99 a month.</p>
-                                        </div>
-                                        <div class="subscription-button">
-                                            <a href="#" class="button">See my options</a>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -65,19 +65,21 @@
                 </div>
             </div>
 
-            <div class="nav-bottom"> <!--Lower part || it becomes sticky after scroll and main menu in small screen-->
-                <div class="nav-bottom-container">
-                    <div class="mega-menu-button-container"> <!--Mega menu button-->
+            <div class="nav-bottom flex"> <!--Lower part || it becomes sticky after scroll and main menu in small screen-->
+                <div class="nav-bottom-container flex">
+                    <div class="mega-menu-container"> <!--Mega menu button-->
 
-                        <div class="menu-button">
-
-                            <!-- [burger menu icon animation] -->
-
+                        <div class="mega-menu-button-container">
+                            
+                            <div class="mega-menu-button">
+                                <div class="mega-menu-button__burger"></div>
+                            </div>
+                            
                             <!--MEGA MENU-->
-                            <div class="mega-menu" hidden> <!--Mega menù on-click-->
-                                <div class="mega-menu-window">
-                                    <div class="mega-menu-box">
-                                        <div class="mega-menu-content"><!--Mega menù links-->
+                            <div class="mega-menu flex"> <!--Mega menù on-click-->
+                                <div class="mega-menu-window-container">
+                                    <div class="mega-menu-window">
+                                        <div class="mega-menu-content flex-column"><!--Mega menù links-->
                                             <section class="mega-menu-link login" hidden> <!--Login on mobile-->
                                                 <div class="mega-menu-section-title-box">
                                                     <a href="#" class="mega-menu-section-title">Log in</a>
@@ -171,7 +173,7 @@
                                                 </div>
                                             </section>
                                         </div>
-                                        <footer class="mega-menu-footer">
+                                        <footer class="mega-menu-footer flex">
                                             <section class="mega-menu-footer-photo">
                                                 <a href="#">
                                                     <img src="" alt="RC cover">
@@ -219,15 +221,15 @@
                         </div>
                     </div>
             
-                    <div class="nav-bottom-logo" hidden> <!-- STICKY & SMALL SCREEN - Central logo-->
-                        <div class="sticky-menu-container">
+                    <div class="nav-bottom-logo mobile-only"> <!-- STICKY & SMALL SCREEN - Central logo-->
+                        <div class="bottom-logo-container">
                             <a href="#">
-                                <img src="" alt="Rolling Stone logo">
+                                <img src="./res/Rolling_Stone_2019.svg" alt="Rolling Stone logo">
                             </a>
                         </div>
                     </div>
 
-                    <div class="nav-bottom-link"> <!--links-->
+                    <div class="nav-bottom-link desktop-only"> <!--links-->
                         <div class="nav-bottom-link-href">
                             <a href="#">Music</a>
                         </div>
@@ -261,7 +263,7 @@
                         </div>
                     </div>
 
-                    <div class="sticky-menu-links"> <!-- STICKY & SMALL SCREEN menu links-->
+                    <div class="sticky-menu-link mobile-only"> <!-- STICKY & SMALL SCREEN menu links-->
                         <div class="sticky-menu-link-href">
                             <a href="#">Got a tip?</a> 
                         </div>
@@ -306,156 +308,186 @@
         <section class="body1-wrapper">   <!--•••••••••• Body 1 // Silvio ••••••••••--> 
                 
                 <div class="body1-container">
-
-                    <div class="body1-left">    <!--•••••••••• Sezione laterale sinistra ••••••••••-->
-                                  
-                        <div class="body1-left-news1">
-
-                            <div class="body1-left-news1-title ">
-                                <h2>BIRDS OF A FEATHER</h2></div>
-                            <div class="body1-left-news1-title-lines"></div>
-                            <div class="body1-left-news1-subtitle">
-                                <h3>Bingo Card From Hell: Kanye West, Kid Rock Attend 
-                                    Candace Owens’ Documentary Premiere
-                                </h3>
+                    <div class="body1-articles">
+                        <div class="body1-left flex-column">    <!--•••••••••• Sezione laterale sinistra ••••••••••-->                            
+                            <div class="body1-left-news">
+    
+                                <div class="body1-news-label">
+                                    <h4>BIRDS OF A FEATHER</h4>
+                                </div>
+                                
+                                <div class="body1-left-news-title">
+                                    <a href="#"><h3>Bingo Card From Hell: Kanye West, Kid Rock Attend 
+                                        Candace Owens’ Documentary Premiere
+                                    </h3></a>
+                                </div>
+                                <div class="body1-left-news-description">
+                                    <p>The premiere also saw appearances from Ray J and known 
+                                        MAGA supporter Colby Covington
+                                    </p>
+                                </div>
+                                <div class="body1-left-news-author">
+                                    <p>BY <a href="https://someurl.com">LARISHA PAUL</a></p>
+                                </div>
+    
                             </div>
-                            <div class="body1-left-news1-description">
-                                <p>The premiere also saw appearances from Ray J and known 
-                                    MAGA supporter Colby Covington
+    
+                            <div class="body1-left-news">
+    
+                                <div class="body1-news-label">
+                                    <h4>PARKLAND</h4>
+                                </div>
+                                
+                                <div class="body1-left-news-title">
+                                    <a href="#"><h3>Jury Recommends Life in Prison for Parkland Shooter Nikolas Cruz</h3></a>
+                                </div>
+                                <div class="body1-left-news-author">
+                                    <p>BY <a href="https://someurl.com">DANIEL KREPS</a></p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="body1-left-news">
+    
+                                <div class="body1-news-label">
+                                    <h4>MOVIE REVIEW</h4>
+                                </div>
+                                
+                                <div class="body1-left-news-title">
+                                    <a href="#">
+                                        <h3>"Halloween Ends" Is a Grim, Gory, and Gooey Goodbye to 
+                                        an Iconic Slasher Franchise</h3>
+                                    </a>
+                                </div>
+                                <div class="body1-left-news-author">
+                                    <p>BY <a href="https://someurl.com">K. AUSTIN COLLINS</a></p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="body1-left-news">
+    
+                                <div class="body1-news-label">
+                                    <h4>TV REVIEW</h4>
+                                </div>
+                                
+                                <div class="body1-left-news-title">
+                                    <a href="#"><h3>"High School’ Tells Tegan and Sara’s Coming-of-Age Story Their Way"</h3></a>
+                                </div>
+                                <div class="body1-left-news-author">
+                                    <p>BY <a href="https://someurl.com">ALAN SEPINWALL</a></p>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+        
+                        <div class="body1-center flex-column">  <!--•••••••••• Sezione Centrale ••••••••••-->
+    
+                            <div class="body1-center-image"><img src="images/michelle-phillips.jpeg" alt="Michelle Phillips"></div>
+                            <div class="body1-center-news-label-container">
+                                <div class="body1-center-news-label"><h4>THE LAST MAMA</h4></div>
+                            </div>
+                            <div class="body1-center-title">
+                                <a href="#"><h2>Michelle Phillips Finally Reveals the 
+                                Secret History of the Mamas and the Papas</h2></a>
+                            </div>
+                            <div class="body1-center-description">
+                                <p>
+                                    She spent her youth redefining the sound of pop — and the next 50 years looking 
+                                    for something she could call her own.
                                 </p>
                             </div>
-                            <div class="body1-left-news1-author">
-                                <p>BY <a href="https://someurl.com">LARISHA PAUL</a></p>
-                            </div>
-
+                            <div class="body1-center-author"><p>BY <a href="https://someurl.com">ANGIE MARTOCCIO</a></p></div>
+                    
                         </div>
-
-                        <div class="body1-left-news2">
-
-                            <div class="body1-left-news2-title">
-                                <h2>PARKLAND</h2></div>
-                            <div class="body1-left-news2-title-lines"></div>
-                            <div class="body1-left-news2-subtitle">
-                                <h3>Jury Recommends Life in Prison for Parkland Shooter Nikolas Cruz</h3>
+    
+                        <div class="body1-right flex-column">   <!--•••••••••• Sezione laterale destra ••••••••••-->
+    
+                            <div class="body1-right-story">
+    
+                                <div class="body1-right-story-image"><img src="images/dusty-baker.webp" alt="Dusty Baker"></div>
+                                <div class="body1-news-label"><h4>LEGENDS ONLY</h4></div>
+                                <div class="body1-right-story-title">
+                                    <a href="#"><h3>Astros Manager Dusty Baker on Smoking a Joint With 
+                                    Jimi Hendrix and Other Wild Tales</h3></a>
+                                    
+                                </div>
+                                <div class="body1-right-story-author">BY <a href="https://someurl.com">SAMA'AN ASHRAWI</a></div>
+    
                             </div>
-                            <div class="body1-left-news2-author">
-                                <p>BY <a href="https://someurl.com">DANIEL KREPS</a></p>
+    
+                            <div class="body1-right-story">
+    
+                                <div class="body1-right-story-image"><img src="images/taylor-swift.webp" alt="Dusty Baker"></div>
+                                <div class="body1-news-label"><h4>NEW TAY-STAMENT</h4></div>
+                                <div class="body1-right-story-title">
+                                    <a href="#"><h3>22 Things We Absolutely Do Not Know About 
+                                    Taylor Swift’s "Midnights"</h3></a>
+                                    
+                                </div>
+                                <div class="body1-right-story-author">BY <a href="https://someurl.com">ROB SHEFFIELD</a></div>
+    
                             </div>
-
+                    
+    
                         </div>
-
-                        <div class="body1-left-news3">
-
-                            <div class="body1-left-news3-title">
-                                <h2>MOVIE REVIEW</h2></div>
-                            <div class="body1-left-news3-title-lines"></div>
-                            <div class="body1-left-news3-subtitle">
-                                <h3>"Halloween Ends" Is a Grim, Gory, and Gooey Goodbye to 
-                                    an Iconic Slasher Franchise</h3>
-                            </div>
-                            <div class="body1-left-news3-author">
-                                <p>BY <a href="https://someurl.com">K. AUSTIN COLLINS</a></p>
-                            </div>
-
-                        </div>
-
-                        <div class="body1-left-news4">
-
-                            <div class="body1-left-news4-title">
-                                <h2>TV REVIEW</h2></div>
-                            <div class="body1-left-news4-title-lines"></div>
-                            <div class="body1-left-news4-subtitle">
-                                <h3>"High School’ Tells Tegan and Sara’s Coming-of-Age Story Their Way"</h3>
-                            </div>
-                            <div class="body1-left-news4-author">
-                                <p>BY <a href="https://someurl.com">ALAN SEPINWALL</a></p>
-                            </div>
-
-                        </div>
-
                     </div>
+                    
+                    <div class="body1-showcase flex">  <!--•••••••••• Sezione di fondo ••••••••••-->
 
+                        <div class="body1-bottom-card flex">
 
-                    <div class="body1-center">  <!--•••••••••• Sezione Centrale ••••••••••-->
+                            <div class="body1-bottom-card-image"><img src="images/Rolling-Stone-Music-Now.webp" alt="Rolling Stone Music Now"/></div>
 
-                        <div class="body1-center-image"><img src="images/michelle-phillips.jpeg" alt="Michelle Phillips"></div>
-                        <div class="body1-center-title"><h1>THE LAST MAMA</h1></div>
-                        <div class="body1-center-subtitle"><h2>Michelle Phillips Finally Reveals the 
-                            Secret History of the Mamas and the Papas</h2>
-                        </div>
-                        <div class="body1-center-description">
-                            <p>
-                                She spent her youth redefining the sound of pop — and the next 50 years looking 
-                                for something she could call her own
-                            </p>
-                        </div>
-                        <div class="body1-center-author"><p>BY <a href="https://someurl.com">ANGIE MARTOCCIO</a></p></div>
-                
-                    </div>
-
-
-                    <div class="body1-right">   <!--•••••••••• Sezione laterale destra ••••••••••-->
-
-                        <div class="body1-right-story1">
-
-                            <div class="body1-right-story1-image"><img src="images/dusty-baker.webp" alt="Dusty Baker"></div>
-                            <div class="body1-right-story1-title"><h2>LEGENDS ONLY</h2></div>
-                            <div class="body1-right-story1-subtitle"><h3>Astros Manager Dusty Baker on Smoking a Joint With 
-                                Jimi Hendrix and Other Wild Tales</h3></div>
-                            <div class="body1-right-story1-author">BY <a href="https://someurl.com">SAMA'AN ASHRAWI</a></div>
-
+                            <div class="body1-bottom-card-text">
+                                <div class="body1-bottom-card-label"><h4>RS MUSIC NOW</h4></div>
+                                <div class="body1-bottom-card-title">
+                                    <a href="#"><p>UFOs, a Plane Crash, and Dick Jokes: The Return of Blink-182</p></a>
+                                    
+                                </div>
+                            </div>
+                            
                         </div>
 
-                        <div class="body1-right-story2">
+                        <div class="body1-bottom-card flex">
 
-                            <div class="body1-right-story2-image"><img src="images/taylor-swift.webp" alt="Dusty Baker"></div>
-                            <div class="body1-right-story2-title"><h2>NEW TAY-STAMENT</h2></div>
-                            <div class="body1-right-story2-subtitle"><h3>22 Things We Absolutely Do Not Know About 
-                                Taylor Swift’s "Midnights"</h3></div>
-                            <div class="body1-right-story2-author">BY <a href="https://someurl.com">ROB SHEFFIELD</a></div>
+                            <div class="body1-bottom-card-image"><img src="images/comedies.webp" alt="Movie List"></div>
 
-                        </div>
-                
-
-                    </div>
-
-
-                    <div class="body1-bottom">  <!--•••••••••• Sezione di fondo ••••••••••-->
-
-                        <div class="body1-bottom-card1">
-
-                            <div class="body1-bottom-card1-image"><img src="images/Rolling-Stone-Music-Now.webp" alt="Rolling Stone Music Now"/></div>
-                            <div class="body1-bottom-card1-title"><h2>RS MUSIC NOW</h2></div>
-                            <div class="body1-bottom-card1-line"></div>
-                            <div class="body1-bottom-card1-subtitle"><p>UFOs, a Plane Crash, and Dick Jokes: The Return of Blink-182</p></div>
-
+                            <div class="body1-bottom-card-text">
+                                <div class="body1-bottom-card-label"><h4>MOVIE LIST</h4></div>
+                                <div class="body1-bottom-card-title">
+                                    <a href="#"><p>70 Greatest Comedies of the 21st Century</p></a>
+                                    
+                                </div>
+                            </div>
+                            
                         </div>
 
-                        <div class="body1-bottom-card2">
+                        <div class="body1-bottom-card flex">
 
-                            <div class="body1-bottom-card2-image"><img src="images/comedies.webp" alt="Movie List"></div>
-                            <div class="body1-bottom-card2-title"><h2>MOVIE LIST</h2></div>
-                            <div class="body1-bottom-card2-line"></div>
-                            <div class="body1-bottom-card2-subtitle"><p>70 Greatest Comedies of the 21st Century</p></div>
+                            <div class="body1-bottom-card-image"><img src="images/game-review.webp" alt="Game Review"></div>
 
+                            <div class="body1-bottom-card-text">
+                                <div class="body1-bottom-card-label"><h4>GAME REVIEW</h4></div>
+                                
+                                <div class="body1-bottom-card-title">
+                                    <a href="#"><p>Mario + Rabbids Sparks of Hope</p></a>
+                                </div>
+                            </div>
+                            
                         </div>
 
-                        <div class="body1-bottom-card3">
+                        <div class="body1-bottom-card flex">
 
-                            <div class="body1-bottom-card3-image"><img src="images/game-review.webp" alt="Game Review"></div>
-                            <div class="body1-bottom-card3-title"><h2>GAME REVIEW</h2></div>
-                            <div class="body1-bottom-card3-line"></div>
-                            <div class="body1-bottom-card3-subtitle"><p>Mario + Rabbids Sparks of Hope</p></div>
+                            <div class="body1-bottom-card-image"><img src="images/Dont-Let-This-Flop.webp" alt="Don't Let This Stop"></div>
 
-                        </div>
-
-                        <div class="body1-bottom-card4">
-
-                            <div class="body1-bottom-card4-image"><img src="images/Dont-Let-This-Flop.webp" alt="Don't Let This Stop"></div>
-                            <div class="body1-bottom-card4-title"><h2>DON'T LET THIS FLOP</h2></div>
-                            <div class="body1-bottom-card4-line"></div>
-                            <div class="body1-bottom-card4-subtitle"><p>Leave Lizzo Alone</p></div>
-
+                            <div class="body1-bottom-card-text">
+                                <div class="body1-bottom-card-label"><h4>DON'T LET THIS FLOP</h4></div>
+                                <div class="body1-bottom-card-title"><a href="#"><p>Leave Lizzo Alone</p></a></div>
+                                
+                            </div>
+                            
                         </div>
 
                     </div> 
@@ -465,132 +497,126 @@
         </section>
         
                                                                         <!-- body 2 Luigi -->
-    <div class="body2" >
-    
-        
-        <div class="sideMenu"> 
 
-        <section class="secondaryNews ">   
+                                                                        <!-- SEZIONE 2  -->
+                                                                        <!--  -->
+                                                                       <!--  -->
+    <div class="body2" > 
+        <div class="body-flex">  
+            <div class="sideMenu">
+                <div class="latest-post">
+                <h3 class="intTitle">THE LATEST</h3>
+                </div>
+            <br>
+            <div>
+                <h4 class="Titlepost" ><strong><u>COVER ART TRIAL</u></strong></h4>
+                <h3 class="title"><strong><u>Cardi B Trial: Man Suing Over ‘Raunchy’ Cover Art Calls Back Tattoo His ‘Michelangelo’</u></strong></h3>
+                <p class="description">Kevin Brophy told jurors he felt "shame" when his body art ended up on Cardi's mixtape cover, but the..</p>
+                <h5 class="timeDate">4:58 PM</h5> 
+            </div>
         
-
-        <div> <ul> <h3 class="intTitle">THE LATEST</h3>
-        
-        <li>  <div><h4 class="Titlepost" ><strong><u>COVER ART TRIAL</u></strong></h4></div>
-            <div><h3 class="title"><strong><u>Cardi B Trial: Man Suing Over ‘Raunchy’ Cover Art Calls Back Tattoo His ‘Michelangelo’</u></strong></h3></div>
-            <div><p class="description">Kevin Brophy told jurors he felt "shame" when his body art ended up on Cardi's mixtape cover, but the..</p></div>
-            <div><h5 class="timeDate">4:58 PM</h5>
-        </li>  
-        
-        <br>     
-
-        
-        
-            <li>  <div><h4 class="Titlepost" ><strong><u>MASTERSON TRIAL</u></strong></h4></div>
-            <div><h3 class="title"><strong><u>Danny Masterson Accuser Testifies on First Day of Rape Trial, Scientology Draws Focus</u></strong></h3></div>
-            <div><p class="description">Masterson has been accused of three counts of forceable rape</p></div>
-            <div><h5 class="timeDate">4:58 PM</h5>
-            </li>  
+            <br>     
+            <div>
+                <h4 class="Titlepost" ><strong><u>MASTERSON TRIAL</u></strong></h4>
+                <h3 class="title"><strong><u>Danny Masterson Accuser Testifies on First Day of Rape Trial, Scientology Draws Focus</u></strong></h3>
+                <p class="description">Masterson has been accused of three counts of forceable rape</p>
+                <h5 class="timeDate">4:58 PM</h5>
+            </div>  
 
             <br>
+            <div> 
+                <h4 class="Titlepost" ><strong><u>TV & MOVIES</u></strong></h4>
+                <h3 class="title"><strong><u>‘Black Adam’: Dwayne Johnson Enters the DCEU. You Run for the Exits</u></strong></h3>
+                <p class="description">The star finally brings the DC Comics' antihero to the big screen — and he's the only reason to see.. </p>
+                <h5 class="timeDate">4:58 PM</h5>
+            </div>  
 
-            
-        
-            <li>  <div><h4 class="Titlepost" ><strong><u>TV & MOVIES</u></strong></h4></div>
-            <div><h3 class="title"><strong><u>‘Black Adam’: Dwayne Johnson Enters the DCEU. You Run for the Exits</u></strong></h3></div>
-            <div><p class="description">The star finally brings the DC Comics' antihero to the big screen — and he's the only reason to see.. </p></div>
-            <div><h5 class="timeDate">4:58 PM</h5>
-            </li>  
-
-
-            <li><div><h4 class="Titlepost" ><strong><u>A MOVIE FOR ALL PEOPLE</u></strong></h4></div>
-                <div><h3 class="title"><strong><u>Did ‘Bros’ Deserve to Flop? Decide for Yourself by Streaming It Now</u></strong></h3></div>
-                <div><p class="description">Billy Eichner's groundbreaking romantic comedy is now available to rent online, with an official..</p></div>
-                <div><h5 class="timeDate">4:58 PM</h5>
-            </li>  
-
-            <li> <div><h4 class="Titlepost" ><strong><u>JUSTICE</u></strong></h4></div>
-                <div><h3 class="title"><strong><u>Paul Flores Found Guilty in Murder of Kristin Smart</u></strong></h3></div>
-                <div><p class="description">Decades after the college student went missing, a family gets some closure</p></div>
-                <div><h5 class="timeDate">4:58 PM</h5>
-            </li>  
-
-            </ul>
-
-            <br>
-            <span>
-            <a href="https://www.rollingstone.com/2022/10/" class="readMore">
-
-                Read more
-            </a>
-        
-        </div></span>   
-
-        </section>    
-    
-            </div > 
+    <br>
+            <div>
+                <h4 class="Titlepost" ><strong><u>A MOVIE FOR ALL PEOPLE</u></strong></h4>
+                <h3 class="title"><strong><u>Did ‘Bros’ Deserve to Flop? Decide for Yourself by Streaming It Now</u></strong></h3>
+                <p class="description">Billy Eichner's groundbreaking romantic comedy is now available to rent online, with an official..</p>
+                <h5 class="timeDate">4:58 PM</h5>
+            </div>  
+    <br>
+            <div>
+                <h4 class="Titlepost" ><strong><u>JUSTICE</u></strong></h4>
+                <h3 class="title"><strong><u>Paul Flores Found Guilty in Murder of Kristin Smart</u></strong></h3>
+                <p class="description">Decades after the college student went missing, a family gets some closure</p>
+                <h5 class="timeDate">4:58 PM</h5>
+            </div>  
+    <br>
+                <span>
+                <a href="https://www.rollingstone.com/2022/10/" class="readMore"> Read more </a>
+                </span>
+        </div>        
 
     <div class="contentPostPrimary">
-    
-        <section class="NewsCentralBorder"> 
+     
             <div class="NewsCentralInner">
-            <div class="primaryPost">
+            <div class="primaryPost-marked">
                 <div class="imagePrimaryPost"><img src="https://www.rollingstone.com/wp-content/uploads/2022/10/concept-albums-2.jpg?w=680&h=453&crop=1" alt="Immagine"></div>
                 <div><h4 class="TitlePost">MIND:BLOWN </h4></div>
                 <div><h3 class="title" ><strong><u>The 50 Greatest Concept Albums of All Time</u></strong></h3></div>
                 <div><h4 class="description"><strong><u>From prog epics to R&B masterpieces, these are the records that define music at its most ambitious</u></strong></h4></div>
                 <div><p class="author">BY ROLLING STONE</p></div>
             </div> 
-                <div class="primaryPost">
+            <div class="primaryPost-conteiner">
+            <div class="primaryPost-flex3">
+                <div class="primaryPost-side2">
                     <div class="imagePrimaryPostSide"><img src="https://www.rollingstone.com/wp-content/uploads/2022/10/9N6A0493-copyx.jpg?w=225&h=225&crop=1" alt="Mia Immagine"></div>
-                    <div><h4 class="TitlePost">TRIBUTE </h4></div>
+                    <div><h4 class="Titlepost">TRIBUTE </h4></div>
                     <div><h3 class="title" ><strong><u>The Generous Life and Tragic Death of Young Dolph</u></strong></h3></div>
                     <div><h4 class="description"><strong><u>The Memphis rapper’s family and friends remember an artist
                         of intensity and passion, cut down in his prime</u></strong></h4></div>
                     <div><p class="author">BY NANCY DILLON</p></div>
                 
                 </div>
-                    <div class="primaryPost">
+                    <div class="primaryPost-side3">
                         <div class="imagePrimaryPostSide"><img src="https://www.rollingstone.com/wp-content/uploads/2022/10/RS_Michelle-Phillips-002-1.jpg?w=225&h=225&crop=1" alt="Mia Immagine"></div>
-                        <div><h4 class="TitlePost">THE LAST MAMA </h4></div>
+                        <div><h4 class="Titlepost">THE LAST MAMA </h4></div>
                         <div><h3 class="title" ><strong><u>Michelle Phillips Finally Reveals the Secret History of the Mamas and the Papas</u></strong></h3></div>
                         <div><h4 class="description"><strong><u>She spent her youth redefining the sound of pop — and the next 50 years looking for something she could call her own</u></strong></h4></div>
                         <div><p class="author">BY ANGIE MARTOCCIO</p></div>
                     </div>   
                 <br>
-
-                <div class="primaryPost">
+            </div>
+                <div class="primaryPost-">
                     <div><h4 class="TitlePost">BDSM </h4></div>
                     <div><h3 class="title" ><strong><u> Getting Blackmailed Was Their Kink. Then It Went Too Far</u></strong></h3></div>
                     <div> <p class="author">By Jessica Lucas </p></div>
                 
                 </div>    
-                
+            </div>  
             </div>
 
             <div class="NewsCentralDown">
-                <div class="primaryPost">
+                <div class="Body2-post4">
                     <div class="imagePrimaryPost"><img src="https://www.rollingstone.com/wp-content/uploads/2022/09/Q194_AWA_StephenCurryXRollingStone_018_08_FNL_HPcrop.jpg?w=680&h=453&crop=1" alt="Mia Immagine"></div> 
-                <div><h4 class="TitlePost">COVER STORY </h4></div>
-                <div><h3 class="title" ><strong><u>Stephen Curry Is Putting It All on the Line</u></strong></h3></div>
-                <div><h4 class="description"><strong><u>The NBA superstar has changed the game of basketball for the better. Now, can he help change America?</u></strong></h4></div>
-                <div><p class="author">BY MATT SULLIVAN</p></div>
+                    <div><h4 class="TitlePost">COVER STORY </h4></div>
+                    <div><h3 class="title" ><strong><u>Stephen Curry Is Putting It All on the Line</u></strong></h3></div>
+                    <div><h4 class="description"><strong><u>The NBA superstar has changed the game of basketball for the better. Now, can he help change America?</u></strong></h4></div>
+                    <div><p class="author">BY MATT SULLIVAN</p></div>
                 </div> 
 
-                    <div class="primaryPost">
+                <div class="primaryPost">
                     <div><h4 class="TitlePost">BEST OF THE BEST</h4></div>
                     <div><h3 class="title" ><strong><u>The 100 Greatest TV Shows of All Time</u></strong></h3></div>
                     <div><h4 class="description"><strong><u>A ranking of the most game-changing, side-splitting, tear-jerking, mind-blowing, world-building,
                         genre-busting programs in television history, from the medium’s inception in the early 20th century through the ever-metastasizing era of Peak TV</u></strong></h4></div>
                     <div><p class="author">BY ALAN SEPINWALL</p></div>
-                    </div>            
+                </div>            
             </div>        
+    </div> 
 
-        </section>
-        </div> 
+            <br> 
+        </div>
+    </div>
+     
+                                                                         <!-- FINE SEZIONE 2 -->
 
-            <br> <br>
-        
-    <section>    
+<!--  PARTE DUPLICATA
+    
     <div class="storyGrid">
 
             <div class="reccomends">
@@ -696,165 +722,209 @@
 
     </div>
 
+-->
 
                                                                                 <!-- BODY 3 YARI -->
-
-    <div class="recommends-section">
-        <div class="recommends-image">
-            <img src="#" alt="RECOMMENDS">
-        </div>
-        <div class="recommends-article">
-            <div class="recommends-first">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/08/best-ipad-deal.jpg?w=225&h=225&crop=1&resize=300%2C300" alt="first-image"><br>
-                <span>APPLE DEAL OF THE DAY</span> <br>
-                <a href="#">The popular $299 ipad deal is back online for limited time</a>
+    <div class="body3">
+        <div class="recommends-section">
+            <div class="recommends-title">
+                <img src="./res/rs-recommends.svg" alt="RECOMMENDS">
             </div>
-            <div class="recommends-second">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Posts-Citadel-art.jpg?w=225&h=225&crop=1" alt="second-image"><br>
-                <span>TECH REVIEWED</span><br>
-                <a href="#">Smarter, Better, Faster: Apple Watch series 8 Adds crash detection and Temperature sensing</a>
-            </div>
-            <div class="recommends-third">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/bts-samsung-galaxy-buds-deal.webp?w=225&h=225&crop=1" alt="third-image"><br>
-                <span>A CASE FOR YOU</span><br>
-                <a href="#">RS Recommends: The Best Iphone 14 Cases to Protect your Brand - New Apple Device</a>
-            </div>
-            <div class="recommends-fourth">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2021/11/Halo_App_and_Halo_Band.jpeg?w=225&h=225&crop=1" alt="fourth-image"><br>
-                <span>FITNES TRACKER DEAL</span> <br>
-                <a href="#"> A "Halo" of the Deal: Amazon Discounts its Popular Helo Fitness Tracker to Just $39</a>
-            </div>
-            <div class="recommends-five">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/HCB98_W_22_260.jpg?w=225&h=225&crop=1"><br>
-                <span>SIMPLY THE BEST</span> <br>
-                <a href="#"> This Tina Turner Barbie Doll Celebrates the 40th Anniversary of Her Hit What’s Love Got to Do With It’</a>
-            </div>
-        </div>
-        <div class="more-editors">
-            <button> <a href="#"></a>MORE EDITORS' PICKS</button>
-        </div>
-    </div>       
-
-    <section class="testimonial">
-        <div class="line-space"></div> 
-        <div class="second-line-space"></div>
-        <div>
-            <a href="#">"I don’t like to give advice, because to give advice is hostile. You’re making an assumption that your ideas are better than somebody else’s. It’s really none of my fucking business."</a>
-            <a href="#">Jamie Lee Curtis Talks the End of Halloween,’ Her Number One Piece of Advice, and Rapping With Lindsay Lohan</a>
-            <a href="#">By Angie Martoccio</a>
-        </div>
-    </section>
-
-    <section class="reports">
-    <div class="line-space"></div> 
-    <div class="second-line-space"></div>
-
-            <div class="report-section">
-                <div class="rolling-report">
-                    <h2>Rolling Stone</h2>
-                    <h2>report</h2>
-                    <img src="#" alt="show-documentary-films">
+            <div class="recommends-article-wrapper">
+                <div class="recommends-article flex-column">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/08/best-ipad-deal.jpg?w=225&h=225&crop=1&resize=300%2C300" alt="first-image">
+                    </div>
+                    <div class="recommends-article-text">
+                        <h4>APPLE DEAL OF THE DAY</h4>
+                        <h3><a href="#">The popular $299 ipad deal is back online for limited time</a></h3>
+                    </div>
                 </div>
-                <div class="report-article">
-                    <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/kanye-school-donda-academy_1800.jpg?w=318&h=212&crop=1&resize=300%2C200" alt="">
-                    <h3><a href="">What the Hell Is Going on at Kanye West’s Mysterious New Private School?</a></h3>
+
+                <div class="recommends-article flex-column">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Posts-Citadel-art.jpg?w=225&h=225&crop=1" alt="second-image">
+                    </div>
+                    <div class="recommends-article-text">
+                        <h4>TECH REVIEWED</h4>
+                        <h3><a href="#">Smarter, Better, Faster: Apple Watch series 8 Adds crash detection and Temperature sensing</a></h3>
+                    </div>
                 </div>
-                <div class="report-article">
-                    <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/aretha-franklin-foia-docs.jpg?w=318&h=212&crop=1&resize=300%2C200" alt="">
-                    <h3><a href="">Aretha Franklin Was Tracked By the FBI for 40 Years. Here’s What’s In Her File	</a></h3>
+
+                <div class="recommends-article flex-column">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/bts-samsung-galaxy-buds-deal.webp?w=225&h=225&crop=1" alt="third-image">
+                    </div>
+                    <div class="recommends-article-text">
+                        <h4>A CASE FOR YOU</h4>
+                        <h3><a href="#">RS Recommends: The Best Iphone 14 Cases to Protect your Brand - New Apple Device</a></h3>
+                    </div>
                 </div>
-                <div class="report-article">
-                    <img src="https://www.rollingstone.com/culture/culture-features/inside-the-overdose-crisis-sweeping-fort-bragg-1396298/" alt="">
-                    <h3><a href="#">&#8216;These  Kids Are Dying&#8217; — Inside the Overdose Crisis Sweeping Fort Bragg</a></h3>
+
+                <div class="recommends-article flex-column">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2021/11/Halo_App_and_Halo_Band.jpeg?w=225&h=225&crop=1" alt="fourth-image">
+                    </div>
+                    <div class="recommends-article-text">
+                        <h4>FITNES TRACKER DEAL</h4>
+                        <h3><a href="#">A "Halo" of the Deal: Amazon Discounts its Popular Helo Fitness Tracker to Just $39</a></h3>
+                    </div>
                 </div>
-                <div class="report-article">
-                    <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/mormon-church-abuse.jpg?w=318&h=212&crop=1&resize=300%2C200" alt="">
-                    <h3><a href="#">The Mormon Church's Creepy Sex Therapist</a></h3>
+
+                <div class="recommends-article flex-column">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/HCB98_W_22_260.jpg?w=225&h=225&crop=1">
+                    </div>
+                    <div class="recommends-article-text">
+                        <h4>SIMPLY THE BEST</h4>
+                        <h3><a href="#">This Tina Turner Barbie Doll Celebrates the 40th Anniversary of Her Hit What’s Love Got to Do With It’</a></h3>
+                    </div>
                 </div>
             </div>
-        <div class="report-more-buttom">
-            <button type="button"> More</button>
-        </div>
-    </section>
+            <div class="recommends-button-container">
+                <div class="recommends-button">
+                    <button> <a href="#"></a>MORE EDITORS' PICKS <span>▶</span></button>
+                </div>
+            </div>
+        </div>       
+    
+        <section class="testimonial">
+            <a href="#"><q>I don’t like to give advice, because to give advice is hostile. You’re making an assumption that your ideas are better than somebody else’s. It’s really none of my fucking business.</q></a>
+            <p><a href="#">Jamie Lee Curtis Talks the End of Halloween,’ Her Number One Piece of Advice, and Rapping With Lindsay Lohan</a>
+            <span><a href="#">By Angie Martoccio</a></span></p>
+        </section>
+    
+        <section class="reports">
+            <div class="report-section flex">
+                    <div class="rolling-report">
+                        <h2><span>Rolling Stone</span><br>reports</h2>
+                        <div class="divider-small">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="./res/Rolling-Stone-Showtime-Small.webp" alt="show-documentary-films">
+                        </div>
+                    </div>
+                    <div class="report-article-container">
+                        <div class="report-article">
+                            <div class="image-wrapper">
+                                <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/kanye-school-donda-academy_1800.jpg?w=318&h=212&crop=1&resize=300%2C200" alt="">
+                            </div>
+                            <h3><a href="">What the Hell Is Going on at Kanye West’s Mysterious New Private School?</a></h3>
+                        </div>
+                        <div class="report-article">
+                            <div class="image-wrapper">
+                                <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/aretha-franklin-foia-docs.jpg?w=318&h=212&crop=1&resize=300%2C200" alt="">
+                            </div>
+                            <h3><a href="">Aretha Franklin Was Tracked By the FBI for 40 Years. Here’s What’s In Her File</a></h3>
+                        </div>
+                        <div class="report-article">
+                            <div class="image-wrapper">
+                                <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/fentanyl2.jpg" alt="">
+                            </div>
+                            <h3><a href="#">&#8216;These  Kids Are Dying&#8217; — Inside the Overdose Crisis Sweeping Fort Bragg</a></h3>
+                        </div>
+                        <div class="report-article">
+                            <div class="image-wrapper">
+                                <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/mormon-church-abuse.jpg?w=318&h=212&crop=1&resize=300%2C200" alt="">
+                            </div>
+                            <h3><a href="#">The Mormon Church's Creepy Sex Therapist</a></h3>
+                        </div>
+                    </div>
+                </div>    
+            <div class="report-more-button">
+                <button type="button">More<span>▶</span></button>
+            </div>
+        </section>
+    
+        <section class="more-news"> 
+            <div class="more-news-title">
+                <div>
+                    <h2>More News</h2>
+                </div>
+            </div>
 
- 
-<section class="more-news"> 
-   <div class="line-space"></div> 
-   <div class="second-line-space"></div>
-    <div>
-        <h2> More News</h2>
+            <div class="more-news-list">
+                <div class="news-article">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/CODY_JINKS_REBELS__RENEGADES_SUNDAY_10_16_2022_PROPIXMEDIALIVE_-21-2.jpg?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <h4 class="article-label">ON THE GROUND</h4>
+                        <h2> <a href="#">Rebels & Renegades Fest Debuts With Cody  Jinks, a Warren Zevon Tribute, and No Geenres Allowed</a></h2>
+                        <p>The inaugural gathering in Monterey , California, did its bestr to blur the lines with artists like Trampled by Turtles, Orville Peck, and Nikki  Lane  </p>
+                        <p class="news-author"> by <a href="#">GARRET K. WOODEARD</a></p>
+                    </div>
+                </div>
+
+                <div class="news-article">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Real-Deal-on-Fentanyl.jpg?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <h4 class="article-label">SCHOOLED</h4>
+                        <h2> <a href="#">How Do We Save Teens From Fentanyl</a></h2>
+                        <p>A new series from the Ad Council is embracing education and promoting harm reduction as the right stokes fear over rainbow fentanyl  </p>
+                        <p class="news-author"> by <a href="#">CT JONES</a></p>
+                    </div>
+                </div>
+
+                <div class="news-article">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/kanye-west-tiktok.jpg?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <h4 class="article-label">ULTRA WHITE BEAM</h4>
+                        <h2> <a href="#">Kanye West's Anti-Semantic Rants Have a Growing Fandom on TikTok</a></h2>
+                        <p>Popular videos include mashups of the rapper with a 1933 speech from Nazi propagandist Joseph Goebbels</p>
+                        <p class="news-author"> by <a href="#">MILES KLEE</a></p>
+                    </div>        
+                </div>
+
+                <div class="news-article-big">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Untitled-1.png?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <div class="article-label-big">
+                            <h4 class="article-label">GAME REVIEW</h4>
+                        </div>
+                        <h2> <a href="#">Mario + Rabbids Sparks of Hope' is a Goofy Gaming Chimera (in thew Good Way)</a></h2>
+                        <p class="news-author"> by <a href="#">CHRISTOPHER CRUZ</a></p>
+                    </div>
+                </div>
+
+                <div class="news-article">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Gunna-bail-denied.jpg?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <h4 class="article-label">YSL INDICTMENT</h4>
+                        <h2> <a href="#">Gunna Files Another Bond Motion After Being Denied Release Three Times</a></h2>
+                        <p>His attorneys previously described keeping the rapper detained a "miscarriage of justice"</p>
+                        <p class="news-author"> by <a href="#">TOMAS MIER</a></p>
+                    </div>
+                </div>
+
+                <div class="news-article">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/camila-jisoo.jpg?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <h4 class="article-label"> GIRL GROUP POWER</h4>
+                        <h2> <a href="#">Camila Cabello Praises Blackpink's Jisoo for Covering Her Song 'Liar : Get It Girl</a></h2>
+                        <p>The solo segment of the Blackpink concert also treated Blinks to unreleased solo music, as Jennie performed her song "Moonlight"</p>
+                        <p class="news-author"> by <a href="#">TOMAS MIER</a></p>
+                    </div>
+                </div>   
+            </div>
+            <div class="news-more-button-container">
+                <div class="news-more-button">
+                    <button><span>▼</span><a href="#">READ MORE</a><span>▼</span></button>
+                </div> 
+            </div>
+        </section> 
     </div>
-    <div class="more-news-list">
-        <div class="news-article">
-            <div>
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/CODY_JINKS_REBELS__RENEGADES_SUNDAY_10_16_2022_PROPIXMEDIALIVE_-21-2.jpg?w=680&h=453&crop=1" alt="">
-            </div>
-            <div>
-                <span class="news-category"> ON THE GROUND</span>
-                <h2> <a href="#">Rebels & Renegades Fest Debuts With Cody  Jinks, a Warren Zevon Tribute, and No Geenres Allowed</a></h2>
-                <P>The inaugural gathering in Monterey , California, did its bestr to blur the lines with artists like Trampled by Turtles, Orville Peck, and Nikki  Lane  </P>
-                <span class="news-author"> by <a href="#">GARRET K. WOODEARD</a></span>
-            </div>
-        </div>  
-        <div class="news-article">
-            <div>
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Real-Deal-on-Fentanyl.jpg?w=680&h=453&crop=1" alt="">
-            </div>
-            <div>
-                <span class="news-category"> SCHOOLED</span>
-                <h2> <a href="#">How Do We Save Teens From Fentanyl</a></h2>
-                <P>A new series from the Ad Council is embracing education and promoting harm reduction as the right stokes fear over rainbow fentanyl  </P>
-                <span class="news-author"> by <a href="#">CT JONES</a></span>
-            </div>
-        </div>
-        <div class="news-article">
-            <div>
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/kanye-west-tiktok.jpg?w=680&h=453&crop=1" alt="">
-            </div>
-            <div>
-                <span class="news-category"> ULTRA WHITE BEAM</span>
-                <h2> <a href="#">Kanye West's Anti.Semantic Rants Have a Growing Fandom on TikTok</a></h2>
-                <P>Popular videos include mashups of the rapper with a 1933 speech from Nazi propagandist Joseph Goebbels  </P>
-                <span class="news-author"> by <a href="#">MILES KLEE</a></span>
-            </div>
-        </div>
-        <div class="news-article">
-            <div>
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Untitled-1.png?w=680&h=453&crop=1" alt="">
-            </div>
-            <div>
-                <span class="news-category"> GAME REVIEW</span>
-                <h2> <a href="#">Mario + Rabbids Sparks of Hope' is a Goofy Gaming Chimera (in thew Good Way)</a></h2>
-                <span class="news-author"> by <a href="#">CHRISTOPHER CRUZ</a></span>
-            </div>
-        </div>
-        <div class="news-article">
-            <div>
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Gunna-bail-denied.jpg?w=680&h=453&crop=1" alt="">
-            </div>
-            <div>
-                <span class="news-category"> YSL INDICTMENT</span>
-                <h2> <a href="#">Gunna Files Another Bond Motion After Being Denied Release Three Times</a></h2>
-                <p>His attorneys previously described keeping the rapper detained a "miscarriage of justice"</p>
-                <span class="news-author"> by <a href="#">TOMAS MIER</a></span>
-            </div>
-        </div>
-        <div class="news-article">
-            <div>
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/camila-jisoo.jpg?w=680&h=453&crop=1" alt="">
-            </div>
-            <div>
-                <span class="news-category"> GIRL GROUP POWER</span>
-                <h2> <a href="#">Camila Cabello Praises Blackpink's Jisoo for Covering Her Song 'Liar : Get It Girl</a></h2>
-                <p>The solo segment of the Blackpink concert also treated Blinks to unreleased solo music, as Jennie performed her song "Moonlight"</p>
-                <span class="news-author"> by <a href="#">TOMAS MIER</a></span>
-            </div>
-        </div>
-        <div class="news-more-buttom">
-            <button> <a href="#"> READ MORE </a></button>
-        </div>    
-    </div>       
-</section> 
+    
     
 
                                                                     <!-- Body 4  Luigi Delber -->
@@ -958,100 +1028,134 @@
             </div>
         </div>
     </div>
+
+        
+
+    </div>
                                                                 <!-- footer matt -->
 <footer>
     <section class="container-1">
-        <div class="footer-image">
-            <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/R1368_COV_Stephen_Curry-PR_88928312_View.jpg" alt="poster-magazine" width="200px">
-        </div>
-        <div>
-            <div class="mini-container1">
-                    <div class="footer-button">
-                        <button class="white-button"><a href="link">GET THE MAGAZINE</a></button>
-                        <button class="white-button"><a href="link">GET DIGITAL CLASSES</a></button>
-                        <button class="black-button"><a href="link">GIVE A GIFT</a></button>
-                        <button class="black-button"><a href="link">CUSTOMER SERVICE</a></button>
-                    </div>
-                    <div class="rollingstone border">
-                    <h3>ROLLINGSTONE</h3>
-                    <hr><hr>
-                    <div class="abs">
-                            <a href="link">music</a>
-                            <a href="link">Politics</a>
-                            <a href="link">Culture</a>
-                            <a href="link">Entertainment</a>
-                            <a href="link">RS Pro</a>
+        <div class="container-2">
+            <div class="footer-image">
+                <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/R1368_COV_Stephen_Curry-PR_88928312_View.jpg" alt="poster-magazine" width="200px">
+            </div>
+            <div class="container-3">
+                <div class="mini-container1">
+                        <div class="footer-button">
+                            <button class="white-button"><a href="link">GET THE MAGAZINE</a></button>
+                            <button class="white-button"><a href="link">GET DIGITAL CLASSES</a></button>
+                            <button class="black-button"><a href="link">GIVE A GIFT</a></button>
+                            <button class="black-button"><a href="link">CUSTOMER SERVICE</a></button>
                         </div>
-                        <div class="float-right">
-                            <a href="link">Advertise</a>
-                            <a href="link">Contact</a>
-                            <a href="link">Live medin</a>
-                            <a href="link">Accesibilty</a>
-                            <a href="link">Shop</a>
-                        </div>   
-                    </div>
-                    <div class="legal border">
-                        <h3>LEGAL</h3>
-                        <hr><hr>
-                        <a href="link">Privacy policy</a>
-                        <a href="link">terme of use</a>
-                        <a href="link">Ad choises</a>
-                        <a href="link">PMC entertainment</a>
-                        <a href="link">EU privacy preferences</a>
-                    </div>
-                    <div class="follow border">
-                        <h3>FOLLOW US</h3>
-                        <hr><hr>
-                        <a href="link">Facebook</a>
-                        <a href="link">Twitter</a>
-                        <a href="link">Youtube</a>
-                        <a href="link">Instagram</a>
-                        <a href="link">Tiktok</a>
-                        <a href="link">Twitch</a>
-                    </div>
-                  
-            </div>
-            <div class="footer-form">
-                <div class="form-1">
-                    <h4>NEWSLETTER SIGNUP</h4>
-                    <input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL">
-                    <button type="submit">SUBSCRIBE ᐅ</button>
+                        <div class="rollingstone border">
+                        <h3 class="bbottom">ROLLINGSTONE</h3>
+                        <hr>
+                        <div class="abs">
+                                <a href="link">music</a>
+                                <a href="link">Politics</a>
+                                <a href="link">Culture</a>
+                                <a href="link">Entertainment</a>
+                                <a href="link">RS Pro</a>
+                            </div>
+                            <div class="float-right">
+                                <a href="link">Advertise</a>
+                                <a href="link">Contact</a>
+                                <a href="link">Live medin</a>
+                                <a href="link">Accesibilty</a>
+                                <a href="link">Shop</a>
+                            </div>   
+                        </div>
+                        <div class="legal border">
+                            <h3 class="bbottom">LEGAL</h3>
+                            <hr>
+                            <a href="link">Privacy policy</a>
+                            <a href="link">terme of use</a>
+                            <a href="link">Ad choises</a>
+                            <a href="link">PMC entertainment</a>
+                            <a href="link">EU privacy preferences</a>
+                        </div>
+                        <div class="follow border">
+                            <h3 class="bbottom">FOLLOW US</h3>
+                            <hr>
+                            <a href="link">Facebook</a>
+                            <a href="link">Twitter</a>
+                            <a href="link">Youtube</a>
+                            <a href="link">Instagram</a>
+                            <a href="link">Tiktok</a>
+                            <a href="link">Twitch</a>
+                        </div>
+                    
                 </div>
-                <div class="border">
-                    <div class="flex form-2">
-                        <p class="gap">
-                            GOT A HOT NEWS TIP?
-                        </p>
-                        <p class="border gap">
-                            we want to hear it. Send us a tip using<br>s our anonymous form.
-                        </p>
+                <div class="footer-form">
+                    <div class="form-1">
+                        <h4>NEWSLETTER SIGNUP</h4>
+                        <input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL">
+                        <button type="submit">SUBSCRIBE ᐅ</button>
                     </div>
-                    <div>
-                        <button type="submit">SEND US A TIP ᐅ</button>
-                        <label for="email"></label>
-                        <input type="text" name="tip" id="tip">
-                    </div>
+                    <div class="border">
+                        <div class="flex form-2">
+                            <p class="gap">
+                                GOT A HOT<br> NEWS TIP?
+                            </p>
+                            <p class="border gap">
+                                we want to hear it. Send us a tip using<br>s our anonymous form.
+                            </p>
+                        </div>
+                        <div>
+                            <button type="submit">SEND US A TIP ᐅ</button>
+                            <label for="email"></label>
+                            <input type="text" name="tip" id="tip">
 
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-            
-        </div>
-    </section>
-    
-    <section>
-        <div>
-            <img src="./logo.jfif" alt="logo">
-        </div>
-        <div class="dropdown">
-            <span>OUR SITES</span>
-            <div class="dropdown-content">
-                <div>DEADLINE</div>
-                <div>BILLBOARD</div>
-                <div>BGR</div>
-                <div>ARTNEWS</div>
+        </section>
+    </footer>
+        
+        <section class="end">
+            <div class="flex gap10">
+                <img src="./res/logo.jfif" alt="logo">
+                <div class="align">
+                    <span>Copyright © 2022 Penske Business Media, LLC. All Rights reserved.</span>
+                    <br>
+                    <span><a href="#">Powered by WordPress.com VIP</a></span>
+                </div>
             </div>
-        </div>
-    </section>
 
-</footer>
+            <div class="dropdown">
+
+                <label for="dropdown-site"></label>
+                <select name="oursites" id="our-site">
+                    <option value="wwd">OUR SITES</option>
+                    <option value="wwd">WWD</option>
+                    <option value="vibe">VIBE</option>
+                    <option value="variety">VARIETY</option>
+                    <option value="tvline">TVLINE</option>
+                    <option value="thehollyrpo">THE HOLLYWOOD REPORTER</option>
+                    <option value="stylecaster">STYLECASTER</option>
+                    <option value="spy">SPY</option>
+                    <option value="sportico">SPORTICO</option>
+                    <option value="sourcing">SOURCING</option>
+                    <option value="journal">JOURNAL</option>
+                    <option value="soaps">SOAPS</option>
+                    <option value="shemedia">SHEMEDIA</option>
+                    <option value="sheknows">SHEKNOWS</option>
+                    <option value="rolingstone">ROLINGSTONE</option>
+                    <option value="robreport">ROBB REPORT</option>
+                    <option value="indiewire">INDIEWIRE</option>
+                    <option value="goldderby">GOLD DERBY</option>
+                    <option value="footwearnews">FOOTWEAR NEWS</option>
+                    <option value="fairchildmedia">FAIRCHILD MEDIA</option>
+                    <option value="daedline">DEADLINE</option>
+                    <option value="billboard">BILLBOARD</option>
+                    <option value="bgr">BGR</option>
+                    <option value="artnews">ARTNEWS</option>
+                </select>
+            </div>
+        </section>
+
+    <script src="./script/menu-btn.js" ></script>
+</body>
 </html>
