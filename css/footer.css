@@ -1,57 +1,106 @@
-footer section:first-of-type{
+footer a, footer h3, footer p, footer h4, footer span{
+    color: var(--invert-primary-color);
+    line-height: 3.5ch;
+}
+
+
+footer{
     background-color: var(--primary-color);
+    padding: 10px;
+}
 
-    }
-    footer a, footer h3, footer p, footer h4, footer span{
-        color: var(--invert-primary-color);
-    }
-    footer section{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
+footer .container-1{
+    border: 3px solid white;
+}
+
+footer .container-2{
+    border: 1px solid white;
+    margin: 10px;
+}
+
+footer .footer-wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-image {
+    max-width: 300px;
+}
+
+footer .mini-container1{
+    display: flex;
+    border-bottom: 1px solid var(--trasparent-white);
+    flex-direction: row;
+}
+
+footer .mini-container1 > * {
+    flex: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: solid 1px white;
+}
+footer .mini-container1 > :last-child {
+    padding-left: 1rem;
+    border-right: none;
+}
+footer .title-box {
+    font-family: var(--generic-text);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.footer-link-container {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--generic-text);
+    font-size: 14px;
+}
+.bbottom{
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+
+
+}
+.rollingstone{
+    padding-left: 20px;
+;
+}
+.legal{
+    padding-left: 20px;
+}
+.follow{
+    padding-left: 20px;
+}
+
+footer .abs{
+    float: left;
+}
+.float-right{
+    float: right;
+}
     
-    }
-    footer .mini-container1 a, footer .mini-container1 button{
-        display: block;
-    }
-    footer .mini-container1{
-        display: flex;
-        gap: 10px;
-        border-bottom: 1px solid white
-    }
-    footer img{
-        width: calc(100vw/5);
-    }
-
-    footer .abs{
-        float: left;
-    }
-    .float-right{
-        float: right;
-    }
+footer > section div{
+    padding: 10px;
+    /* border-right: solid white 1px; */
+}
+.footer-button button{
+    width: 100%;
+    min-width: 100%;
+}
         
-    footer > section div{
-        padding: 10px;
-        /* border-right: solid white 1px; */
-    }
-    footer  .minicontainer1 button{
-        width: 100%;
-        max-width: 100%;
-        
-    }
     
 .white-button {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 0, 0);
     padding: 5px;
-    height: 42px;
 }
  .white-button > a {
     border: 1px solid black;
-    padding: 5px 30px 5px 30px;
-    color: rgb(0, 0, 0);
-    margin: 3px;
+    padding: 4px;
+    color: black;
     text-decoration: none;
 } 
 
@@ -69,15 +118,12 @@ footer section:first-of-type{
     background-color: black;
     border: 1px solid white;
     padding: 5px;
-    height: 42px;
-    
 }
 
 .black-button > a {
     border: 1px solid white;
-    padding: 5px 30px 5px 30px;
+    padding: 4px;
     color: white;
-    margin: 3PX;
     text-decoration: none;
 }
 
@@ -91,9 +137,72 @@ footer section:first-of-type{
 
 .footer-form{
     display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 10px;
+    border-top: 1px solid var(--trasparent-white);
 
 }
-footer-form label{
-    text-decoration: none;
+.footer-form input{
+    border: none;
+    border-bottom: 1px solid var(--trasparent-white);
+    background-color: black;
+    color: black;   
+    width: 300px;
+}
 
+.form-1 h4{ 
+    margin-bottom: 40px;
+
+}
+    
+.form-2{
+    margin-bottom: 10px;
+}
+.gap{
+    padding: 0 10px;
+    line-height: 2ch;
+}
+.footer-form button{
+    background-color: black;
+    color: white;
+}
+.footer-form > .form-1 button{
+    border-bottom: 1px solid var(--trasparent-white);
+    border-top: 1px solid var(--trasparent-white);
+    padding-top: 5px ;
+}
+/*.border{
+    border-left: 1px solid white;
+}*/
+.end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+}   
+.end img{
+    width:100px ;
+}
+.end .dropdown{
+    margin-top: 40px;
+    padding-right: 40px;
+    
+}
+.align{
+    margin-top: 40px;
+    font-size: 10px;
+    font-family: var(--label);
+}
+.gap10{
+    gap: 10px;
+}
+@media (max-width: 1259px){
+    .footer-image{
+        display:none;
+    }
+    .mini-container1{
+        width: 100%;
+        justify-content: space-between;
+    }
 }
