@@ -119,11 +119,3 @@ img {
    display: flex !important;
    flex-direction: column;
 }
-
-.mobile-only{
-   display: none !important;
-}
-
-.desktop-only{
-   display: block;
-}
