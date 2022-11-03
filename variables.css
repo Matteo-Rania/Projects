@@ -1,0 +1,20 @@
+ :root {
+    --regular-text: 16px; 
+    --big-title:  35px;
+    --medium-title: 18px;
+    --small-title: 14px;
+    --by-author-text: 10px;
+        /* COLORS */
+    --primary-color: black;
+    --invert-primary-color: white;
+    --secondary-color: gray;
+    --tertiary-color: #D71920;
+    --trasparent-white:rgba(255, 255, 255, 0.4);
+        /* width images */
+    --regular-width-image: 16px; 
+    --big-width-image:  35px;
+    --medium-width-image: 18px;
+    --small-width-image: 14px;
+    
+}
+    
