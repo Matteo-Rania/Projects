@@ -206,3 +206,21 @@ footer > section div{
         justify-content: space-between;
     }
 }
+
+.align{
+    margin-top: 40px;
+    font-size: 10px;
+    font-family: var(--label);
+}
+.gap10{
+    gap: 10px;
+}
+@media (max-width: 1259px){
+    .footer-image{
+        display:none;
+    }
+    .mini-container1{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
