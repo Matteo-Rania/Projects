@@ -78,7 +78,7 @@
                             <!--MEGA MENU-->
                             <div class="mega-menu flex"> <!--Mega menù on-click-->
                                 <div class="mega-menu-window-container">
-                                    <div class="mega-menu-window">
+                                    <div class="mega-menu-window flex-column">
                                         <div class="mega-menu-content flex-column"><!--Mega menù links-->
                                             <section class="mega-menu-link login mobile-only"> <!--Login on mobile-->
                                                 <div class="mega-menu-section-title-box">
@@ -174,43 +174,47 @@
                                             </section>
                                         </div>
                                         <div class="mega-menu-footer flex">
-                                            <section class="mega-menu-footer-photo">
+                                            <section class="mega-menu-footer-photo desktop-only">
                                                 <a href="#">
-                                                    <img src="" alt="RC cover">
+                                                    <img src="./images/cover_small.webp" alt="RC cover">
                                                 </a>
                                             </section>
                                             <section class="mega-menu-footer-socials">
                                                 <h5>Follow Us</h5>
                                                 <div class="mega-menu-footer-socials-container">
                                                     <a href="#" class="social-icon">
-                                                        <img src="" alt="Facebook">
+                                                        <img src="./res/social-icons/fb.svg" alt="Facebook">
                                                     </a>
                                                     <a href="#" class="social-icon">
-                                                        <img src="" alt="Twitter">
+                                                        <img src="./res/social-icons/tw.svg" alt="Twitter">
                                                     </a>
                                                     <a href="#" class="social-icon">
-                                                        <img src="" alt="Youtube">
+                                                        <img src="./res/social-icons/yt.svg" alt="Youtube">
                                                     </a>
                                                     <a href="#" class="social-icon">
-                                                        <img src="" alt="Instagram">
+                                                        <img src="./res/social-icons/ig.svg" alt="Instagram">
                                                     </a>
                                                     <a href="#" class="social-icon">
-                                                        <img src="" alt="TikTok">
+                                                        <img src="./res/social-icons/tiktok.svg" alt="TikTok">
                                                     </a>
                                                     <a href="#" class="social-icon">
-                                                        <img src="" alt="Twitch">
+                                                        <img src="./res/social-icons/twitch.svg" alt="Twitch">
                                                     </a>
                                                 </div>
                                             </section>
                                             <section class="mega-menu-footer-newsletter">
-                                                <h5>Alerts & Newsletter</h5>
+                                                <div class="title-container">
+                                                    <h5>Alerts & Newsletter</h5>
+                                                </div>
                                                 <div class="mega-menu-newsletter-signup">
-                                                    <form action="" class="newsletter-signup-form">
-                                                        <label for="newsletter-signup">
-                                                            Email Address
-                                                        </label>
-                                                        <input class="newsletter-signup-input" type="mail" id="newsletter-signup" required placeholder="email@example.com">
-                                                        <button class="newsletter-signup-button" type="submit">Sign up</button>
+                                                    <form action="" class="newsletter-signup-form" id="newsletter-signup-form">
+                                                        <div class="newsletter-signup-form-input">
+                                                            <label for="newsletter-signup">
+                                                                Email Address
+                                                            </label>
+                                                            <input class="newsletter-signup-input" type="mail" id="newsletter-signup" required placeholder="email@example.com">
+                                                        </div>
+                                                        <button class="newsletter-signup-button" type="submit" form="newsletter-signup-form">Sign up</button>
                                                     </form>
                                                 </div>
                                             </section>
@@ -237,13 +241,13 @@
                         <div class="nav-bottom-link-href">
                             <a href="#">Politics</a>
                         </div>
-                        <div class="nav-bottom-link-href">
+                        <div class="nav-bottom-link-href truncate">
                             <a href="#">TV & Movies</a>
                         </div>
                         <div class="nav-bottom-link-href">
                             <a href="#">(Sub)culture</a>
                         </div>
-                        <div class="nav-bottom-link-href">
+                        <div class="nav-bottom-link-href truncate">
                             <a href="#">Rs Recommends</a>
                         </div>
                     </div>
