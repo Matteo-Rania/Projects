@@ -109,18 +109,31 @@ padding-top: 5px;
     padding-bottom: 1ch;
 }
 
-
-
-.sideMenu {
-   
+ .NewsCentralInner .author {
+    font-size: 11px;
 }
 
-.primaryPost-marked {
-    
+ .NewsCentralInner .title-main {
+    font-size: 28px;
+} 
+ .NewsCentralInner .description {
+    font-size: var(--regular-text);
+    font-weight: 300;
+} 
+
+.primaryPost- {
+    align-items: baseline;
+}
+.primaryPost- .title-primary-post {
+    font-family: var(--big-title);
+    font-size: 22px;
+    color: var(--tertiary-color);
 }
 
-.primaryPost {
-    
+.primaryPost- .author-primary-post {
+    font-size: 22px;
+    font-family: var(--big-title);
+    color: dimgrey;
 }
 
 
