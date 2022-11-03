@@ -16,6 +16,12 @@ footer{
         flex-direction: row;
         border: 1px solid white;
         margin: 10px;
+
+    }
+    footer .container-4{
+        display: flex;
+        max-width: var(--max-width);
+        margin:0 auto
     }
     footer .mini-container1 a, footer .mini-container1 button{
         display: block;
