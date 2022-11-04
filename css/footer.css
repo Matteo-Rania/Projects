@@ -1,118 +1,223 @@
-footer .container-1{
-    border: 3px solid white;
+footer a, 
+footer h3, 
+footer p, 
+footer h4, 
+footer span{
+    color: var(--invert-primary-color);
+    font-family: var(--generic-text);
+    letter-spacing: .5px;
 }
+
+footer h3 {
+    letter-spacing: 1.7;
+    font-weight: 600;
+    font-size: 14px;
+}
+
 footer{
     background-color: var(--primary-color);
     padding: 10px;
+}
 
-    }
-    footer a, footer h3, footer p, footer h4, footer span{
-        color: var(--invert-primary-color);
-        line-height: 3.5ch;
+footer .container-1{
+    border: 1px solid white;
+    flex: 1;
+}
 
-    }
-    footer .container-2{
-        display: flex;
-        flex-direction: row;
-        border: 1px solid white;
-        margin: 10px;
+footer .container-2{
+    border: 1px solid white;
+    margin: 10px;
+}
 
-    }
-    footer .container-4{
-        display: flex;
-        max-width: var(--max-width);
-        margin:0 auto
-    }
-    footer .mini-container1 a, footer .mini-container1 button{
-        display: block;
-    }
-    footer .mini-container1{
-        display: flex;
-        border-bottom: 1px solid var(--trasparent-white);
-        flex-direction: row;
-       
+footer .container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
 
-    }
-    .bbottom{
-        border-bottom: 2px solid white;
-        margin-bottom: 5px;
+footer .footer-wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 3rem;
+    justify-content: space-between;
+}
 
-    
-    }
-    .rollingstone{
-        padding-left: 20px;
-    ;
-    }
-    .legal{
-        padding-left: 20px;
-    }
-    .follow{
-        padding-left: 20px;
-    }
-    footer img{
-        width: 300px;
-        height: 400px;
-        margin-top: 50px;
-        margin-left: 10px;
-    }
+.footer-image {
+    max-width: 300px;
+}
 
-    footer .abs{
-        float: left;
-    }
-    .float-right{
-        float: right;
-    }
-        
-    footer > section div{
-        padding: 10px;
-        /* border-right: solid white 1px; */
-    }
-    .footer-button button{
-        width: 100%;
-        min-width: 100%;
-        margin: 20px 0;
-    }
+footer .mini-container1{
+    display: flex;
+    border-bottom: 1px solid var(--trasparent-white);
+    flex-direction: row;
+    padding-bottom: 2rem;
+    position: relative;
+    flex: 1;
+}
+
+footer .mini-container1::after {
+    content: " ";
+    position: absolute;
+    bottom: .25rem;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--trasparent-white);
+}
+
+
+footer .mini-container1 > * {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-right: solid 1px var(--trasparent-white);
+}
+footer .mini-container1 > :first-child {
+    flex: 1;
+    padding-right: 2rem;
+    padding-left: 0px;
+}
+footer .mini-container1 > :last-child {
+    flex: 0;
+    min-width: 15%;
+    padding-right: 0px;
+    padding-left: 2rem;
+    border-right: none;
+}
+
+footer .footer-link {
+    justify-content: space-between;
+}
+footer .form-1 .title-box {
+    font-family: var(--generic-text);
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: solid 1px var(--trasparent-white);
+    padding-bottom: 1ch;
+    position: relative;
+}
+
+footer .form-1 .title-box::after {
+    content: " ";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--trasparent-white);
+}
+
+.footer-link-container {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--generic-text);
+    font-size: 14px;
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+}
+
+.footer-link-container a{
+    padding-top: 1.5ch;
+}
+.footer-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rollingstone{
+    padding-left: 20px;
+;
+}
+.column-left{
+    margin-right: 2rem;
+
+}
+.legal{
+    padding-left: 20px;
+}
+.follow{
+    padding-left: 20px;
+}
+
+.follow a {
+    display: flex;
+    align-items: center;
+}
+
+.follow a img {
+    opacity: 1;
+    object-fit: contain;
+    max-height: 16px;
+    max-width: 16px;
+    /*change icons color with "https://codepen.io/sosuke/pen/Pjoqqp"*/
+    filter: invert(13%) sepia(99%) saturate(3755%) hue-rotate(349deg) brightness(100%) contrast(95%);
+    margin-right: 2ch;
+}
+
+.follow a:hover img {
+    opacity: 1;
+    filter: invert(13%) sepia(99%) saturate(3755%) hue-rotate(349deg) brightness(250%) contrast(150%);
+}
+
+footer .abs{
+    float: left;
+}
         
     
 .white-button {
+    display: flex;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
-    padding: 5px;
-}
- .white-button > a {
-    border: 1px solid black;
-    padding: 4px;
-    color: black;
-    text-decoration: none;
-} 
-
-.white-button:hover {
-    background-color: red;
-    border: white;
-}
-
-.white-button > a:hover {
-    color: white;
     border: 1px solid white;
+    padding: .25rem;
+    font-size: 13px;
+    text-align: center;
 }
 
 .black-button {
+    display: flex;
     background-color: black;
-    border: 1px solid white;
-    padding: 5px;
+    border: 1px solid var(--trasparent-white);
+    padding: .25rem;
+    font-size: 13px;
+    text-align: center;
 }
 
-.black-button > a {
-    border: 1px solid white;
-    padding: 4px;
+.white-button a {
+    flex: 1;
+    border: 1px solid black;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+} 
+.black-button a {
+    flex: 1;
+    border: 1px solid var(--trasparent-white);
+    padding: .5rem;
     color: white;
     text-decoration: none;
 }
 
+.white-button:hover {
+    background-color: red;
+    border: solid 1px white;
+}
+.white-button:hover a {
+    color: white;
+    border: 1px solid white;
+}
 .black-button:hover {
     background-color: red;
-    border: red;
+    border: solid 1px red;
 }
+.black-button:hover a {
+    background-color: red;
+    border: 1px solid white;
+}
+
 .footer-container{
     display: flex;
 }
@@ -120,43 +225,151 @@ footer{
 .footer-form{
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
-    border-top: 1px solid var(--trasparent-white);
-
+    padding-top: 2rem;
 }
-.footer-form input{
-    border: none;
-    border-bottom: 1px solid var(--trasparent-white);
-    background-color: black;
-    color: black;   
-    width: 300px;
+.footer-form .form-1 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    border-right: solid 1px var(--trasparent-white);
+    flex: 1;
 }
 
 .form-1 h4{ 
-    margin-bottom: 40px;
+    flex: 1;
+}
 
+.form-1 .newsletter-signup-form {
+    display: flex;
+    gap: 1rem;
+    height: 2rem;
 }
-    
-.form-2{
-    margin-bottom: 10px;
+.form-1 .newsletter-signup-form input{
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--trasparent-white);
+    background-color: transparent;
+    color: white;
+    flex: 1;
+    font-family: var(--generic-text);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1.7px;
 }
+.form-1 .newsletter-signup-form input:focus {
+    border-bottom: 2px solid white;
+}
+.form-1 .newsletter-signup-form button {
+    display: flex;
+    align-items: center;
+    font-family: var(--generic-text);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.7px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-top: solid 1px var(--trasparent-white);
+    border-bottom: solid 1px var(--trasparent-white);
+    cursor: pointer;
+}
+.form-1 .newsletter-signup-form button:hover {
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+.form-1 .newsletter-signup-form button:active {
+    border-top: solid 1px var(--trasparent-white);
+    border-bottom: solid 1px var(--trasparent-white);
+    color: var(--trasparent-white);
+}
+.form-1 .newsletter-signup-form button span {
+    padding-left: 1ch;
+    color: inherit;
+}
+.footer-form .form-2 {
+    padding-left: 2rem;
+    flex: 1;
+}
+
+footer .form-2 .title-box {
+    font-family: var(--generic-text);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 1ch;
+    position: relative;
+}
+.form-2 .title-box h4 {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    border-right: solid 1px var(--trasparent-white);
+    line-height: 18px;
+}
+
+.form-2 .title-box p {
+    display: flex;
+    align-items: center;
+    font-family: var(--generic-text);
+    font-size: 13px;
+    letter-spacing: .5px;
+    text-transform: none;
+    padding-left: 1rem;
+    flex: 1;
+}
+
+.form-2 .send-a-tip-form button {
+    display: flex;
+    align-items: center;
+    width: calc(33%);
+    font-family: var(--generic-text);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.7px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.form-2 .send-a-tip-form button span {
+    padding-left: .25rem;
+    color: inherit;
+}
+
+.form-2 .send-a-tip-form button:active {
+    color: var(--trasparent-white);
+}
+
+.form-2 .send-a-tip-form input{
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--trasparent-white);
+    background-color: transparent;
+    color: white;
+    flex: 1;
+    font-family: var(--generic-text);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1.7px;
+}
+.form-2 .send-a-tip-form input:focus {
+    border-bottom: 2px solid white;
+}
+
+
 .gap{
     padding: 0 10px;
     line-height: 2ch;
 }
-.footer-form button{
-    background-color: black;
-    color: white;
-}
-.footer-form > .form-1 button{
-    border-bottom: 1px solid var(--trasparent-white);
-    border-top: 1px solid var(--trasparent-white);
-    padding-top: 5px ;
-}
-.border{
-    border-left: 1px solid white;
 
-}
+/*.border{
+    border-left: 1px solid white;
+}*/
 .end{
     display: flex;
     flex-direction: row;
@@ -171,6 +384,24 @@ footer{
     padding-right: 40px;
     
 }
+.align{
+    margin-top: 40px;
+    font-size: 10px;
+    font-family: var(--label);
+}
+.gap10{
+    gap: 10px;
+}
+@media (max-width: 1259px){
+    .footer-image{
+        display:none;
+    }
+    .mini-container1{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
 .align{
     margin-top: 40px;
     font-size: 10px;
