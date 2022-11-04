@@ -1,14 +1,20 @@
 //WIP
 
+let sticky = document.getElementById("sticky");
+window.onscroll = function() {scroll()};
 
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
+function scroll() {
+  if (document.documentElement.scrollTop > 250) {
+    
+    if (document.documentElement.scrollTop < 400) {
+        sticky.classList.add('hide'); 
+    } else {
+        sticky.classList.add('sticky');
+        sticky.classList.remove('hide');
+    }
 
-function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    document.getElementsByClassName(".nav-bottom").style.display = "fixed";
   } else {
-    document.getElementById("navbar").style.padding = "80px 10px";
-    document.getElementById("logo").style.fontSize = "35px";
+    sticky.classList.remove('hide');
+    sticky.classList.remove('sticky');
   }
 }

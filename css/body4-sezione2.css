@@ -23,6 +23,9 @@
 .slide1 img{
     height: 50%;
 }
+.carosello {
+    overflow: hidden;
+}
 .carosello > *{
     margin-right: 20px;
     margin-left: 20px;
