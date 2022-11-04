@@ -225,6 +225,48 @@ nav{
 .nav-bottom-searchbar-container{
     justify-content: right;
 }
+.nav-bottom-searchbar {
+    position: relative;
+}
+
+.nav-bottom-searchbar .searchbar-button + .searchbar-input {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0rem;
+    top: 0;
+    background-color: transparent;
+    height: 100%;
+}
+.nav-bottom-searchbar .searchbar-input form label{
+    display: flex;
+}
+.nav-bottom-searchbar .searchbar-input form label button {
+    border: 0;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+}
+
+.nav-bottom-searchbar .searchbar-input form label button img {
+    /*change icons color with "https://codepen.io/sosuke/pen/Pjoqqp"*/
+    filter: invert(13%) sepia(99%) saturate(3755%) hue-rotate(349deg) brightness(100%) contrast(95%);
+}
+
+.nav-bottom-searchbar .searchbar-button.open + .searchbar-input{
+    visibility: visible;
+    pointer-events: all;
+    cursor: auto;
+}
+.nav-bottom-searchbar .searchbar-button {
+    object-fit: contain;
+    max-width: 24px;
+    max-height: 24px;
+    cursor: pointer;
+}
+.nav-bottom-searchbar .searchbar-button:hover {
+    opacity: .5;
+}
 
 .nav-top-link-href {
     position: relative;
