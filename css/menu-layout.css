@@ -111,6 +111,8 @@ nav{
     pointer-events: none;
 }
 .subscribe-box-content{
+    display: flex;
+    flex-direction: row;
     background-color: transparent;
     color: transparent;
     border: solid 2px transparent;
