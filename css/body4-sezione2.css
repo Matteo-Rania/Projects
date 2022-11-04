@@ -33,3 +33,15 @@
 .spacing{
     justify-content: space-between;
 }
+
+.carosello h3 {
+    font-family: var(--generic-text);
+    font-size: var(--regular-text);
+    font-weight: 400;
+}
+
+.borderGridTitle {
+    font-family: var(--generic-text);
+    font-size: 13px;
+    font-weight: 400;
+}
