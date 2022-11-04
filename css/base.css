@@ -118,3 +118,7 @@ img {
    display: flex !important;
    flex-direction: column;
 }
+.hidden{
+   visibility: hidden;
+   position: absolute;
+}

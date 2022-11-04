@@ -1002,36 +1002,49 @@
             </div> 
             
                                         <!-- fine sezione 1 -->
-            <div class="border-grid-wrapper">
-                <section class="mostPopularList">
-                    <div class="mostPopularStory">1
+            <div class="border-grid-wrapper flex">
+                <section class="mostPopularList flex-column">
+                    <div class="mostPopularStory flex">
+                        <h3>1</h3>
                        <h3 class="borderGridTitle">
                         Meghan Markle Lets Her Guard Down: On Grieving Queen Elizabeth, Producing With Harry and Returning to Hollywood
                        </h3> 
                      </div>
 
-                     <div class="mostPopularStory">2
+                     <div class="mostPopularStory flex">
+                        <h3>2</h3>
                         <h3 class="borderGridTitle">
                          Melania Trump Made the Surprising Decision to Join Forces With Michelle Obama & Hillary Clinton For This Historic Cause
                         </h3> 
                       </div>
 
-                      <div class="mostPopularStory">3
+                      <div class="mostPopularStory flex">
+                        <h3>3</h3>
                         <h3 class="borderGridTitle">
                             Ralph Macchio on How He Survived Lean Years in His Career: "I Still Live Fairly Modestly"
                         </h3> 
                       </div>
 
-                      <div class="mostPopularStory">4
+                      <div class="mostPopularStory flex">
+                        <h3>4</h3>
                         <h3 class="borderGridTitle">
                             Jadakiss Launches Kiss Café Coffee Brand With His Father And Son
                         </h3> 
                       </div>
                 </section>
                 <section class="mostPopularNews">
-                    <h3 class="mostPopularTitle">YOU MIGHT ALSO LIKE</h3>
-
-                    <div class="carosello">
+                    <div class="flex spacing" >
+                        <div>
+                            <h3 class="mostPopularTitle">YOU MIGHT ALSO LIKE</h3>
+                        </div>
+                        <div >
+                            <a class="prec" onclick="cambiaSlide(-1, 0)">&#10094;
+                            </a>
+                            <a class="succ" onclick="cambiaSlide(1, 0)">&#10095;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carosello flex">
                         <div class="slide1">
                           <img src="https://variety.com/wp-content/uploads/2022/10/Rita-Ora-Taika-Waititi-MTV-VMA.jpg?resize=225%2C169&quality=100&w=300"
                            style="width:100%">
@@ -1052,15 +1065,12 @@
                              style="width:100%">
                              <h3>Marlon Wayans Defends ‘White Chicks’ Against Cancel Culture: ‘I Don’t Know What Planet We’re On’</h3>
                           </div>
-                          <div class="slide1">
+                          <div class="slide1 hidden">
                             <img src="https://www.sportico.com/wp-content/uploads/2022/10/GettyImages-1243761253-e1666381058157.jpg?w=1280&h=720&crop=1"
                              style="width:100%">
                              <h3>FAN TOKEN PROGRAMS NEED ADDITIONAL PERKS TO BUOY FALLING VALUES</h3>
                           </div>
-                        <a class="prec" onclick="cambiaSlide(-1, 0)">&#10094;
-                        </a>
-                        <a class="succ" onclick="cambiaSlide(1, 0)">&#10095;
-                        </a>
+                    
                       </div>
                 </section>
             </div>
