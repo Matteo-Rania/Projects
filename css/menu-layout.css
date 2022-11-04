@@ -225,6 +225,85 @@ nav{
 .nav-bottom-searchbar-container{
     justify-content: right;
 }
+.nav-bottom-searchbar {
+    position: relative;
+}
+
+.nav-bottom-searchbar .searchbar-button {
+    object-fit: contain;
+    max-width: 24px;
+    max-height: 24px;
+    cursor: pointer;
+}
+.nav-bottom-searchbar .searchbar-button:hover {
+    opacity: .5;
+}
+
+.nav-bottom-searchbar .searchbar-button + .searchbar-input {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0rem;
+    top: 0;
+    background-color: transparent;
+    height: 100%;
+}
+.nav-bottom-searchbar .searchbar-input form label{
+    display: flex;
+}
+.nav-bottom-searchbar .searchbar-input form label button {
+    opacity: 0;
+    border: 0;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.nav-bottom-searchbar .searchbar-input form label button img {
+    /*change icons color with "https://codepen.io/sosuke/pen/Pjoqqp"*/
+    filter: invert(13%) sepia(99%) saturate(3755%) hue-rotate(349deg) brightness(100%) contrast(95%);
+}
+
+.nav-bottom-searchbar .searchbar-input form label button:hover img {
+    filter: invert(13%) sepia(99%) saturate(3755%) hue-rotate(349deg) brightness(250%) contrast(150%);
+}
+
+.nav-bottom-searchbar .searchbar-button.open {
+    visibility: hidden;
+    transition-delay: .3s;
+}
+
+.nav-bottom-searchbar .searchbar-button.open + .searchbar-input{
+    visibility: visible;
+    pointer-events: all;
+    cursor: auto;
+}
+.nav-bottom-searchbar .searchbar-button.open + .searchbar-input form label button {
+    opacity: 100;
+    transition: ease-in-out .3s;
+}
+.nav-bottom-searchbar .searchbar-input form label input {
+    width: 0rem;
+    margin-right: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px black;
+    background-color: transparent;
+    font-family: var(--generic-text);
+    font-size: 13px;
+    letter-spacing: .5px;
+    transition: .3s;
+}
+.nav-bottom-searchbar .searchbar-button.open + .searchbar-input form label input {
+    width: 10rem;
+    transition: .3s;
+}
+
+
+
+
 
 .nav-top-link-href {
     position: relative;
