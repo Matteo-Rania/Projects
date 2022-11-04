@@ -36,6 +36,7 @@
 }
 
 .carosello h3 {
+    padding-top: 1rem;
     font-family: var(--generic-text);
     font-size: var(--regular-text);
     font-weight: 400;
