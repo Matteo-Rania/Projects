@@ -30,7 +30,6 @@ footer{
         display: flex;
         border-bottom: 1px solid var(--trasparent-white);
         flex-direction: row;
-        gap: 90px;
        
 
     }
@@ -69,7 +68,7 @@ footer{
         /* border-right: solid white 1px; */
     }
     .footer-button button{
-        width: 140%;
+        width: 100%;
         min-width: 100%;
         margin: 20px 0;
     }
@@ -121,7 +120,6 @@ footer{
 .footer-form{
     display: flex;
     flex-direction: row;
-    gap: 80px;
     margin-top: 10px;
     border-top: 1px solid var(--trasparent-white);
 

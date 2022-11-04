@@ -1,0 +1,71 @@
+.body4-box{
+    border: 1px solid black;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    font-family: var(--label);
+}
+.relative{
+    position: relative;
+    font-size: 12px !important;
+}
+.inline{
+    display: inline;
+    padding-left: 1rem;
+    font-size: 15px;
+}
+.jsTooltip{
+    visibility: hidden;
+    position: absolute;
+}
+.more-button{
+    border-left: 1px solid black;
+    padding-left: 0.5rem;
+    font-family: var(--generic-text);
+    font-size: 13px;
+}   
+
+.more-button .div-border{
+    border-left: 1px solid black;
+    padding-left: 1rem;
+}   
+.titlebox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height: 3rem;
+    padding: 0 20px;
+    margin-top: 2rem;
+}
+   
+.storyGrid{
+    display: flex;
+    flex-direction: row;
+}
+.storyGrid > *{
+    padding-right: 20px;
+    border-right: 1px solid black;
+    padding-left: 20px;
+    margin-top: 1rem;
+}
+.story{
+    display: flex;
+    flex-direction: column;
+    height: 14.5rem;
+    width: 100%;
+}
+.story:last-of-type{
+    border-right: none;
+}
+.absolute-border{
+    position: absolute;
+    border : 3px solid black;
+    width: 96.8%;
+    top: 2rem;
+}
+.story h3{
+    padding-top: 1rem;
+}
