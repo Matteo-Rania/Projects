@@ -217,6 +217,10 @@ nav{
     padding-bottom: 10px;
     transition: ease-out .2s;
 }
+
+.bottom-logo-container {
+    height: 100%;
+}
 /*LEFT*/
 .mega-menu-container{
     justify-content: left;
