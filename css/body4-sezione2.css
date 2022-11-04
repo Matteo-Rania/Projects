@@ -1,6 +1,6 @@
 .border-grid-wrapper{
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: 50px auto;
     height: 17rem;
     gap: 20px;
 }
@@ -19,11 +19,16 @@
     flex-direction: column;
     width: 100%;
 }
+.slide1 img{
+    height: 50%;
+}
 .carosello > *{
-    padding-right: 20px;
+    margin-right: 20px;
     margin-left: 20px;
     margin-top: 1rem;
     border-top: 1px solid black;
+    padding-top: 2rem;
+    line-height: 2ch;
 }
 .spacing{
     justify-content: space-between;
