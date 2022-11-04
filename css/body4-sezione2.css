@@ -12,6 +12,7 @@
 }
 .mostPopularList > *{
     border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+    padding: 1rem 0;
 }
 
 .slide1{
