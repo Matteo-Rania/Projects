@@ -277,7 +277,7 @@
 
 .report-article-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
     flex: 1;
     width: 100%;
     transform: translateX(2rem);
