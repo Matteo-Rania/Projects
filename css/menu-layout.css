@@ -55,7 +55,7 @@ nav{
     object-fit: contain;
 }
 
-.mega-menu-container, .nav-bottom-searchbar-container, .sticky-menu-link { /*Left & Right*/
+.mega-menu-container, .nav-bottom-searchbar-container{ /*Left & Right*/
     width: 15%;
 }
 
@@ -194,12 +194,14 @@ nav{
 }
 
 .sticky-menu-link, 
+.nav-bottom-right,
 .nav-bottom-searchbar-container, 
 .nav-bottom-link, 
 .nav-bottom-logo, 
 .mega-menu-container {
     display: flex;
     align-items: center;
+
 }
 
 /*CENTER*/
@@ -221,7 +223,9 @@ nav{
     padding-bottom: 10px;
     transition: ease-out .2s;
 }
-
+.nav-bottom-logo {
+    justify-content: center;
+}
 .bottom-logo-container {
     height: 100%;
 }
@@ -230,11 +234,14 @@ nav{
     justify-content: left;
 }
 /*RIGHT*/
-.nav-bottom-searchbar-container{
+.nav-bottom-searchbar-container, .nav-bottom-right{
     justify-content: right;
 }
 .nav-bottom-searchbar {
     position: relative;
+}
+.sticky-menu-link {
+    display: none;
 }
 
 .nav-bottom-searchbar .searchbar-button {
@@ -899,4 +906,74 @@ body:has(.mega-menu-button.open){
 
 .nav-bottom.sticky .nav-bottom-link.desktop-only {
     display: none;
+}
+
+.nav-bottom.sticky .sticky-menu-link {
+    display: flex;
+    height: 100%;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 1rem;
+}
+
+.nav-bottom.sticky .sticky-menu-link > * {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-left: solid 1px black;
+    font-family: var(--generic-text);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav-bottom.sticky .sticky-menu-link > :last-child {
+    padding-right: 0rem;
+}
+
+.nav-bottom.sticky .mega-menu-container, .nav-bottom.sticky .nav-bottom-right{ /*Left & Right*/
+    width: 33%;
+}
+
+.nav-bottom.sticky .nav-bottom-logo { /*Center*/
+    width: 33%;
+    flex: 1;
+}
+
+.nav-bottom.sticky .mega-menu-container {
+    order: 1;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.nav-bottom.sticky .nav-bottom-searchbar-container {
+    order: 2;
+    width: calc(33% - (1rem + 32px));
+    justify-content: flex-start;
+}
+.nav-bottom.sticky .nav-bottom-searchbar .searchbar-button + .searchbar-input {
+    right: auto;
+    left: 0;
+}
+
+.nav-bottom.sticky .nav-bottom-searchbar .searchbar-input form label {
+    flex-direction: row-reverse;
+}
+
+.nav-bottom.sticky .nav-bottom-searchbar .searchbar-input form label input {
+    margin-left: 1rem;
+    margin-right: auto;
+}
+.nav-bottom.sticky .nav-bottom-logo {
+    order: 3;
+    max-width: 33%;
+}
+.nav-bottom.sticky .sticky-menu-link {
+    order: 4;
+    width: 33%;
+    justify-content: flex-end;
 }
