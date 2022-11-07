@@ -1,5 +1,3 @@
-//WIP
-
 let sticky = document.getElementById("sticky");
 window.onscroll = function() {scroll()};
 

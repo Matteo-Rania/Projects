@@ -66,7 +66,7 @@ nav{
 
 /*TOP PART*/
 /*CENTER*/
-.nav-top-container div {
+.nav-top-container > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,12 +114,71 @@ nav{
 }
 .subscribe-box-content{
     display: flex;
+    gap: 1rem;
     flex-direction: row;
     background-color: transparent;
     color: transparent;
     border: solid 2px transparent;
     padding: 20px;
     box-shadow: 2px 2px 6px rgb(0, 0, 0, .2);
+}
+
+.subscribe-box-content .last-cover {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    min-width: 9rem;
+}
+.subscribe-box-content .subscribe-caption {
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.subscribe-box-content .subscribe-caption .caption-title{
+    font-family: var(--big-title);
+    font-size: 24px;
+    text-transform: none;
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin-bottom: .25rem;
+}
+.subscribe-box-content .subscribe-caption .caption-title span{
+    font-size: inherit;
+    text-transform: none;
+    color: var(--tertiary-color);
+}
+
+.subscribe-box-content .subscribe-caption .caption-subtitle{
+    font-family: var(--generic-text);
+    text-transform: none;
+}
+.subscribe-box-content .subscribe-caption .subscription-button{
+    margin-top: 1rem;
+    display: flex;
+    background-color: black;
+    padding: 4px;
+}
+.subscribe-box-content .subscribe-caption .subscription-button a{
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.subscribe-box-content .subscribe-caption .subscription-button:hover{
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--tertiary-color);
+}
+.subscribe-box-content .subscribe-caption .subscription-button:hover a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
 }
 .subscribe-box-content::after{ /*arrow*/
     content: " ";
@@ -165,6 +224,8 @@ nav{
     background-color: black ;
     margin: 4px 1px;
 }
+
+
 /*BOTTOM PART*/
 
 .nav-bottom {
@@ -877,6 +938,33 @@ body:has(.mega-menu-button.open){
     }
     .newsletter-signup-form button {
         height: auto;
+    }
+    .sticky-menu-link .sticky-menu-link-href {
+        display: none !important;
+    }
+    .sticky-menu-link .sticky-menu-subscribe {
+        border: none !important;
+    }
+    .nav-bottom-searchbar-container {
+        display: none !important;
+    }
+    .bottom-logo-container {
+        width: 70% !important;
+        flex: 2;
+    }
+    .bottom-logo-container img{
+        object-fit: contain;
+    }
+    .mega-menu-container {
+        width: 15% !important;
+    }
+    .sticky-menu-link {
+        width: 15% !important;
+        justify-content: flex-end;
+        font-family: var(--generic-text);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1.7px;
     }
 }  
 }
