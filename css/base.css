@@ -11,7 +11,9 @@
     font-size: var(--regular-text);
 }*/
 
-
+.relative{
+   position: relative;
+}
 a:hover{
     color: var(--secondary-color);
     text-decoration: underline;
