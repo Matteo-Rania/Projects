@@ -1,6 +1,7 @@
 .border-grid-wrapper{
     max-width: var(--max-width);
     margin: 50px auto;
+    margin-bottom: 200px;
     height: 17rem;
     gap: 20px;
 }
@@ -8,11 +9,11 @@
     gap: 20px;
 }
 .mostPopularList{
-    width: 70%;
+    width: 100%;
 }
 .mostPopularList > *{
     border-bottom: 1px solid rgba(0, 0, 0, 0.308);
-    padding: 1rem 0;
+    padding: .50rem 0;
 }
 
 .slide1{
@@ -49,4 +50,10 @@
     font-family: var(--generic-text);
     font-size: 13px;
     font-weight: 400;
+}
+.svg-width{
+    width: 200px;
+    height: 20px;
+    color: black;
+    margin-top:1rem;
 }
