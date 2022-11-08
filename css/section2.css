@@ -93,13 +93,14 @@ padding-top: 5px;
 }
 
 .title {
-    font-family: var(--big-title);
-    font-size: var(--small-title);
+    font-family: var(--title);
+    font-size: var(--regular-text);
     padding-bottom: 1ch;
 }
 
 .description {
     font-size: 13px;
+    font-family: var(--generic-text);
     padding-bottom: 1ch;
 }
 
@@ -108,3 +109,9 @@ padding-top: 5px;
     font-size: var(--by-author-text);
     padding-bottom: 1ch;
 }
+
+.author {
+    font-style: var(--generic-text);
+    font-size: 13px;
+} 
+
