@@ -156,7 +156,7 @@ footer .form-1 .title-box::after {
     max-width: 16px;
     /*change icons color with "https://codepen.io/sosuke/pen/Pjoqqp"*/
     filter: invert(13%) sepia(99%) saturate(3755%) hue-rotate(349deg) brightness(100%) contrast(95%);
-    margin-right: 2ch;
+    margin-right: 1rem;
 }
 
 .follow a:hover img {
@@ -393,16 +393,8 @@ footer .form-2 .title-box {
 .gap10{
     gap: 10px;
 }
-@media (max-width: 1259px){
-    .footer-image{
-        display:none;
-    }
-    .mini-container1{
-        width: 100%;
-        justify-content: space-between;
-    }
-}
 
+/*
 .align{
     margin-top: 40px;
     font-size: 10px;
@@ -411,12 +403,64 @@ footer .form-2 .title-box {
 .gap10{
     gap: 10px;
 }
+*/
+
+
+
+
 @media (max-width: 1259px){
     .footer-image{
         display:none;
     }
-    .mini-container1{
+    .container-3{
+        padding: 0 1rem;
         width: 100%;
         justify-content: space-between;
     }
+    footer .mini-container1 > div {
+        width: auto;
+        min-width: 9rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    footer .mini-container1 > :last-child {
+        padding-left: 1rem;
+    }
+    footer .mini-container1 > :first-child {
+        padding-right: 1rem;
+    }
+    footer .mini-container1 .footer-link-container.column-left {
+        margin-right: 1rem;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    footer .footer-wrapper {
+        padding: 1rem 0;
+    }
+    .footer-form {
+        display: none;
+    }
+    footer .mini-container1 {
+        border: none;
+        padding: 0;
+    }
+    
+    footer .mini-container1::after {
+        content: none;
+    }
+    .footer-image{
+        display:none;
+    }
+    .rollingstone, .legal, .follow {
+        display: none;
+    }
+    footer .mini-container1 .footer-button {
+        border: none;
+        padding-right: 0;
+        gap: .5rem;
+    }
+
 }

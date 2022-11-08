@@ -153,13 +153,14 @@ nav{
 }
 
 .subscribe-box-content .subscribe-caption .caption-subtitle{
-    font-family: var(--generic-text);
+    font-family: var(--title);
     text-transform: none;
-    font-size: 13px;
-    letter-spacing: 1.7px;
+    font-size: 17px;
+    letter-spacing: 0;
+    margin-top: .5rem;
 }
 .subscribe-box-content .subscribe-caption .subscription-button{
-    margin-top: 1rem;
+    margin-top: .5rem;
     display: flex;
     background-color: black;
     padding: 4px;
