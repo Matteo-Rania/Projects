@@ -129,7 +129,7 @@ footer .form-1 .title-box::after {
     flex-direction: column;
     justify-content: space-between;
 }
-.rollingstone{
+.rollingstoneBtn{
     padding-left: 20px;
 ;
 }
@@ -137,7 +137,7 @@ footer .form-1 .title-box::after {
     margin-right: 2rem;
 
 }
-.legal{
+.legalBtn{
     padding-left: 20px;
 }
 .follow{
@@ -436,6 +436,16 @@ footer .form-2 .title-box {
 
 
 @media (max-width: 768px){
+    footer,
+    footer .container-1,
+    footer .container-2,
+    footer .container-3,
+    footer .mini-container1,
+    footer .footer-wrapper {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
 
     footer .footer-wrapper {
         padding: 1rem 0;
@@ -446,21 +456,117 @@ footer .form-2 .title-box {
     footer .mini-container1 {
         border: none;
         padding: 0;
+        flex-direction: column;
+        gap: .5rem;
     }
-    
     footer .mini-container1::after {
         content: none;
     }
-    .footer-image{
-        display:none;
+    footer .mini-container1 > * {
+        border: none;
     }
-    .rollingstone, .legal, .follow {
-        display: none;
+    footer .mini-container1 .footer-image{
+        display:none;
     }
     footer .mini-container1 .footer-button {
         border: none;
         padding-right: 0;
         gap: .5rem;
+    }
+
+    footer .mini-container1 .rollingstoneBtn,
+    footer .mini-container1 .legalBtn {
+        display: flex;
+        flex-direction: column;
+        border: solid 1px var(--trasparent-white);
+        padding: .25rem;
+    }
+
+    footer .mini-container1 .rollingstoneBtn .section-content,
+    footer  .mini-container1 .legalBtn .section-content {
+        padding: .5rem;
+        border: solid 1px var(--trasparent-white);
+        display: flex;
+        flex-direction: column;
+        height: calc(13px + 1.25rem);
+        overflow: hidden;
+        /*transition: ease-in-out .3s;*/
+    }
+    footer .mini-container1 .rollingstoneBtn.active .section-content,
+    footer .mini-container1 .legalBtn.active .section-content {
+        height: 100%;
+        /*transition: ease-in-out .3s;*/
+    }
+
+    footer .mini-container1 .rollingstoneBtn .footer-link-container, 
+    footer .mini-container1 .legalBtn .footer-link-container {
+        display: flex;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        pointer-events: none;
+    }
+    footer .legalBtn.active .footer-link-container,
+    footer .rollingstoneBtn.active .footer-link-container {
+        pointer-events: all;
+    }
+    footer .mini-container1 .follow {
+        display: none;
+    }
+
+    footer .rollingstoneBtn .title-box,
+    footer .legalBtn .title-box {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+   
+    footer .rollingstoneBtn .title-box h3,
+    footer .legalBtn .title-box h3{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        
+        font-size: 13px;
+        font-family: var(--generic-text);
+        font-weight: 200;
+        cursor: pointer;
+    }
+
+    footer .rollingstoneBtn .title-box h3::after,
+    footer .legalBtn .title-box h3::after {
+        content: " ";
+        height: 1ch;
+        width: 1ch;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        transform: translateY(-2px) rotate(45deg);
+        margin-left: 1.5ch;
+
+        transition: transform ease-in-out .3s;
+    }
+    footer .rollingstoneBtn .title-box h3:hover::after,
+    footer .legalBtn .title-box h3:hover::after {
+        transform: translateY(-4px) rotate(45deg);
+        transition: transform ease-in-out .3s;
+    }
+    footer .rollingstoneBtn.active .title-box h3::after,
+    footer .legalBtn.active .title-box h3::after {
+        transform: translateY(4px) rotate(-135deg);
+        transition: transform ease-in-out .3s;
+    }
+    footer .rollingstoneBtn.active .title-box h3:hover::after,
+    footer .legalBtn.active .title-box h3:hover::after {
+        transform: translateY(2px) rotate(-135deg);
+        transition: transform ease-in-out .3s;
+    }
+
+    footer .rollingstoneBtn .footer-link {
+        flex-direction: column;
     }
 
 }
