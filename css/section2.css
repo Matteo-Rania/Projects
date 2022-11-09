@@ -1,11 +1,19 @@
+.body2 {
+    margin-top: 2rem;
+}
 .body-flex {
     display: flex;
     flex-direction: row;
     max-width: var(--max-width);
-    margin: auto;
-    gap: 30px;
-    padding-top: 20px;
-    
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.sideMenu {
+    max-width: 20%;
+    border-top: 5px solid black;
+    margin-top: 5px;
+    padding-top: 5px;
 }
 
 .contentPostPrimary,.primaryPost-conteiner {
@@ -69,12 +77,7 @@
     padding-right: 40px;
 }
 
-.sideMenu {
-width: 35%;
-border-top: 5px solid black;
-margin-top: 5px;
-padding-top: 5px;
-}
+
 
 
 .intTitle {
