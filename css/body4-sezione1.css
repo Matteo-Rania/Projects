@@ -8,7 +8,7 @@
 }
 .relative{
     position: relative;
-    font-size: 12px !important;
+    font-size: 12px !important ;
 }
 .inline{
     display: inline;
@@ -29,7 +29,10 @@
 .more-button .div-border{
     border-left: 1px solid black;
     padding-left: 1rem;
-}   
+} 
+.body-4 .more *{
+    display: none ;
+}  
 .titlebox{
     display: flex;
     flex-direction: row;
@@ -68,4 +71,58 @@
 }
 .story h3{
     padding-top: 1rem;
+}
+@media (max-width: 1259px)and (min-width: 999px){
+   .body-4 .story:last-of-type{
+    display: none;
+   }
+}
+@media (max-width: 999px){
+    .body-4 .storyGrid{
+        overflow-x:scroll ;
+    }
+    .story h3{
+        padding-top: inherit;
+    }
+    .storyGrid > *{
+        padding: 1px;
+        font-size: 13px;
+    }
+    .body-4 .storyGrid > *{
+        min-width: 30%;
+        border: none;
+        padding: none;
+        height: 80%;
+
+    }
+    .story h3{
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 768px){
+    .more-button{
+        display: none;
+    }
+    .storyGrid{
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+    .body-4 .story:last-of-type{
+        display: none;
+       }
+    .more-button2{
+        border-top: 1px solid black;
+    }
+    .more-button2 a{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+    }
+    .flex-border-left{
+        border-top: 1px solid black;
+    }
+
+
 }
