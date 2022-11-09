@@ -5,19 +5,24 @@
     padding: 20px;
     position: relative;
     font-family: var(--label);
+    background-color: #EFEFEF;
 }
 .relative{
-    position: relative;
     font-size: 12px !important ;
 }
 .inline{
-    display: inline;
     padding-left: 1rem;
     font-size: 15px;
+}
+.relative.inline{
+    min-width: max-content;
 }
 .jsTooltip{
     visibility: hidden;
     position: absolute;
+}
+.news-more-button-container{
+    display: none;
 }
 .more-button{
     border-left: 1px solid black;
@@ -30,9 +35,6 @@
     border-left: 1px solid black;
     padding-left: 1rem;
 } 
-.body-4 .more *{
-    display: none ;
-}  
 .titlebox{
     display: flex;
     flex-direction: row;
@@ -63,11 +65,11 @@
 .story:last-of-type{
     border-right: none;
 }
-.absolute-border{
-    position: absolute;
+.relative-border{
+    position: relative;
     border : 3px solid black;
-    width: 96.8%;
-    top: 2rem;
+    width: 100%;
+    top: 1rem;
 }
 .story h3{
     padding-top: 1rem;
@@ -107,22 +109,52 @@
         padding-bottom: 1rem;
         margin-bottom: 2rem;
     }
-    .body-4 .story:last-of-type{
-        display: none;
-       }
+    .body-4 .storyGrid > *{
+        min-width: 70%;
+        padding: .5rem;
+    }
+
     .more-button2{
         border-top: 1px solid black;
     }
-    .more-button2 a{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 1px solid black;
-    }
-    .flex-border-left{
-        border-top: 1px solid black;
+    .news-more-button-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
 
+    .news-more-button-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .news-more-button {
+        height: 2.5rem;
+        width: 10rem;
+    }
+    
+    .news-more-button button {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border: none;
+        border-bottom: solid 1px black;
+        border: 1px solid black;
+        font-weight: bold;
+
+    }
+    .news-more-button button a {
+        margin: 0 2ch;
+    }
+    .relative-border-bottom{
+        position: relative;
+    border : 1px solid black;
+    width: 100%;
+    }
+    .inline{
+        line-height:normal;
+        padding: 1rem 1rem;
+    }
 
 }
