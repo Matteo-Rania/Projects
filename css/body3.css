@@ -479,20 +479,17 @@
     margin: 0 2ch;
 }
 
-@media screen and (max-width: 999px ) {
+@media (max-width: 999px ) {
 
     .recommends-article-wrapper {
-    grid-auto-flow: column;
-    grid-template-columns: repeat(5, minmax(300px,200px));
+    grid-template-columns: repeat(4, minmax(300px,200px));
     overflow: hidden;
     overflow-x: scroll;
     gap: 5px;
     width: auto;
     }
+ 
     
-    .recommends-article:nth-last-of-type(5){
-        display: none;
-    }
     
     .recommends-article:not(:last-child){
         border-right: none;
@@ -501,10 +498,8 @@
         visibility: hidden;
     }
     
-     .image-wrapper img { 
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: none;
-        
-    } 
-}
+    .recommends-article-text a {
+        font-size: 18px;
+    }
+     
+}  
