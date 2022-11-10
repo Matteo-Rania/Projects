@@ -9,7 +9,7 @@
         /* COLORS */
     --primary-color: black;
     --invert-primary-color: white;
-    --secondary-color: gray;
+    --secondary-color: rgb(118, 118, 118);
     --tertiary-color: #D71920;
     --trasparent-white:rgba(255, 255, 255, 0.4);
         /* width images */
