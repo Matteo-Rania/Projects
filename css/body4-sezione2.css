@@ -1,15 +1,14 @@
 .border-grid-wrapper{
     max-width: var(--max-width);
-    margin: 50px auto;
-    margin-bottom: 200px;
-    height: 17rem;
+    margin: 0 auto;
     gap: 20px;
+    margin-top: 2rem;
 }
 .mostPopularStory{
     gap: 20px;
 }
 .mostPopularList{
-    width: 100%;
+    width: 50%;
 }
 .mostPopularList > *{
     border-bottom: 1px solid rgba(0, 0, 0, 0.308);
@@ -23,9 +22,6 @@
 }
 .slide1 img{
     height: 50%;
-}
-.carosello {
-    overflow: hidden;
 }
 .carosello > *{
     margin-right: 20px;
@@ -56,4 +52,61 @@
     height: 20px;
     color: black;
     margin-top:1rem;
+}
+@media (max-width: 1259px){
+    .body-4{
+        padding: 0 1rem;
+    }
+    
+    .carosello {
+        overflow-x: scroll;
+    }
+    .mostPopularList{
+        min-width: 15rem;
+    }
+    .slide1 img{
+        height: inherit;
+    }
+    .carosello > *{
+        min-width: 33%;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 999px){
+    .border-grid-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+    .mostPopularList{
+        width: 100%;
+    }
+    .mostPopularList > *{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+        padding: 1rem ;
+    }
+    .carosello{
+        overflow-x: scroll;
+    }
+    .mostPopularNews{
+        border-top: 1px solid black;
+        padding-top: 1rem;
+    }
+    .carosello > *{
+        border: none;
+        padding-top: inherit;
+        min-width: 80%;
+    }
+    .slide1 > img{
+        height: 25vh;
+    }
+    .prec, .succ{
+        visibility: hidden;
+    }
+    .mostPopularTitle{
+        font-size: 20px;
+        font-family: var(--generic-text);
+    }
 }
