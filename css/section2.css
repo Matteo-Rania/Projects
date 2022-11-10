@@ -337,7 +337,6 @@
         }
     .side-articles-container {
         max-width: 25%;
-        padding-right: 1rem;
     }
     .main-articles-container .articles-top-container {
         flex-direction: column;
