@@ -909,43 +909,81 @@
                                         <!-- fine sezione 1 -->
             <div class="border-grid-wrapper flex">
                 <section class="mostPopularList flex-column">
-                    <div>
+                    <div class="title-box">
+                        <img src="./res/pmc-logo.svg" alt="">
                         <h3 class="mostPopularTitle">MOST POPULAR</h3>
                     </div>
                     <div class="mostPopularStory flex">
                         <h3>1</h3>
-                       <h3 class="borderGridTitle">
-                        Meghan Markle Lets Her Guard Down: On Grieving Queen Elizabeth, Producing With Harry and Returning to Hollywood
-                       </h3> 
+                        <div class="article-text">
+                            <div class="image-wrapper">
+                                <img src="./res/fancy-tags/hollywood.svg">
+                            </div>
+                            <a href="#">
+                               <h3 class="borderGridTitle">
+                            Meghan Markle Lets Her Guard Down: On Grieving Queen Elizabeth, Producing With Harry and Returning to Hollywood
+                            </h3>  
+                            </a>
+                            
+                        </div>
+                       
                      </div>
 
                      <div class="mostPopularStory flex">
                         <h3>2</h3>
-                        <h3 class="borderGridTitle">
-                         Melania Trump Made the Surprising Decision to Join Forces With Michelle Obama & Hillary Clinton For This Historic Cause
-                        </h3> 
+
+                        <div class="article-text">
+                            <div class="image-wrapper">
+                                <img src="./res/fancy-tags/variety.svg" alt="">
+                            </div>
+                            <a href="#">
+                                <h3 class="borderGridTitle">
+                            Melania Trump Made the Surprising Decision to Join Forces With Michelle Obama & Hillary Clinton For This Historic Cause
+                            </h3> 
+                            </a>
+                            
+                        </div>
+                        
                       </div>
 
                       <div class="mostPopularStory flex">
                         <h3>3</h3>
-                        <h3 class="borderGridTitle">
+                        <div class="article-text">
+                            <div class="image-wrapper">
+                                <img src="./res/fancy-tags/she-knows.svg" alt="">
+                            </div>
+                            <a href="#">
+                                <h3 class="borderGridTitle">
                             Ralph Macchio on How He Survived Lean Years in His Career: "I Still Live Fairly Modestly"
-                        </h3> 
+                            </h3>
+                            </a>
+                            
+                        </div>
+                         
                       </div>
 
                       <div class="mostPopularStory flex">
                         <h3>4</h3>
-                        <h3 class="borderGridTitle">
+                        <div class="article-text">
+                            <div class="image-wrapper">
+                               <img src="./res/fancy-tags/dirt.svg" alt=""> 
+                            </div>
+                            <a href="#">
+                                 <h3 class="borderGridTitle">
                             Jadakiss Launches Kiss Café Coffee Brand With His Father And Son
-                        </h3> 
+                            </h3> 
+                            </a>
+                           
+                        </div>
+                        
                       </div>
                 </section>
                 <section class="mostPopularNews">
-                    <div class="flex spacing" >
+                    <div class="title-container" >
                         <div class="mostPopularTitle">
-                            <h3 >YOU MIGHT ALSO LIKE</h3>
+                            <h3>YOU MIGHT ALSO LIKE</h3>
                         </div>
-                        <div >
+                        <div class="arrows" hidden>
                             <a class="prec" onclick="cambiaSlide(-1, 0)">&#10094;
                             </a>
                             <a class="succ" onclick="cambiaSlide(1, 0)">&#10095;
@@ -954,27 +992,42 @@
                     </div>
                     <div class="carosello flex">
                         <div class="slide1">
-                          <img src="https://variety.com/wp-content/uploads/2022/10/Rita-Ora-Taika-Waititi-MTV-VMA.jpg?resize=225%2C169&quality=100&w=300">
-                          <h3 class="title">"Rita Ora, Taika Waititi to Host MTV EMAs in Dusseldorf"  </h3>
+                          <img class="article-image" src="https://variety.com/wp-content/uploads/2022/10/Rita-Ora-Taika-Waititi-MTV-VMA.jpg?resize=225%2C169&quality=100&w=300">
+                          <div class="image-wrapper">
+                            <img src="./res/fancy-tags/variety.svg" alt=""> 
+                         </div>
+                          <h3 class="title"><a href="#">"Rita Ora, Taika Waititi to Host MTV EMAs in Dusseldorf"</a></h3>
                         </div>
                         <div class="slide1">
-                          <img src="https://wwd.com/wp-content/uploads/2022/10/18K-RG-Ruby-Studs-with-Mini-Diamond-Center-Grey.jpg?resize=225%2C169&quality=100&w=300">
-                          <h3 class="title">Nina Runsdorf Brings Earrings for Cross-generational Sharing to Alex Eagle</h3> 
+                          <img class="article-image" src="https://wwd.com/wp-content/uploads/2022/10/18K-RG-Ruby-Studs-with-Mini-Diamond-Center-Grey.jpg?resize=225%2C169&quality=100&w=300">
+                          <div class="image-wrapper">
+                            <img src="./res/fancy-tags/wwd.svg" alt=""> 
+                         </div>
+                          <h3 class="title"><a href="#">Nina Runsdorf Brings Earrings for Cross-generational Sharing to Alex Eagle</a></h3> 
                         </div>
                         <div class="slide1">
-                          <img src="https://www.dirt.com/wp-content/uploads/2022/10/kourtney-kardashian-house.png?resize=225%2C169&quality=100&w=300">
-                           <h3>Kourtney Kardashian, Travis Barker Buy Conan O’Brien’s Carpinteria Beach House</h3>
+                          <img class="article-image" src="https://www.dirt.com/wp-content/uploads/2022/10/kourtney-kardashian-house.png?resize=225%2C169&quality=100&w=300">
+                          <div class="image-wrapper">
+                            <img src="./res/fancy-tags/dirt.svg" alt=""> 
+                         </div>
+                           <h3><a href="#">Kourtney Kardashian, Travis Barker Buy Conan O’Brien’s Carpinteria Beach House</a></h3>
                         </div>
                         <div class="slide1 slide4 ">
-                            <img src="https://www.indiewire.com/wp-content/uploads/2022/10/MCDWHCH_EC014.jpg?resize=1024,683"
+                            <img class="article-image" src="https://www.indiewire.com/wp-content/uploads/2022/10/MCDWHCH_EC014.jpg?resize=1024,683"
                              style="width:100%">
-                             <h3>Marlon Wayans Defends ‘White Chicks’ Against Cancel Culture: ‘I Don’t Know What Planet We’re On’</h3>
+                             <div class="image-wrapper">
+                                <img src="./res/fancy-tags/indie-wire.svg" alt=""> 
+                             </div>
+                             <h3><a href="#">Marlon Wayans Defends ‘White Chicks’ Against Cancel Culture: ‘I Don’t Know What Planet We’re On’</a></h3>
                           </div>
-                          <!-- <div class="slide1 ">
-                            <img src="https://www.sportico.com/wp-content/uploads/2022/10/GettyImages-1243761253-e1666381058157.jpg?w=1280&h=720&crop=1"
+                          <div class="slide1">
+                            <img class="article-image" src="https://www.sportico.com/wp-content/uploads/2022/10/GettyImages-1243761253-e1666381058157.jpg?w=1280&h=720&crop=1"
                              style="width:100%">
-                             <h3>FAN TOKEN PROGRAMS NEED ADDITIONAL PERKS TO BUOY FALLING VALUES</h3>
-                          </div>  -->
+                             <div class="image-wrapper">
+                                <img src="./res/fancy-tags/sport-ico.svg" alt=""> 
+                             </div>
+                             <h3><a href="#">Fan Token Programs Need Additional Perks To Buy Falling Values</a></h3>
+                          </div>
                     
                       </div>
                 </section>
@@ -1097,7 +1150,7 @@
             
     <section class="end">
         <div class="flex gap10">
-            <img src="./res/logo.jfif" alt="logo">
+            <img src="./res/logo-pmc.jfif" alt="logo">
             <div class="align">
                 <span>Copyright © 2022 Penske Business Media, LLC. All Rights reserved.</span>
                 <br>
