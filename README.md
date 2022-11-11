@@ -1,2 +1,2 @@
 # RollingStoneSite
-A Project to start working in programming
+A RollingStone website clone: our first project in Develhope!
