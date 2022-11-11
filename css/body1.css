@@ -288,4 +288,35 @@
     .body1-bottom-card .body1-bottom-card-text {
         margin-left: 1rem;
     }
+
+    .body1-center-news-label-container {
+       align-self: flex-start;
+       justify-content: flex-start;
+    }
+
+    .body1-center >*{
+        margin-left: 1rem;
+        align-items: left;
+        align-items: flex-start;
+    }
+    .body1-center-title h2, .body1-center-description p, .body1-center-author p{
+        text-align: left;
+        align-items: left;
+    }
+    
+    .body1-center-title, .body1-center-description, .body1-center-author{
+        padding-left: 0;
+    }
+
+    .body1-left-news-title {
+        font-size: 1.125rem;
+    }
+    
+    .side-articles-container .articles-box .side-article .description {
+        display: none !important;
+    }
+
+    .articles-box .title h3 {
+        font-size: 	1.125rem;
+    }  
 }
