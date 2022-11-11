@@ -6,6 +6,7 @@
 }
 .mostPopularList{
     min-width: 25%;
+    transform: translateY(-1rem);
 }
 .mostPopularNews {
     display: flex;
