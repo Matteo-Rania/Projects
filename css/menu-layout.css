@@ -891,8 +891,11 @@ body:has(.mega-menu-button.open){
     .mega-menu-content {
         flex-wrap: nowrap;
         overflow-y: scroll;
+        scroll-snap-type: y proximity;
     }
-
+    .mega-menu-content >* {
+        scroll-snap-align: start;
+    }
     .mega-menu-link {
         max-width: 100%;
     }

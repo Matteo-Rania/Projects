@@ -82,6 +82,7 @@
 @media (max-width: 999px){
     .body-4 .storyGrid{
         overflow-x:scroll ;
+        scroll-snap-type: x proximity;
     }
     .story h3{
         padding-top: inherit;
@@ -89,6 +90,7 @@
     .storyGrid > *{
         padding: 1px;
         font-size: 13px;
+        scroll-snap-align: start;
     }
     .body-4 .storyGrid > *{
         min-width: 30%;

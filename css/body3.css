@@ -504,6 +504,10 @@
     height: 25rem;
     padding-left: 20px;
     padding-bottom: 0.5rem;
+    scroll-snap-type: x proximity;
+    }
+    .recommends-article-wrapper > * {
+        scroll-snap-align: start;
     }
   
     .recommends-article-text h3 {

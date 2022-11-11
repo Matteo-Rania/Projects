@@ -244,8 +244,11 @@
     height: 10rem;
     gap: 5px;
     width: auto;
+    scroll-snap-type: x proximity;
    }
-
+.body1-showcase > * {
+    scroll-snap-align: start;
+}
    .body1-showcase > :last-child {
     display: none;
    }

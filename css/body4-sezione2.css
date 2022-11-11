@@ -143,6 +143,7 @@
     }
     .carosello {
         overflow-x: scroll;
+        scroll-snap-type: x mandatory;
     }
     .mostPopularList{
         min-width: 15rem;
@@ -153,6 +154,7 @@
     .carosello > *{
         min-width: 33%;
         overflow-x: auto;
+        scroll-snap-align: center;
     }
 }
 
