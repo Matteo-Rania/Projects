@@ -1,0 +1,39 @@
+ :root {
+    --regular-text: 16px; 
+    --big-title:  35px;
+    --medium-title: 18px;
+    --small-title: 14px;
+    --by-author-text: 10px;
+    --max-width: 78.75rem;
+    --large-title: 20px;
+        /* COLORS */
+    --primary-color: black;
+    --invert-primary-color: white;
+    --secondary-color: rgb(118, 118, 118);
+    --tertiary-color: #D71920;
+    --trasparent-white:rgba(255, 255, 255, 0.4);
+        /* width images */
+    --regular-width-image: 16px; 
+    --big-width-image:  35px;
+    --medium-width-image: 18px;
+    --small-width-image: 14px;
+    --big-title: Publico Banner;
+    --title: Publico Headline;
+    --label: Graphik;
+    --generic-text: Georgia;
+}
+
+@font-face {
+    font-family: Publico Banner;
+    src: url(../fonts/Publico\ Banner\ Web\ Ultra\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Publico Headline;
+    src: url(../fonts/Publico\ Headline\ Web\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Graphik;
+    src: url(../fonts/Graphik-Font-Family/GraphikRegular.otf);
+}

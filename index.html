@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto RollingStone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav> <!--menù-->
+        <div class="menu-wrapper flex-column"> <!--Header navbar-->
+
+            <div class="nav-top flex desktop-only"> <!--Upper part-->
+                <div class="nav-top-container flex">
+                    <div class="nav-top-link"> <!--Links left-->
+                        <div class="nav-top-link-href">
+                            <a href="#">Rs Shop</a>
+                        </div>
+                        <div class="nav-divider-small">
+                        </div>
+                        <div class="nav-top-link-href">
+                            <a href="#">Got a tip?</a>
+                        </div>
+                    </div>
+                    <div class="nav-top-logo"> <!--Central logo-->
+                        <div class="top-logo-container">
+                            <a href="#">
+                                <img src="./res/Rolling_Stone_2019.svg" alt="Rolling Stone logo" class="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav-top-auth"> <!--Links right-->
+                        <div class="nav-top-link-href">
+                            <a href="#">Log in</a>
+                        </div>
+                        <div class="nav-divider-small">
+                        </div>
+                        <div class="nav-top-link-href">
+                            <div class="nav-top-subscribe"> <!--Subscribe link-->
+                                <a href="#">Subscribe</a>
+                                <div class="subscribe-box"> <!--Subscription banner when "subscribe" is hovered-->
+                                    <div class="subscribe-box-content">
+                                        <div class="last-cover">
+                                            <img src="./images/cover_small.webp" alt="Rolling Stone Magazine Cover ##/##">
+                                        </div>
+                                        <div class="subscribe-caption">
+                                            <div class="caption-title">
+                                                <h4>Journalism that <span>Matters.</span><br>
+                                                Music that <span>Inspires.</span></h4>
+                                            </div>
+                                            <div class="caption-subtitle">
+                                                <p>Subscriptions from just $7.99 a month.</p>
+                                            </div>
+                                            <div class="subscription-button">
+                                                <a href="#" class="button">See my options</a>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-bottom flex" id="sticky"> <!--Lower part || it becomes sticky after scroll and main menu in small screen-->
+                <div class="nav-bottom-container flex">
+                    <div class="mega-menu-container"> <!--Mega menu button-->
+
+                        <div class="mega-menu-button-container">
+                            
+                            <div class="mega-menu-button">
+                                <div class="mega-menu-button__burger"></div>
+                            </div>
+                            
+                            <!--MEGA MENU-->
+                            <div class="mega-menu flex"> <!--Mega menù on-click-->
+                                <div class="mega-menu-window-container">
+                                    <div class="mega-menu-window flex-column">
+                                        <div class="mega-menu-content flex-column"><!--Mega menù links-->
+                                            <section class="mega-menu-link login mobile-only"> <!--Login on mobile-->
+                                                <div class="mega-menu-section-title-box">
+                                                    <a href="#" class="mega-menu-section-title">Log in <span>▶</span></a>
+                                                </div>
+                                            </section>
+                                            <section class="mega-menu-link music">
+                                                <div class="mega-menu-section-title-box">
+                                                    <a href="#" class="mega-menu-section-title">Music</a>
+                                                </div>
+                                                <ul class="mega-menu-section-list">
+                                                    <li><a href="#">News</a></li>
+                                                    <li><a href="#">Features</a></li>
+                                                    <li><a href="#">Lists</a></li>
+                                                    <li><a href="#">Album Reviews</a></li>
+                                                    <li><a href="#">Live Reviews</a></li>
+                                                    <li><a href="#">Artists You Need To Know</a></li>
+                                                    <li><a href="#">Songs You Need To Know</a></li>
+                                                    <li><a href="#">RS Country</a></li>
+                                                    <li><a href="#">RS Latin</a></li>
+                                                </ul>
+                                            </section>
+                                            <section class="mega-menu-link politics">
+                                                <div class="mega-menu-section-title-box">
+                                                    <a href="#" class="mega-menu-section-title">Politics</a>
+                                                </div>
+                                                <ul class="mega-menu-section-list">
+                                                    <li><a href="#">News</a></li>
+                                                    <li><a href="#">Features</a></li>
+                                                    <li><a href="#">Lists</a></li>
+                                                </ul>
+                                            </section>
+                                            <section class="mega-menu-link shop">
+                                                <div class="mega-menu-section-title-box">
+                                                    <a href="#" class="mega-menu-section-title">Shop <span>▶</span></a>
+                                                </div>
+                                            </section>
+                                            <section class="mega-menu-link movies">
+                                                <div class="mega-menu-section-title-box">
+                                                    <a href="#" class="mega-menu-section-title">Tv & Movies</a>
+                                                </div>
+                                                <ul class="mega-menu-section-list">
+                                                    <li><a href="#">News</a></li>
+                                                    <li><a href="#">Features</a></li>
+                                                    <li><a href="#">Lists</a></li>
+                                                    <li><a href="#">Recaps</a></li>
+                                                    <li><a href="#">Reviews</a></li>
+                                                </ul>
+                                            </section>
+                                            <section class="mega-menu-link gallery">
+                                                <div class="mega-menu-section-title-box">
+                                                    <a href="#" class="mega-menu-section-title">Video & Photos</a>
+                                                </div>
+                                                <ul class="mega-menu-section-list">
+                                                    <li><a href="#">RS News</a></li>
+                                                    <li><a href="#">Photo Galleries</a></li>
+                                                    <li><a href="#">The Rolling Stone Cover</a></li>
+                                                    <li><a href="#">Musicians on Musicians</a></li>
+                                                    <li><a href="#">The Breakdown</a></li>
+                                                    <li><a href="#">Rolling Stone on Twitch</a></li>
+                                                </ul>
+                                            </section>
+                                            <section class="mega-menu-link subculture">
+                                                <div class="mega-menu-section-title-box">
+                                                    <a href="#" class="mega-menu-section-title">(Sub)Culture</a>
+                                                </div>
+                                                <ul class="mega-menu-section-list">
+                                                    <li><a href="#">News</a></li>
+                                                    <li><a href="#">Features</a></li>
+                                                    <li><a href="#">Lists</a></li>
+                                                    <li><a href="#">Creators</a></li>
+                                                    <li><a href="#">Crime</a></li>
+                                                    <li><a href="#">Drugs</a></li>
+                                                    <li><a href="#">Sex</a></li>
+                                                    <li><a href="#">Tech</a></li>
+                                                </ul>
+                                            </section>
+                                            <section class="mega-menu-link recommends">
+                                                <div class="mega-menu-section-title-box">
+                                                    <a href="#" class="mega-menu-section-title">Rs recommends</a>
+                                                </div>
+                                                <ul class="mega-menu-section-list">
+                                                    <li><a href="#">Reviews</a></li>
+                                                    <li><a href="#">RS Essentials</a></li>
+                                                    <li><a href="#">RS Audio Awards</a></li>
+                                                    <li><a href="#">Gift Guides</a></li>
+                                                </ul>
+                                            </section>
+                                            <section class="mega-menu-link council">
+                                                <div class="mega-menu-section-title-box">
+                                                    <a href="#" class="mega-menu-section-title">Culture Council <span>▶</span></a>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="mega-menu-footer flex">
+                                            <section class="mega-menu-footer-photo desktop-only">
+                                                <a href="#">
+                                                    <img src="./images/cover_small.webp" alt="RC cover">
+                                                </a>
+                                            </section>
+                                            <section class="mega-menu-footer-socials">
+                                                <h5>Follow Us</h5>
+                                                <div class="mega-menu-footer-socials-container">
+                                                    <a href="#" class="social-icon">
+                                                        <img src="./res/social-icons/fb.svg" alt="Facebook">
+                                                    </a>
+                                                    <a href="#" class="social-icon">
+                                                        <img src="./res/social-icons/tw.svg" alt="Twitter">
+                                                    </a>
+                                                    <a href="#" class="social-icon">
+                                                        <img src="./res/social-icons/yt.svg" alt="Youtube">
+                                                    </a>
+                                                    <a href="#" class="social-icon">
+                                                        <img src="./res/social-icons/ig.svg" alt="Instagram">
+                                                    </a>
+                                                    <a href="#" class="social-icon">
+                                                        <img src="./res/social-icons/tiktok.svg" alt="TikTok">
+                                                    </a>
+                                                    <a href="#" class="social-icon">
+                                                        <img src="./res/social-icons/twitch.svg" alt="Twitch">
+                                                    </a>
+                                                </div>
+                                            </section>
+                                            <section class="mega-menu-footer-newsletter">
+                                                <div class="title-container">
+                                                    <h5>Alerts & Newsletter</h5>
+                                                </div>
+                                                <div class="mega-menu-newsletter-signup">
+                                                    <form action="" class="newsletter-signup-form" id="newsletter-signup-form">
+                                                        <div class="newsletter-signup-form-input">
+                                                            <label for="newsletter-signup">
+                                                                Email Address
+                                                            </label>
+                                                            <input class="newsletter-signup-input" type="mail" id="newsletter-signup" required placeholder="email@example.com">
+                                                        </div>
+                                                        <button class="newsletter-signup-button" type="submit" form="newsletter-signup-form">Sign up</button>
+                                                    </form>
+                                                </div>
+                                            </section>
+                                        </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="nav-bottom-logo mobile-only"> <!-- STICKY & SMALL SCREEN - Central logo-->
+                        <div class="bottom-logo-container">
+                            <a href="#">
+                                <img src="./res/Rolling_Stone_2019.svg" alt="Rolling Stone logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nav-bottom-link desktop-only"> <!--links-->
+                        <div class="nav-bottom-link-href">
+                            <a href="#">Music</a>
+                        </div>
+                        <div class="nav-bottom-link-href">
+                            <a href="#">Politics</a>
+                        </div>
+                        <div class="nav-bottom-link-href">
+                            <a href="#">TV & Movies</a>
+                        </div>
+                        <div class="nav-bottom-link-href">
+                            <a href="#">(Sub)culture</a>
+                        </div>
+                        <div class="nav-bottom-link-href">
+                            <a href="#">Rs Recommends</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-bottom-searchbar-container"> <!--searchbar-->
+                        <div class="nav-bottom-searchbar">
+                            <div class="searchbar-button">
+                                <img src="./res/lens.svg" alt="">
+                            </div>
+                            <div class="searchbar-input">
+                                <form action="#">
+                                    <label for="site-search" class="searchbar-input-area">
+                                        <input type="search" id="site-search">
+                                        <button type="submit"><img src="./res/lens.svg" alt=""></button>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sticky-menu-link mobile-only"> <!-- STICKY & SMALL SCREEN menu links-->
+                        <div class="sticky-menu-link-href">
+                            <a href="#">Got a tip?</a> 
+                        </div>
+                        <div class="sticky-menu-link-href">
+                            <a href="#">Log in</a>
+                        </div>
+                        <div class="sticky-menu-subscribe"> <!--Subscribe link-->
+                            <a href="#">Subscribe</a>
+
+                            <div class="subscribe-box"> <!--Subscription banner when "subscribe" is hovered-->
+                                <div class="subscribe-box-content">
+                                    <div class="last-cover">
+                                        <img src="./images/cover_small.webp" alt="Rolling Stone Magazine Cover ##/##">
+                                    </div>
+                                    <div class="subscribe-caption">
+                                        <div class="caption-title">
+                                            <h4>Journalism that <span>Matters.</span><br>
+                                            Music that <span>Inspires.</span></h4>
+                                        </div>
+                                        <div class="caption-subtitle">
+                                            <p>Subscriptions from just $7.99 a month.</p>
+                                        </div>
+                                        <div class="subscription-button">
+                                            <a href="#" class="button">See my options</a>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                                </div>
+                        </div>
+        
+                            
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="max-width">
+
+    
+        <section class="body1-wrapper">   <!--•••••••••• Body 1 // Silvio ••••••••••--> 
+                
+                <div class="body1-container">
+                    <div class="body1-articles">
+                        <div class="body1-left flex-column">    <!--•••••••••• Sezione laterale sinistra ••••••••••-->                            
+                            <div class="body1-left-news">
+    
+                                <div class="body1-news-label">
+                                    <h4>BIRDS OF A FEATHER</h4>
+                                </div>
+                                
+                                <div class="body1-left-news-title">
+                                    <a href="#"><h3>Bingo Card From Hell: Kanye West, Kid Rock Attend 
+                                        Candace Owens’ Documentary Premiere
+                                    </h3></a>
+                                </div>
+                                <div class="body1-left-news-description">
+                                    <p>The premiere also saw appearances from Ray J and known 
+                                        MAGA supporter Colby Covington
+                                    </p>
+                                </div>
+                                <div class="body1-left-news-author">
+                                    <p>BY <a href="https://someurl.com">LARISHA PAUL</a></p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="body1-left-news">
+    
+                                <div class="body1-news-label">
+                                    <h4>PARKLAND</h4>
+                                </div>
+                                
+                                <div class="body1-left-news-title">
+                                    <a href="#"><h3>Jury Recommends Life in Prison for Parkland Shooter Nikolas Cruz</h3></a>
+                                </div>
+                                <div class="body1-left-news-author">
+                                    <p>BY <a href="https://someurl.com">DANIEL KREPS</a></p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="body1-left-news">
+    
+                                <div class="body1-news-label">
+                                    <h4>MOVIE REVIEW</h4>
+                                </div>
+                                
+                                <div class="body1-left-news-title">
+                                    <a href="#">
+                                        <h3>"Halloween Ends" Is a Grim, Gory, and Gooey Goodbye to 
+                                        an Iconic Slasher Franchise</h3>
+                                    </a>
+                                </div>
+                                <div class="body1-left-news-author">
+                                    <p>BY <a href="https://someurl.com">K. AUSTIN COLLINS</a></p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="body1-left-news">
+    
+                                <div class="body1-news-label">
+                                    <h4>TV REVIEW</h4>
+                                </div>
+                                
+                                <div class="body1-left-news-title">
+                                    <a href="#"><h3>"High School’ Tells Tegan and Sara’s Coming-of-Age Story Their Way"</h3></a>
+                                </div>
+                                <div class="body1-left-news-author">
+                                    <p>BY <a href="https://someurl.com">ALAN SEPINWALL</a></p>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+        
+                        <div class="body1-center flex-column">  <!--•••••••••• Sezione Centrale ••••••••••-->
+    
+                            <div class="body1-center-image"><img src="images/michelle-phillips.jpeg" alt="Michelle Phillips"></div>
+                            <div class="body1-center-news-label-container">
+                                <div class="body1-center-news-label"><h4>THE LAST MAMA</h4></div>
+                            </div>
+                            <div class="body1-center-title">
+                                <a href="#"><h2>Michelle Phillips Finally Reveals the 
+                                Secret History of the Mamas and the Papas</h2></a>
+                            </div>
+                            <div class="body1-center-description">
+                                <p>
+                                    She spent her youth redefining the sound of pop — and the next 50 years looking 
+                                    for something she could call her own.
+                                </p>
+                            </div>
+                            <div class="body1-center-author"><p>BY <a href="https://someurl.com">ANGIE MARTOCCIO</a></p></div>
+                    
+                        </div>
+    
+                        <div class="body1-right flex-column">   <!--•••••••••• Sezione laterale destra ••••••••••-->
+    
+                            <div class="body1-right-story">
+    
+                                <div class="body1-right-story-image"><img src="images/dusty-baker.webp" alt="Dusty Baker"></div>
+                                <div class="body1-news-label"><h4>LEGENDS ONLY</h4></div>
+                                <div class="body1-right-story-title">
+                                    <a href="#"><h3>Astros Manager Dusty Baker on Smoking a Joint With 
+                                    Jimi Hendrix and Other Wild Tales</h3></a>
+                                    
+                                </div>
+                                <div class="body1-right-story-author">BY <a href="https://someurl.com">SAMA'AN ASHRAWI</a></div>
+    
+                            </div>
+    
+                            <div class="body1-right-story">
+    
+                                <div class="body1-right-story-image"><img src="images/taylor-swift.webp" alt="Dusty Baker"></div>
+                                <div class="body1-news-label"><h4>NEW TAY-STAMENT</h4></div>
+                                <div class="body1-right-story-title">
+                                    <a href="#"><h3>22 Things We Absolutely Do Not Know About 
+                                    Taylor Swift’s "Midnights"</h3></a>
+                                    
+                                </div>
+                                <div class="body1-right-story-author">BY <a href="https://someurl.com">ROB SHEFFIELD</a></div>
+    
+                            </div>
+                    
+    
+                        </div>
+                    </div>
+                    
+                    <div class="body1-showcase flex">  <!--•••••••••• Sezione di fondo ••••••••••-->
+
+                        <div class="body1-bottom-card flex">
+
+                            <div class="body1-bottom-card-image"><img src="images/Rolling-Stone-Music-Now.webp" alt="Rolling Stone Music Now"/></div>
+
+                            <div class="body1-bottom-card-text">
+                                <div class="body1-bottom-card-label"><h4>RS MUSIC NOW</h4></div>
+                                <div class="body1-bottom-card-title">
+                                    <a href="#"><p>UFOs, a Plane Crash, and Dick Jokes: The Return of Blink-182</p></a>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="body1-bottom-card flex">
+
+                            <div class="body1-bottom-card-image"><img src="images/comedies.webp" alt="Movie List"></div>
+
+                            <div class="body1-bottom-card-text">
+                                <div class="body1-bottom-card-label"><h4>MOVIE LIST</h4></div>
+                                <div class="body1-bottom-card-title">
+                                    <a href="#"><p>70 Greatest Comedies of the 21st Century</p></a>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="body1-bottom-card flex">
+
+                            <div class="body1-bottom-card-image"><img src="images/game-review.webp" alt="Game Review"></div>
+
+                            <div class="body1-bottom-card-text">
+                                <div class="body1-bottom-card-label"><h4>GAME REVIEW</h4></div>
+                                
+                                <div class="body1-bottom-card-title">
+                                    <a href="#"><p>Mario + Rabbids Sparks of Hope</p></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="body1-bottom-card flex">
+
+                            <div class="body1-bottom-card-image"><img src="images/Dont-Let-This-Flop.webp" alt="Don't Let This Stop"></div>
+
+                            <div class="body1-bottom-card-text">
+                                <div class="body1-bottom-card-label"><h4>DON'T LET THIS FLOP</h4></div>
+                                <div class="body1-bottom-card-title"><a href="#"><p>Leave Lizzo Alone</p></a></div>
+                                
+                            </div>
+                            
+                        </div>
+
+                    </div> 
+
+                </div>
+
+        </section>
+        
+                                                                        <!-- body 2 Luigi -->
+
+                                                                        <!-- SEZIONE 2  -->
+                                                                        <!--  -->
+                                                                       <!--  -->
+    <div class="body2" > 
+        <div class="body-flex">  
+            <div class="side-articles-container">
+                <div class="title-box">
+                    <h3 class="intTitle">THE LATEST</h3>
+                </div>
+                <div class="articles-box">
+                    <div class="side-article">
+                        <h4 class="post-label" ><strong><u>COVER ART TRIAL</u></strong></h4>
+                        <h3 class="title"><strong><a href="#">Cardi B Trial: Man Suing Over ‘Raunchy’ Cover Art Calls Back Tattoo His ‘Michelangelo’</a></strong></h3>
+                        <p class="description">Kevin Brophy told jurors he felt "shame" when his body art ended up on Cardi's mixtape cover, but the rapper's camp says Brophy suffered a "self-inflicted" wound by identifying himself with lawsuit</p>
+                        <h5 class="timeDate">4:58 PM</h5> 
+                    </div> 
+    
+                    <div class="side-article">
+                        <h4 class="post-label" ><strong><u>MASTERSON TRIAL</u></strong></h4>
+                        <h3 class="title"><strong><a href="#">Danny Masterson Accuser Testifies on First Day of Rape Trial, Scientology Draws Focus</a></strong></h3>
+                        <p class="description">Masterson has been accused of three counts of forceable rape</p>
+                        <h5 class="timeDate">4:58 PM</h5>
+                    </div>  
+    
+                    <div class="side-article"> 
+                        <h4 class="post-label" ><strong><u>TV & MOVIES</u></strong></h4>
+                        <h3 class="title"><strong><a href="#">‘Black Adam’: Dwayne Johnson Enters the DCEU. You Run for the Exits</a></strong></h3>
+                        <p class="description">The star finally brings the DC Comics’ antihero to the big screen — and he’s the only reason to see what is one messy, sloppy, less-than-super superhero movie</p>
+                        <h5 class="timeDate">4:58 PM</h5>
+                    </div>  
+    
+                    <div class="side-article">
+                        <h4 class="post-label" ><strong><u>A MOVIE FOR ALL PEOPLE</u></strong></h4>
+                        <h3 class="title"><strong><a href="#">Did ‘Bros’ Deserve to Flop? Decide for Yourself by Streaming It Now</a></strong></h3>
+                        <p class="description">Billy Eichner's groundbreaking romantic comedy is now available to rent online, with an official streaming release later this fall</p>
+                        <h5 class="timeDate">4:58 PM</h5>
+                    </div>  
+    
+                    <div class="side-article">
+                        <h4 class="post-label" ><strong><u>JUSTICE</u></strong></h4>
+                        <h3 class="title"><strong><a href="#">Paul Flores Found Guilty in Murder of Kristin Smart</a></strong></h3>
+                        <p class="description">Decades after the college student went missing, a family gets some closure</p>
+                        <h5 class="timeDate">4:58 PM</h5>
+                    </div>  
+                </div>
+                
+
+                <div class="read-more">
+                    <a href="https://www.rollingstone.com/2022/10/">Read more<span>▶</span></a>
+                </div>
+            </div>        
+
+    <div class="main-articles-container">
+     
+            <div class="articles-top-container">
+                <div class="article-top-main">
+                    <div class="image-wrapper"><img src="https://www.rollingstone.com/wp-content/uploads/2022/10/concept-albums-2.jpg?w=680&h=453&crop=1"></div>
+                    <div class="article-text">
+                        <div class="label"><h4>MIND:BLOWN</h4></div>
+                        <h3 class="title"><a href="#">The 50 Greatest Concept Albums of All Time</a></h3>
+                        <p class="description">From prog epics to R&B masterpieces, these are the records that define music at its most ambitious</p>
+                        <p class="author"><a href="#">by Rolling Stone</a></p>
+                    </div>
+                </div> 
+                <div class="article-top-secondary">
+                    <div class="articles-container">
+                        <div>
+                            <div class="image-wrapper">
+                                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/9N6A0493-copyx.jpg?w=225&h=225&crop=1">
+                            </div>
+                            <div class="article-text">
+                                <h4 class="label">TRIBUTE</h4>
+                                <h3 class="title"><a href="#">The Generous Life and Tragic Death of Young Dolph</a></h3>
+                                <p class="description">The Memphis rapper’s family and friends remember an artist
+                                    of intensity and passion, cut down in his prime</p>
+                                <p class="author"><a href="#">BY NANCY DILLON</a></p>
+                            </div>
+                            
+                        </div>
+
+                        <div>
+                            <div class="image-wrapper">
+                                <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/RS_Michelle-Phillips-002-1.jpg?w=225&h=225&crop=1">
+                            </div>
+                            <div class="article-text">
+                                <h4 class="label">THE LAST MAMA</h4>
+                                <h3 class="title"><a href="#">Michelle Phillips Finally Reveals the Secret History of the Mamas and the Papas</a></h3>
+                                <p class="description">She spent her youth redefining the sound of pop — and the next 50 years looking for something she could call her own</p>
+                                <p class="author"><a href="#">BY ANGIE MARTOCCIO</a></p>
+                            </div>
+                        </div>   
+
+                    </div>
+                    <div class="footer-article">
+                        <h4 class="label">BDSM </h4>
+                        <h3 class="title"><a href="#"> Getting Blackmailed Was Their Kink. Then It Went Too Far</a></h3>
+                        <p class="author"><a href="#">By Jessica Lucas</a></p>
+                    </div>    
+                </div>  
+            </div>
+
+            <div class="articles-bottom-container">
+                <div class="article-bottom-main">
+                    <div class="imagePrimaryPost"><img src="https://www.rollingstone.com/wp-content/uploads/2022/09/Q194_AWA_StephenCurryXRollingStone_018_08_FNL_HPcrop.jpg?w=680&h=453&crop=1" alt="Mia Immagine"></div> 
+                    <div class="label"><h4 class="TitlePost">COVER STORY </h4></div>
+                    <h3 class="title" ><a href="#">Stephen Curry Is Putting It All on the Line</a></h3>
+                    <p class="description">The NBA superstar has changed the game of basketball for the better. Now, can he help change America?</p>
+                    <p class="author"><a href="#">BY MATT SULLIVAN</a></p>
+                </div> 
+
+                <div class="article-bottom-secondary">
+                    <div class="label"><h4>BEST OF THE BEST</h4></div>
+                    <h3 class="title" ><a href="#">The 100 Greatest TV Shows of All Time</a></h3>
+                    <p class="description">A ranking of the most game-changing, side-splitting, tear-jerking, mind-blowing, world-building, genre-busting programs in television history, from the medium’s inception in the early 20th century through the ever-metastasizing era of Peak TV</p>
+                    <p class="author"><a href="#">BY ALAN SEPINWALL</a></p>
+                </div>            
+            </div>        
+    </div>  
+        </div>
+    </div>
+     
+                                                                         <!-- FINE SEZIONE 2 -->
+
+                                                                                <!-- BODY 3 YARI -->
+    <div class="body3">
+        <div class="recommends-section">
+            <div class="recommends-title">
+                <img src="./res/rs-recommends.svg" alt="RECOMMENDS">
+            </div>
+            <div class="recommends-article-wrapper">
+                <div class="recommends-article flex-column">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/08/best-ipad-deal.jpg?w=225&h=225&crop=1&resize=300%2C300" alt="first-image">
+                    </div>
+                    <div class="recommends-article-text">
+                        <h4>APPLE DEAL OF THE DAY</h4>
+                        <h3><a href="#">The popular $299 ipad deal is back online for limited time</a></h3>
+                    </div>
+                </div>
+
+                <div class="recommends-article flex-column">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Posts-Citadel-art.jpg?w=225&h=225&crop=1" alt="second-image">
+                    </div>
+                    <div class="recommends-article-text">
+                        <h4>TECH REVIEWED</h4>
+                        <h3><a href="#">Smarter, Better, Faster: Apple Watch series 8 Adds crash detection and Temperature sensing</a></h3>
+                    </div>
+                </div>
+
+                <div class="recommends-article flex-column">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/bts-samsung-galaxy-buds-deal.webp?w=225&h=225&crop=1" alt="third-image">
+                    </div>
+                    <div class="recommends-article-text">
+                        <h4>A CASE FOR YOU</h4>
+                        <h3><a href="#">RS Recommends: The Best Iphone 14 Cases to Protect your Brand - New Apple Device</a></h3>
+                    </div>
+                </div>
+
+                <div class="recommends-article flex-column">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2021/11/Halo_App_and_Halo_Band.jpeg?w=225&h=225&crop=1" alt="fourth-image">
+                    </div>
+                    <div class="recommends-article-text">
+                        <h4>FITNES TRACKER DEAL</h4>
+                        <h3><a href="#">A "Halo" of the Deal: Amazon Discounts its Popular Helo Fitness Tracker to Just $39</a></h3>
+                    </div>
+                </div>
+
+                <div class="recommends-article flex-column">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/HCB98_W_22_260.jpg?w=225&h=225&crop=1">
+                    </div>
+                    <div class="recommends-article-text">
+                        <h4>SIMPLY THE BEST</h4>
+                        <h3><a href="#">This Tina Turner Barbie Doll Celebrates the 40th Anniversary of Her Hit What’s Love Got to Do With It’</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="recommends-button-container">
+                <div class="recommends-button">
+                    <button> <a href="#"></a>MORE EDITORS' PICKS <span>▶</span></button>
+                </div>
+            </div>
+        </div>       
+    
+        <section class="testimonial">
+            <a href="#"><q>I don’t like to give advice, because to give advice is hostile. You’re making an assumption that your ideas are better than somebody else’s. It’s really none of my fucking business.</q></a>
+            <p><a href="#">Jamie Lee Curtis Talks the End of Halloween,’ Her Number One Piece of Advice, and Rapping With Lindsay Lohan</a>
+            <span><a href="#">By Angie Martoccio</a></span></p>
+        </section>
+    
+        <section class="reports">
+            <div class="report-section flex">
+                    <div class="rolling-report">
+                        <h2><span>Rolling Stone</span><br>reports</h2>
+                        <div class="divider-small">
+                        </div>
+                        <div class="image-wrapper-left">
+                            <img src="./res/Rolling-Stone-Showtime-Small.svg" alt="show-documentary-films">
+                        </div>
+                    </div>
+                    <div class="report-article-container">
+                        <div class="report-article">
+                            <div class="image-wrapper ">
+                                <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/kanye-school-donda-academy_1800.jpg?w=318&h=212&crop=1&resize=300%2C200" alt="">
+                            </div>
+                            <h3><a href="">What the Hell Is Going on at Kanye West’s Mysterious New Private School?</a></h3>
+                        </div>
+                        <div class="report-article">
+                            <div class="image-wrapper ">
+                                <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/aretha-franklin-foia-docs.jpg?w=318&h=212&crop=1&resize=300%2C200" alt="">
+                            </div>
+                            <h3><a href="">Aretha Franklin Was Tracked By the FBI for 40 Years. Here’s What’s In Her File</a></h3>
+                        </div>
+                        <div class="report-article">
+                            <div class="image-wrapper ">
+                                <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/fentanyl2.jpg" alt="">
+                            </div>
+                            <h3><a href="#">&#8216;These  Kids Are Dying&#8217; — Inside the Overdose Crisis Sweeping Fort Bragg</a></h3>
+                        </div>
+                        <div class="report-article">
+                            <div class="image-wrapper ">
+                                <img src="https://www.rollingstone.com/wp-content/uploads/2022/09/mormon-church-abuse.jpg?w=318&h=212&crop=1&resize=300%2C200" alt="">
+                            </div>
+                            <h3><a href="#">The Mormon Church's Creepy Sex Therapist</a></h3>
+                        </div>
+                    </div>
+                </div>    
+            <div class="report-more-button">
+                <button type="button">More<span>▶</span></button>
+            </div>
+        </section>
+    
+        <section class="more-news"> 
+            <div class="more-news-title">
+                <div>
+                    <h2>More News</h2>
+                </div>
+            </div>
+
+            <div class="more-news-list">
+                <div class="news-article">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/CODY_JINKS_REBELS__RENEGADES_SUNDAY_10_16_2022_PROPIXMEDIALIVE_-21-2.jpg?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <h4 class="article-label">ON THE GROUND</h4>
+                        <h2> <a href="#">Rebels & Renegades Fest Debuts With Cody  Jinks, a Warren Zevon Tribute, and No Geenres Allowed</a></h2>
+                        <p>The inaugural gathering in Monterey , California, did its bestr to blur the lines with artists like Trampled by Turtles, Orville Peck, and Nikki  Lane  </p>
+                        <p class="news-author"> by <a href="#">GARRET K. WOODEARD</a></p>
+                    </div>
+                </div>
+
+                <div class="news-article">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Real-Deal-on-Fentanyl.jpg?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <h4 class="article-label">SCHOOLED</h4>
+                        <h2> <a href="#">How Do We Save Teens From Fentanyl</a></h2>
+                        <p>A new series from the Ad Council is embracing education and promoting harm reduction as the right stokes fear over rainbow fentanyl  </p>
+                        <p class="news-author"> by <a href="#">CT JONES</a></p>
+                    </div>
+                </div>
+
+                <div class="news-article">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/kanye-west-tiktok.jpg?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <h4 class="article-label">ULTRA WHITE BEAM</h4>
+                        <h2> <a href="#">Kanye West's Anti-Semantic Rants Have a Growing Fandom on TikTok</a></h2>
+                        <p>Popular videos include mashups of the rapper with a 1933 speech from Nazi propagandist Joseph Goebbels</p>
+                        <p class="news-author"> by <a href="#">MILES KLEE</a></p>
+                    </div>        
+                </div>
+
+                <div class="news-article-big">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Untitled-1.png?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <div class="article-label-big">
+                            <h4 class="article-label">GAME REVIEW</h4>
+                        </div>
+                        <h2> <a href="#">Mario + Rabbids Sparks of Hope' is a Goofy Gaming Chimera (in thew Good Way)</a></h2>
+                        <p class="news-author"> by <a href="#">CHRISTOPHER CRUZ</a></p>
+                    </div>
+                </div>
+
+                <div class="news-article">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Gunna-bail-denied.jpg?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <h4 class="article-label">YSL INDICTMENT</h4>
+                        <h2> <a href="#">Gunna Files Another Bond Motion After Being Denied Release Three Times</a></h2>
+                        <p>His attorneys previously described keeping the rapper detained a "miscarriage of justice"</p>
+                        <p class="news-author"> by <a href="#">TOMAS MIER</a></p>
+                    </div>
+                </div>
+
+                <div class="news-article">
+                    <div class="image-wrapper">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/camila-jisoo.jpg?w=680&h=453&crop=1" alt="">
+                    </div>
+                    <div class="news-article-text">
+                        <h4 class="article-label"> GIRL GROUP POWER</h4>
+                        <h2> <a href="#">Camila Cabello Praises Blackpink's Jisoo for Covering Her Song 'Liar : Get It Girl</a></h2>
+                        <p>The solo segment of the Blackpink concert also treated Blinks to unreleased solo music, as Jennie performed her song "Moonlight"</p>
+                        <p class="news-author"> by <a href="#">TOMAS MIER</a></p>
+                    </div>
+                </div>   
+            </div>
+            <div class="news-more-button-container">
+                <div class="news-more-button">
+                    <button><span>▼</span><a href="#">READ MORE</a><span>▼</span></button>
+                </div> 
+            </div>
+        </section> 
+    </div>
+    
+    
+
+                                                                    <!-- Body 4  Luigi Delber -->
+                                                <!-- sezione 1 -->
+    <div class="body-4">
+        <div >
+            <div class="body4-box">  
+                <div class="relative-border"></div>
+                <div class="titlebox">
+                    <div class="flex">  
+                        <span><h3 class="inline">CONTENT BY RS CULTURE COUNCIL</h3></span>
+                        <span><h4 class="relative inline">What's This?</h4></span>
+                        <span class="jsTooltip">Opinions expressed are solely those of the author and do not reflect the views of Rolling Stone editors or publishers.
+                        Content is produced and managed by the Rolling Stone Culture Council, a fee-based, invitation-only membership community,
+                         operated by Culture Council, LLC, under license from Rolling Stone Licensing, LLC.
+                          Visit <a> council.rollingstone.com </a> to find out if you qualify to be a member. Questions about an article? Email <a> concierge@rollingstonecouncil.com</a> .
+                    </span>
+                    </div>
+                    <div class="more-button">
+                        <div class="div-border">
+                            <a href="#">MORE ᐅ</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="storyGrid">
+                    <div class="story">
+                        <div>
+                            <img  src="https://www.rollingstone.com/wp-content/uploads/2022/10/21c5533d-8a40-4725-be0f-c202ba39da1c.jpg">
+                        </div>
+                        <div>
+                            <a href="#"><h3>5 Ways to Be a Better Leader</h3></a>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div>
+                            <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/1279f322-5b80-43db-9c4c-043792179d1c.jpg">
+                        </div>
+                        <div>
+                            <h3><a href="#">The Healing Power of Art</a></h3>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div>
+                            <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Dont-Wait-for-When-Experience-Joy-Now.jpg">
+                        </div>
+                        <div>
+                            <a href="#"><h3>Don‘t Wait for ’When’ — Experience Joy Now</h3></a>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div>
+                            <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/10-Skills-or-Traits-Any-Good-Customer-Facing-Employee-Should-Have.jpeg">
+                        </div>
+                        <div>
+                            <a href="#"><h3>10 Skills or Traits Any Good Customer-Facing Employee Should Have</h3></a>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div>
+                            <img src="https://www.rollingstone.com/wp-content/uploads/2022/10/Post-Pandemic-and-Beyond-Looking-Ahead-to-the-Future-of-Live-Concerts.jpg">
+                        </div>
+                        <div>
+                            <a href="#"><h3>Post-Pandemic and Beyond: Looking Ahead to the Future of Live Concerts</h3></a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="relative-border-bottom"></div>
+                    <div class="news-more-button-container">
+                        <div class="news-more-button">
+                            <button><a href="#">MORE ᐅ</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+                                        <!-- fine sezione 1 -->
+            <div class="border-grid-wrapper flex">
+                <section class="mostPopularList flex-column">
+                    <div class="title-box">
+                        <img src="./res/pmc-logo.svg" alt="">
+                        <h3 class="mostPopularTitle">MOST POPULAR</h3>
+                    </div>
+                    <div class="mostPopularStory flex">
+                        <h3>1</h3>
+                        <div class="article-text">
+                            <div class="image-wrapper">
+                                <img src="./res/fancy-tags/hollywood.svg">
+                            </div>
+                            <a href="#">
+                               <h3 class="borderGridTitle">
+                            Meghan Markle Lets Her Guard Down: On Grieving Queen Elizabeth, Producing With Harry and Returning to Hollywood
+                            </h3>  
+                            </a>
+                            
+                        </div>
+                       
+                     </div>
+
+                     <div class="mostPopularStory flex">
+                        <h3>2</h3>
+
+                        <div class="article-text">
+                            <div class="image-wrapper">
+                                <img src="./res/fancy-tags/variety.svg" alt="">
+                            </div>
+                            <a href="#">
+                                <h3 class="borderGridTitle">
+                            Melania Trump Made the Surprising Decision to Join Forces With Michelle Obama & Hillary Clinton For This Historic Cause
+                            </h3> 
+                            </a>
+                            
+                        </div>
+                        
+                      </div>
+
+                      <div class="mostPopularStory flex">
+                        <h3>3</h3>
+                        <div class="article-text">
+                            <div class="image-wrapper">
+                                <img src="./res/fancy-tags/she-knows.svg" alt="">
+                            </div>
+                            <a href="#">
+                                <h3 class="borderGridTitle">
+                            Ralph Macchio on How He Survived Lean Years in His Career: "I Still Live Fairly Modestly"
+                            </h3>
+                            </a>
+                            
+                        </div>
+                         
+                      </div>
+
+                      <div class="mostPopularStory flex">
+                        <h3>4</h3>
+                        <div class="article-text">
+                            <div class="image-wrapper">
+                               <img src="./res/fancy-tags/dirt.svg" alt=""> 
+                            </div>
+                            <a href="#">
+                                 <h3 class="borderGridTitle">
+                            Jadakiss Launches Kiss Café Coffee Brand With His Father And Son
+                            </h3> 
+                            </a>
+                           
+                        </div>
+                        
+                      </div>
+                </section>
+                <section class="mostPopularNews">
+                    <div class="title-container" >
+                        <div class="mostPopularTitle">
+                            <h3>YOU MIGHT ALSO LIKE</h3>
+                        </div>
+                        <div class="arrows" hidden>
+                            <a class="prec" onclick="cambiaSlide(-1, 0)">&#10094;
+                            </a>
+                            <a class="succ" onclick="cambiaSlide(1, 0)">&#10095;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carosello flex">
+                        <div class="slide1">
+                          <img class="article-image" src="https://variety.com/wp-content/uploads/2022/10/Rita-Ora-Taika-Waititi-MTV-VMA.jpg?resize=225%2C169&quality=100&w=300">
+                          <div class="image-wrapper">
+                            <img src="./res/fancy-tags/variety.svg" alt=""> 
+                         </div>
+                          <h3 class="title"><a href="#">"Rita Ora, Taika Waititi to Host MTV EMAs in Dusseldorf"</a></h3>
+                        </div>
+                        <div class="slide1">
+                          <img class="article-image" src="https://wwd.com/wp-content/uploads/2022/10/18K-RG-Ruby-Studs-with-Mini-Diamond-Center-Grey.jpg?resize=225%2C169&quality=100&w=300">
+                          <div class="image-wrapper">
+                            <img src="./res/fancy-tags/wwd.svg" alt=""> 
+                         </div>
+                          <h3 class="title"><a href="#">Nina Runsdorf Brings Earrings for Cross-generational Sharing to Alex Eagle</a></h3> 
+                        </div>
+                        <div class="slide1">
+                          <img class="article-image" src="https://www.dirt.com/wp-content/uploads/2022/10/kourtney-kardashian-house.png?resize=225%2C169&quality=100&w=300">
+                          <div class="image-wrapper">
+                            <img src="./res/fancy-tags/dirt.svg" alt=""> 
+                         </div>
+                           <h3><a href="#">Kourtney Kardashian, Travis Barker Buy Conan O’Brien’s Carpinteria Beach House</a></h3>
+                        </div>
+                        <div class="slide1 slide4 ">
+                            <img class="article-image" src="https://www.indiewire.com/wp-content/uploads/2022/10/MCDWHCH_EC014.jpg?resize=1024,683"
+                             style="width:100%">
+                             <div class="image-wrapper">
+                                <img src="./res/fancy-tags/indie-wire.svg" alt=""> 
+                             </div>
+                             <h3><a href="#">Marlon Wayans Defends ‘White Chicks’ Against Cancel Culture: ‘I Don’t Know What Planet We’re On’</a></h3>
+                          </div>
+                          <div class="slide1">
+                            <img class="article-image" src="https://www.sportico.com/wp-content/uploads/2022/10/GettyImages-1243761253-e1666381058157.jpg?w=1280&h=720&crop=1"
+                             style="width:100%">
+                             <div class="image-wrapper">
+                                <img src="./res/fancy-tags/sport-ico.svg" alt=""> 
+                             </div>
+                             <h3><a href="#">Fan Token Programs Need Additional Perks To Buy Falling Values</a></h3>
+                          </div>
+                    
+                      </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+        
+
+    </div>
+                                                                <!-- footer matt -->
+    <footer>
+        <section class="container-1">
+            <div class="container-2">
+                <div class="footer-wrapper">
+                    <div class="footer-image">
+                        <img src="./images/cover_medium.webp" alt="poster-magazine" width="200px">
+                    </div>
+                    <div class="container-3">
+                        <div class="mini-container1">
+                                <div class="footer-button">
+                                    <div class="white-button"><a href="#">GET THE MAGAZINE</a></div>
+                                    <div class="white-button"><a href="#">GET DIGITAL CLASSES</a></div>
+                                    <div class="black-button"><a href="#">GIVE A GIFT</a></div>
+                                    <div class="black-button"><a href="#">CUSTOMER SERVICE</a></div>
+                                </div>
+                                <div class="rollingstoneBtn">
+                                    <div class="section-content">
+                                        <div class="title-box">
+                                            <h3><a href="#">ROLLINGSTONE</a></h3>
+                                        </div>
+                                        <div class="footer-link flex">
+                                            <div class="footer-link-container column-left">
+                                                <a href="#">Music</a>
+                                                <a href="#">Politics</a>
+                                                <a href="#">Culture</a>
+                                                <a href="#">Entertainment</a>
+                                                <a href="#">RS Pro</a>
+                                            </div>
+                                            <div class="footer-link-container column-right">
+                                                <a href="#">Advertise</a>
+                                                <a href="#">Contact</a>
+                                                <a href="#">Live media</a>
+                                                <a href="#">Accesibility</a>
+                                                <a href="#">Shop</a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="legalBtn">
+                                    <div class="section-content">
+                                        <div class="title-box">
+                                            <h3><a href="#">LEGAL</a></h3>
+                                        </div>
+                                        <div class="footer-link-container">
+                                            <a href="link">Privacy policy</a>
+                                            <a href="link">Terms of use</a>
+                                            <a href="link">Ad choises</a>
+                                            <a href="link">PMC entertainment</a>
+                                            <a href="link">EU privacy preferences</a>
+                                        </div>
+                                    </div>         
+                                </div>
+                                <div class="follow">
+                                    <div class="title-box">
+                                        <h3><a href="#">FOLLOW US</a></h3>
+                                    </div>
+                                    <div class="footer-link-container">
+                                        <a href="link">
+                                            <img src="./res/social-icons/fb-no-circle.svg" alt="">
+                                            <span>Facebook</span></a>
+                                        <a href="link">
+                                            <img src="./res/social-icons/tw.svg" alt="">
+                                            <span>Twitter</span></a>
+                                        <a href="link">
+                                            <img src="./res/social-icons/yt.svg" alt="">
+                                            <span>Youtube</span></a>
+                                        <a href="link">
+                                            <img src="./res/social-icons/ig.svg" alt="">
+                                            <span>Instagram</span></a>
+                                        <a href="link">
+                                            <img src="./res/social-icons/tiktok.svg" alt="">
+                                            <span>Tiktok</span></a>
+                                        <a href="link">
+                                            <img src="./res/social-icons/twitch.svg" alt="">
+                                            <span>Twitch</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="footer-form">
+                            <div class="form-1">
+                                <h4>NEWSLETTER SIGNUP</h4>
+                                <form action="" class="newsletter-signup-form" id="footer-newsletter-signup-form">
+                                    <input type="mail" name="email" id="email" placeholder="ENTER YOUR EMAIL" required>
+                                    <button type="submit" form="footer-newsletter-signup-form">SUBSCRIBE<span>▶</span></button>
+                                </form>
+                            </div>
+                            <div class="form-2 flex-column">
+                                <div class="title-box flex">
+                                    <h4>
+                                        GOT A HOT<br>NEWS TIP?
+                                    </h4>
+                                    <p>
+                                        We want to hear it. Send us a tip using our anonymous form.
+                                    </p>
+                                </div>
+                                <div>
+                                    <form action="" class="send-a-tip-form flex" id="send-a-tip">
+                                        <button type="submit" form="send-a-tip">SEND US A TIP<span>▶</span></button>
+                                        <input type="text" name="tip" id="tip" required>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>    
+            </section>
+    </footer>
+            
+    <section class="end">
+        <img src="./res/pmc-logo.svg" alt="logo">
+        <div class="dropdown">
+            <div class="legalBtn our-sites-btn">
+                <div class="section-content">
+                    <div class="title-box">
+                        <h3>Our Sites</h3>
+                    </div>
+                    <div class="footer-link-container">
+                        <a href="#">WWD</a>
+                        <a href="#">VIBE</a>
+                        <a href="#">VARIETY</a>
+                        <a href="#">TVLINE</a>
+                        <a href="#">THE HOLLYWOOD REPORTER</a>
+                        <a href="#">STYLECASTER</a>
+                        <a href="#">SPY</a>
+                        <a href="#">SPORTICO</a>
+                        <a href="#">SOURCING</a>
+                        <a href="#">JOURNAL</a>
+                        <a href="#">SOAPS</a>
+                        <a href="#">SHEMEDIA</a>
+                        <a href="#">SHEKNOWS</a>
+                        <a href="#">ROLLING STONE</a>
+                        <a href="#">ROBB REPORT</a>
+                        <a href="#">INDIEWIRE</a>
+                        <a href="#">GOLD DERBY</a>
+                        <a href="#">FOOTWEAR NEWS</a>
+                        <a href="#">FAIRCHILD MEDIA</a>
+                        <a href="#">DEADLINE</a>
+                        <a href="#">BILLBOARD</a>
+                        <a href="#">BGR</a>
+                        <a href="#">ARTNEWS</a>
+
+                    </div>
+                </div>         
+            </div>
+        </div>
+        <div class="footer-bottom-text">
+            <span>Copyright © 2022 Penske Business Media, LLC. All Rights reserved.</span>
+            <br>
+            <span><a href="#">Powered by WordPress.com VIP</a></span>
+        </div>
+    </section>
+    
+    <script src="./script/menu-btn.js" ></script>
+    <script src="./script/searchbar-button.js" ></script>
+    <script src="./script/sticky.js" ></script>
+    <script src="./script/footer-buttons.js"></script>
+</body>
+</html>

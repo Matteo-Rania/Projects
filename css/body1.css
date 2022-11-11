@@ -1,0 +1,322 @@
+
+
+.body1-wrapper {
+    margin-top: 1.5rem;
+    max-width: var(--max-width);
+    margin: auto;
+    padding-top: 1.5rem;
+}
+
+.body1-articles {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1.5rem;
+}
+
+.body1-left {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-right: solid 1px black;
+    border-left: solid 1px black;
+}
+.body1-left-news {
+    margin-bottom: 2rem;
+}
+
+/*Labels style*/
+.body1-news-label, .body1-bottom-card-label {
+    font-size: 11px;
+    font-family: var(--label);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.body1-left-news-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: var(--title);
+    text-transform: capitalize;
+    margin-top: .5rem;
+}
+
+.body1-left-news-description {
+    font-size: 13px;
+    font-family: var(--generic-text);
+    margin-top: .5rem;
+}
+
+.body1-left-news-author {
+    font-size: 11px;
+    font-family: var(--generic-text);
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    margin-top: .5rem;
+}
+
+.body1-center {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    align-items: center;
+}
+
+.body1-center-image {
+    height: 26.75rem;
+    max-width: 40rem;
+}
+.body1-center-news-label-container {
+    background-color: white;
+    padding: 1rem;
+    transform: translateY(-50%);
+}
+.body1-center-news-label {
+    font-size: 15px;
+    font-family: var(--label);
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    border-bottom: solid 5px black;
+    padding-bottom: 2px;
+}
+.body1-center-title{
+    font-size: 38px;
+    line-height: 42px;
+    font-family: var(--big-title);
+    text-transform: capitalize;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.body1-center-description {
+    font-size: 16px;
+    font-family: var(--generic-text);
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.body1-center-author {
+    font-size: 13px;
+    font-family: var(--generic-text);
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    margin-top: .5rem;
+}
+
+.body1-right > :first-child {
+    padding-bottom: 2rem;
+}
+
+.body1-right > :not(:first-child) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: solid 1px black;
+}
+.body1-right-story-image {
+    margin-bottom: .5rem;
+}
+.body1-right-story-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: var(--title);
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+.body1-right-story-author{
+    font-size: 13px;
+    letter-spacing: 1.7px;
+    font-family: var(--generic-text);
+    text-transform: uppercase;
+    margin-top: .5rem;
+}
+.body1-showcase {
+    height: 8.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    margin-top: 2rem;
+    min-width: 100%;
+    gap: 1rem;
+    position: relative;
+}
+
+.body1-showcase::before {
+    content: " ";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    background-color: black;
+    display: block;
+}
+
+.body1-bottom-card{
+    flex-basis: 100%;
+    gap: 1.5rem;
+}
+.body1-bottom-card-image {
+    height: 100%;
+    max-width: fit-content;
+    min-width: fit-content;
+}
+.body1-bottom-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.body1-bottom-card:not(:first-child) {
+    padding-left: 1.5rem;
+    border-left: solid 1px black;
+}
+
+.body1-bottom-card-title {
+    font-size: 16px;
+    font-family: var(--generic-text);
+    line-height: 20px;
+    margin-top: .5rem;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+@media (max-width: 1259px){
+   .body1-wrapper {
+        margin: 0 .75rem;
+   }
+
+}
+
+
+@media (max-width: 999px) {
+   .body1-articles {
+    display:  flex;
+    flex-direction:  column;
+   }
+
+   .body1-left {
+    order: 3;
+   }
+
+   .body1-center {
+    order: 1;
+   }
+   
+   .body1-right {
+    order: 2;
+   }
+
+   .body1-wrapper {
+    margin: auto;
+   }
+   .body1-center-image {
+   max-width: none;
+   max-height: none;
+   width: 100%;
+   height: 100%;
+   }
+   .body1-center {
+    padding: 0;
+   }
+
+   .body1-wrapper {
+    max-width: var(--max-width);
+        margin: 0 0.75rem;
+   }
+
+   .body1-left{
+    padding: 0;
+    border: none;
+   }
+
+   .body1-left-news {
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+   }
+
+   .body1-showcase {
+    overflow: hidden;
+    overflow-x: auto;
+    height: 10rem;
+    gap: 5px;
+    width: auto;
+    scroll-snap-type: x proximity;
+   }
+.body1-showcase > * {
+    scroll-snap-align: start;
+}
+   .body1-showcase > :last-child {
+    display: none;
+   }
+
+   .body1-bottom-card {
+    gap: 5px;
+   }
+
+   .body1-bottom-card p {
+    display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+        white-space: normal;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+   }
+
+   .body1-bottom-card h4 {
+    display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        white-space: normal;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+   }
+}
+
+@media (max-width: 768px){
+    .body1-bottom-card:last-child {
+        display: flex;
+    }
+
+    .body1-bottom-card {
+        min-width: 16rem;
+    }
+
+    .body1-bottom-card .body1-bottom-card-text {
+        margin-left: 1rem;
+    }
+
+    .body1-center-news-label-container {
+       align-self: flex-start;
+       justify-content: flex-start;
+    }
+
+    .body1-center >*{
+        margin-left: 1rem;
+        align-items: left;
+        align-items: flex-start;
+    }
+    .body1-center-title h2, .body1-center-description p, .body1-center-author p{
+        text-align: left;
+        align-items: left;
+    }
+    
+    .body1-center-title, .body1-center-description, .body1-center-author{
+        padding-left: 0;
+    }
+
+    .body1-left-news-title {
+        font-size: 1.125rem;
+    }
+    
+    .side-articles-container .articles-box .side-article .description {
+        display: none !important;
+    }
+
+    .articles-box .title h3 {
+        font-size: 	1.125rem;
+    }  
+}

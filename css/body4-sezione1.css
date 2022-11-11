@@ -1,0 +1,162 @@
+.body4-box{
+    border: 1px solid black;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    font-family: var(--label);
+    background-color: #EFEFEF;
+}
+.relative{
+    font-size: 12px !important ;
+}
+.inline{
+    padding-left: 1rem;
+    font-size: 15px;
+}
+.relative.inline{
+    min-width: max-content;
+}
+.jsTooltip{
+    visibility: hidden;
+    position: absolute;
+}
+.news-more-button-container{
+    display: none;
+}
+.more-button{
+    border-left: 1px solid black;
+    padding-left: 0.5rem;
+    font-family: var(--generic-text);
+    font-size: 13px;
+}   
+
+.more-button .div-border{
+    border-left: 1px solid black;
+    padding-left: 1rem;
+} 
+.titlebox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height: 3rem;
+    padding: 0 20px;
+    margin-top: 2rem;
+}
+   
+.storyGrid{
+    display: flex;
+    flex-direction: row;
+}
+.storyGrid > *{
+    padding-right: 20px;
+    border-right: 1px solid black;
+    padding-left: 20px;
+    margin-top: 1rem;
+}
+.story{
+    display: flex;
+    flex-direction: column;
+    height: 14.5rem;
+    width: 100%;
+}
+.story:last-of-type{
+    border-right: none;
+}
+.relative-border{
+    position: relative;
+    border : 3px solid black;
+    width: 100%;
+    top: 1rem;
+}
+.story h3{
+    padding-top: 1rem;
+}
+@media (max-width: 1259px)and (min-width: 999px){
+   .body-4 .story:last-of-type{
+    display: none;
+   }
+}
+@media (max-width: 999px){
+    .body-4 .storyGrid{
+        overflow-x:scroll ;
+        scroll-snap-type: x proximity;
+    }
+    .story h3{
+        padding-top: inherit;
+    }
+    .storyGrid > *{
+        padding: 1px;
+        font-size: 13px;
+        scroll-snap-align: start;
+    }
+    .body-4 .storyGrid > *{
+        min-width: 30%;
+        border: none;
+        padding: none;
+        height: 80%;
+
+    }
+    .story h3{
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 768px){
+    .more-button{
+        display: none;
+    }
+    .storyGrid{
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+    .body-4 .storyGrid > *{
+        min-width: 70%;
+        padding: .5rem;
+    }
+
+    .more-button2{
+        border-top: 1px solid black;
+    }
+    .news-more-button-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .news-more-button-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .news-more-button {
+        height: 2.5rem;
+        width: 10rem;
+    }
+    
+    .news-more-button button {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border: none;
+        border-bottom: solid 1px black;
+        border: 1px solid black;
+        font-weight: bold;
+
+    }
+    .news-more-button button a {
+        margin: 0 2ch;
+    }
+    .relative-border-bottom{
+        position: relative;
+    border : 1px solid black;
+    width: 100%;
+    }
+    .inline{
+        line-height:normal;
+        padding: 1rem 1rem;
+    }
+
+}
