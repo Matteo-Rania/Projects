@@ -816,7 +816,16 @@ body:has(.mega-menu-button.open){
  .desktop-only{
     display: inherit;
  }
-
+ @media (max-width: 999px){
+    .nav-bottom-link .nav-bottom-link-href {
+        font-size: 11px;
+        margin-left: 1ch;
+        margin-right: 1ch;
+    }
+    .nav-bottom-link .nav-bottom-link-href a {
+        font-size: 11px;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -853,6 +862,10 @@ body:has(.mega-menu-button.open){
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+
+    .menu-wrapper {
+        height: 4rem;
+    }
     .mobile-only{
         display: inherit;
     }
