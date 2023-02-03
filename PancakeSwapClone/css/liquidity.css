@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.wrapper{
+    height: 100vh; /*da modificare appena si aggiunge menu' e footer*/
+    max-width: 100vw;
+    justify-content: center;
+    display:flex;
+}
+
+.liquidity {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.void{
+    flex-grow: 1;
+}
+
+.semi-footer{
+    width: 100%;
+    justify-content: space-between;
+    display:flex;
+    align-items: center;
+}
+
+#target, #target a, #target svg{
+    text-decoration: none;
+    color:#1fc7d4;
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: text-decoration .2s ease-in-out;
+}
+#target:hover{
+    text-decoration: underline;
+}
+#target{
+    padding-left:72px;
+}
+.second-part {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.second-part, .second-part a{
+    display:inline-flex;
+   align-items: center;
+   text-decoration: none;
+   color:turquoise;
+
+}
+.bunny{
+    padding-right: 45px;
+}
+
+.liquidity-container{
+    display:flex;
+    flex-direction: column;
+    max-width: 436px;
+    max-height: 283px;
+    width: 100%;
+    margin-top:2rem;
+    background: var(--card-background);
+    border-radius: 1.5rem;
+    border: 1px solid var(--primary-darker);
+    box-shadow: 0px 2px 0px 0px var(--card-shadow);
+    flex: 1;
+    align-self: center;
+}
+
+.liquidity-row{
+    display:flex;
+    justify-content: space-between;
+}
+
+.liquidity-header {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.liquidity-icons button{
+    padding: 0 .5rem;
+    border:none;
+    background-color: transparent;
+}
+.info-about-liquidity{
+    font-size:14px;
+    line-height: 1.5;
+    color:#7a6eaa;
+}
+.connect{
+    border-top:.5px solid rgb(206, 200, 200);
+    border-bottom:.5px solid rgb(206, 200, 200);
+    padding:24px;
+    display:flex;
+    color:#7a6eaa;
+    justify-content: center;
+    background-color:rgb(238, 238, 238);
+    font-weight: 400;
+    line-height: 1.5;
+}
+.add{
+    padding: 1.5rem;
+}
+.add button {
+    width: 100%;
+}
+.add button svg {
+    fill: var(--primary);
+}
+.bottom-cta {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+}
+.help #need-help{
+    position:relative;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    opacity: 1;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: #7a6eaa;
+    color: white;
+    transition: opacity 3ms ease-in-out;
+}
+.help:hover{
+ opacity:.6;
+}
+.help{
+    display:flex;
+    align-items: center;
+}
+
+.img-bunny{
+    display:flex;
+}
+
+.icon{
+   margin-left:3px;
+}
+
+:root:has(#dark-mode:checked) .connect {
+    background: var(--primary);
+    border-top: 1px solid var(--card-shadow-dark);
+    border-bottom: 1px solid var(--card-shadow-dark);
+}
+:root:has(#dark-mode:checked) .liquidity-container {
+    border: 1px solid var(--card-shadow-dark);
+}
+
+
+@media screen and (max-width: 768px) {
+    #target {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 7rem;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+}

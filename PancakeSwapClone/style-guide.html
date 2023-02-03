@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PancakeSwap Clone [STYLE GUIDE]</title>
+    <link rel="shortcut icon" href="./res/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/style-guide.css">
+</head>
+<body>
+    <!--STYLE GUIDELINES-->
+    <div class="guidelines-wrapper">
+        <h1 class="guidelines-title">
+            PancakeSwap Style Guidelines
+        </h1>
+        <form class="change-theme" action="" onchange="detectHexCode()">
+            <fieldset>
+                <p>Switch theme</p>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="dark-mode">
+                    <div class="switch-base">
+                        <img src="./res/icons/sun-black.svg" alt="sun icon b&n">
+                        <img src="./res/icons/moon-black.svg" alt="sun icon b&n">
+                    </div>
+                    <div class="switch-icon"></div>
+                </div>
+            </fieldset>
+          </form>
+        <!--TEXT-->
+        <div class="text-style section">
+            <h2 class="section-title">Text Style</h2>
+            <div class="text-examples-container">
+                <div class="text-examples">
+                    <div class="text-box">
+                        <h1 class="title">This is a title (h1)</h1>
+                    </div>
+                    <div class="text-box">
+                        <h2 class="small-title">This is a small-title (h2)</h2>
+                    </div>
+                    <div class="text-box">
+                        <h3 class="sub-title">This is a sub-title (h3)</h3>
+                    </div>
+                    <div class="text-box">
+                        <p class="paragraph">This is a paragraph (p)</p>
+                    </div>
+                </div>
+                <div class="text-properties-table">
+                    <div class="text-properties-row">
+                        <div class="text-type"><p>Title</p></div>
+                        <div class="text-variables">
+                            <p>font: var(--title);</p>
+                            <p>color: var(--secondary);</p>
+                        </div>
+                        <div class="text-properties"><p>600 64px / 70.4px 'Kanit'</p></div>
+                    </div>
+                    <div class="text-properties-row">
+                        <div class="text-type"><p>Small title</p></div>
+                        <div class="text-variables">
+                            <p>font: var(--small-title);</p>
+                            <p>color: var(--secondary-darker);<br><i>in darkmode, color: var(--primary-static);</i></p>
+                        </div>
+                        <div class="text-properties"><p>600 40px / 44px 'Kanit'</p></div>
+                    </div>
+                    <div class="text-properties-row">
+                        <div class="text-type"><p>Subtitle</p></div>
+                        <div class="text-variables">
+                            <p>font: var(--sub-title);</p>
+                            <p>color: var(--secondary-darker);<br><i>in darkmode, color: var(--primary-static);</i></p>
+                        </div>
+                        <div class="text-properties"><p>600 20px / 22px 'Kanit'</p></div>
+                    </div>
+                    <div class="text-properties-row">
+                        <div class="text-type"><p>Paragraph</p></div>
+                        <div class="text-variables">
+                            <p>font: var(--paragraph);</p>
+                            <p>color: var(--secondary-lighter);<br><i>in darkmode, color: var(--secondary-lightest);</i></p>
+                        </div>
+                        <div class="text-properties"><p>400 16px / 24px 'Kanit'</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--COLOURS-->
+        <div class="palettes section">
+            <h2 class="section-title">Color Palettes</h2>
+            <div class="light-mode">
+                <h3>Light Mode <span>(Depending on mode "primary" switches between "primary-static" and "primary-darkmode")</span></h3>
+                <p>hover to see variable names</p>
+                <div class="light-palette-container">
+                    <div class="color-box">
+                        <div class="color"><span>primary-static</span></div>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                    <div class="color-box">
+                        <div class="color"><span>primary-darker</span></div>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                    <div class="color-box">
+                        <div class="color"><span>secondary-darker</span></div>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                    <div class="color-box">
+                        <div class="color"><span>secondary</span></div>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                    <div class="color-box">
+                        <div class="color"><span>secondary-lighter</span></div>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                    <div class="color-box">
+                        <div class="color"><span>secondary-lightest</span></div>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                    <div class="color-box">
+                        <div class="color"><span>accent</span></div>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                    <div class="color-box">
+                        <div class="color"><span>accent-alert-soft</span></div>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                    <div class="color-box">
+                        <div class="color"><span>accent-alert-strong</span></div>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                    <div class="color-box">
+                        <div class="color"><span>background-alt</span></div>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                    <div class="color-box">
+                        <div class="color"><span>primary</span></div>
+                        <h3>Current primary color:</h3>
+                        <h3 class="color-hex"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="dark-mode">
+                <h3>Dark Mode</h3>
+            </div>
+        </div>
+        <!--BUTTONS-->
+        <div class="buttons section">
+            <h2 class="section-title">Buttons&Links</h2>
+            <div class="buttons-examples-container">
+                <div class="button-examples">
+
+                    <!--MAIN BUTTON-->
+                    <div class="button-box">
+                        <button class="main-button">Main Button</button>
+                    </div>
+
+                    <!--FAKE BUTTON-->
+                    <div class="button-box">
+                        <a href="" class="fake-button">Fake Button</a>
+                    </div>
+                    
+                    <!--LINK-->
+                    <div class="button-box">
+                        <a href="#" class="link">Link</a>
+                    </div>
+
+                    <!--MENU BUTTON-->
+                    <div class="button-box">
+                        <button class="menu-button">Menu Button</button>
+                    </div>
+
+                    <!--TOGGLE SWITCH-->
+                    <div class="button-box">
+                        <div class="toggle-switch">
+                            <input type="checkbox"> <!-- insert id="dark-mode" to make it work-->
+                            <div class="switch-base">
+                                <img src="./res/icons/sun-black.svg" alt="sun icon b&n">
+                                <img src="./res/icons/moon-black.svg" alt="sun icon b&n">
+                            </div>
+                            <div class="switch-icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--CARDS-->
+        <div class="cards section">
+            <h2 class="section-title">Cards</h2>
+            <div class="cards-container">
+
+                <!--CARD 1-->
+                <div class="card-box">
+                    <div class="big-ps-card yellow-card left-card">
+                        <div class="big-card-icon">
+                            <img src="./res/icons/svgexport-26.svg" alt="icona-svg">
+                        </div>
+                        <div class="big-card-title">
+                            <p class="paragraph-bold">Lorem ipsum</p>
+                            <h2 class="small-title amount">$999,999</h2>
+                            <p class="paragraph-bold">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eius!</p>
+                        </div>
+                        <div class="cta">
+                            <a href="#">
+                                <button class="main-button">
+                                    <span>Click me</span>
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" color="invertedContrast" width="24" xmlns="http://www.w3.org/2000/svg" class="sc-4ba21b47-0 dBIaUm" height="24" >
+                                        <path d="M5 13H16.17L11.29 17.88C10.9 18.27 10.9 18.91 11.29 19.3C11.68 19.69 12.31 19.69 12.7 19.3L19.29 12.71C19.68 12.32 19.68 11.69 19.29 11.3L12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7C10.91 5.09 10.91 5.72 11.3 6.11L16.17 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13Z"></path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--CARD 2-->
+                <div class="card-box">
+                    <div class="big-ps-card purple-card right-card">
+                        <div class="big-card-icon">
+                            <img src="./res/icons/svgexport-28.svg" alt="icona-svg">
+                        </div>
+                        <div class="big-card-title">
+                            <p class="paragraph-bold">Lorem ipsum</p>
+                            <h2 class="small-title amount">$999,999</h2>
+                            <p class="paragraph-bold">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eius!</p>
+                        </div>
+                        <div class="cta">
+                            <a href="#">
+                                <button class="main-button">
+                                    <span>Click me</span>
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" color="invertedContrast" width="24" xmlns="http://www.w3.org/2000/svg" class="sc-4ba21b47-0 dBIaUm" height="24" >
+                                        <path d="M5 13H16.17L11.29 17.88C10.9 18.27 10.9 18.91 11.29 19.3C11.68 19.69 12.31 19.69 12.7 19.3L19.29 12.71C19.68 12.32 19.68 11.69 19.29 11.3L12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7C10.91 5.09 10.91 5.72 11.3 6.11L16.17 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13Z"></path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--CARD 3-->
+                <div class="card-box">
+                    <!--to change card-color-theme, change the second class-->
+                    <!--card-color-themes: card-sec-color, card-acc-color, card-acc-strong-color -->
+                    <div class="ps-card card-sec-color">
+                        <div class="card-icon">
+                            <!--to change icon, import svg content from svg file-->
+                            <!--IMPORTANT - Remove "fill" property from svg if present to automatically match card-theme-color-->
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" color="secondary" width="36" xmlns="http://www.w3.org/2000/svg" class="sc-4ba21b47-0 brakPB" height="36" >
+                                <path d="M4 13C5.1 13 6 12.1 6 11C6 9.9 5.1 9 4 9C2.9 9 2 9.9 2 11C2 12.1 2.9 13 4 13ZM5.13 14.1C4.76 14.04 4.39 14 4 14C3.01 14 2.07 14.21 1.22 14.58C0.48 14.9 0 15.62 0 16.43V17C0 17.5523 0.447715 18 1 18H4.5V16.39C4.5 15.56 4.73 14.78 5.13 14.1ZM20 13C21.1 13 22 12.1 22 11C22 9.9 21.1 9 20 9C18.9 9 18 9.9 18 11C18 12.1 18.9 13 20 13ZM24 16.43C24 15.62 23.52 14.9 22.78 14.58C21.93 14.21 20.99 14 20 14C19.61 14 19.24 14.04 18.87 14.1C19.27 14.78 19.5 15.56 19.5 16.39V18H23C23.5523 18 24 17.5523 24 17V16.43ZM16.24 13.65C15.07 13.13 13.63 12.75 12 12.75C10.37 12.75 8.93 13.14 7.76 13.65C6.68 14.13 6 15.21 6 16.39V17C6 17.5523 6.44772 18 7 18H17C17.5523 18 18 17.5523 18 17V16.39C18 15.21 17.32 14.13 16.24 13.65ZM8.07 16C8.16 15.77 8.2 15.61 8.98 15.31C9.95 14.93 10.97 14.75 12 14.75C13.03 14.75 14.05 14.93 15.02 15.31C15.79 15.61 15.83 15.77 15.93 16H8.07ZM12 8C12.55 8 13 8.45 13 9C13 9.55 12.55 10 12 10C11.45 10 11 9.55 11 9C11 8.45 11.45 8 12 8ZM12 6C10.34 6 9 7.34 9 9C9 10.66 10.34 12 12 12C13.66 12 15 10.66 15 9C15 7.34 13.66 6 12 6Z"></path>
+                            </svg>
+                        </div>
+                        <div class="card-title">
+                            <h3 class="small-title">Lorem, ipsum<br><span>dolor</span></h3>
+                        </div>
+                        <div class="card-subtitle">
+                            <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <!--IGNORE-->
+                    <div class="preview-card-theme">
+                        <p class="paragraph">Click to preview card theme:</p>
+                        <div class="select-preview">
+                            <button class="preview-sec"></button>
+                            <button class="preview-acc"></button>
+                            <button class="preview-acc-strong"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ANIMATIONS-->
+        <div class="animations section">
+            <h2 class="section-title">~ ANIMATIONS ~</h2>
+            <div class="animations-container">
+                <div class="animation-box astrobunny">
+                    <img class="animation-layer star" src="./res/images/astronaut-bunny/top-r-star-white.png" data-layer="-3">
+                    <img class="animation-layer star" src="./res/images/astronaut-bunny/star-top-r_2x.png" data-layer="-3">
+                    <img class="animation-layer" src="./res/images/astronaut-bunny/top-r-small-rock.png" data-layer="-3">
+                    <img class="animation-layer" src="./res/images/astronaut-bunny/bottom-r-pancake.png" data-layer="-2">
+                    <img class="animation-layer" src="./res/images/astronaut-bunny/top-r-big-rock.png" data-layer="-2">
+                    <img class="animation-layer star" src="./res/images/astronaut-bunny/middle-r-star.png" data-layer="-1">
+                    <img class="animation-layer" src="./res/images/astronaut-bunny/bottom-l-small-rock.png" data-layer="-1">
+                    <img class="animation-layer" src="./res/images/astronaut-bunny/astro-bunny.png" data-layer="1">
+                    <img class="animation-layer" src="./res/images/astronaut-bunny/bottom-rock.png" data-layer="2">
+                    <img class="animation-layer star" src="./res/images/astronaut-bunny/star-l_2x.png" data-layer="2">
+                    <img class="animation-layer" src="./res/images/astronaut-bunny/bottom-l-big-rock.png" data-layer="3">
+                    <img class="animation-layer star" src="./res/images/astronaut-bunny/star-r_2x.png" data-layer="3">
+                </div>
+
+                <div class="animation-divider"></div> <!--IGNORE-->
+
+                <div class="animation-box moving-cryptos">
+                    <img src="./res/images/moving-cryptos/BNB@2x.webp" alt="bnb coin" class="animation-layer" data-layer="-1">
+                    <img src="./res/images/moving-cryptos/BTC@2x.webp" alt="btc coin" class="animation-layer" data-layer="0">
+                    <img src="./res/images/moving-cryptos/CAKE@2x.webp" alt="cake coin" class="animation-layer" data-layer="1">
+                </div>
+
+                <div class="animation-divider"></div> <!--IGNORE-->
+                
+                <div class="animation-box moving-graphs">
+                    <img src="./res/images/moving-graphs/pie@2x.webp" alt="pie chart" class="animation-layer" data-layer="-1">
+                    <img src="./res/images/moving-graphs/stonks@2x.webp" alt="stonks" class="animation-layer" data-layer="0">
+                    <img src="./res/images/moving-graphs/folder@2x.webp" alt="folder" class="animation-layer" data-layer="1">
+                </div>
+
+                <div class="animation-divider"></div> <!--IGNORE-->
+
+                <div class="animation-box cake-and-pancakes">
+                    <img src="./res/images/cake-and-pancakes/top-right@2x.webp" alt="pancake" class="animation-layer pancake" data-layer="-2">
+                    <img src="./res/images/cake-and-pancakes/bottom-right@2x.webp" alt="pancake" class="animation-layer pancake" data-layer="-1">
+                    <img src="./res/images/cake-and-pancakes/coin@2x.webp" alt="cake coin" class="animation-layer" data-layer="0">
+                    <img src="./res/images/cake-and-pancakes/top-left@2x.webp" alt="pancake" class="animation-layer pancake" data-layer="1">
+                </div>
+
+                <div class="animation-divider"></div> <!--IGNORE-->
+
+                <div class="animation-box balls">
+                    <img src="./res/images/balls/yellow-ball.webp" alt="yellow ball" class="animation-layer" data-layer="-3">
+                    <img src="./res/images/balls/violet-ball.webp" alt="violet ball" class="animation-layer" data-layer="-2">
+                    <img src="./res/images/balls/green-ball.webp" alt="green-ballball" class="animation-layer" data-layer="-1">
+                    <img src="./res/images/balls/light-blue-ball.webp" alt="light blue ball" class="animation-layer" data-layer="1">
+                    <img src="./res/images/balls/pink-ball.webp" alt="pink ball" class="animation-layer" data-layer="2">
+                </div>
+
+                <div class="animation-divider"></div> <!--IGNORE-->
+
+                <div class="animation-box tickets">
+                    <img src="./res/images/lottery-tickets/top-right@2x.webp" alt="ticket" class="animation-layer" data-layer="-2">
+                    <img src="./res/images/lottery-tickets/bottom-left@2x.webp" alt="ticket" class="animation-layer" data-layer="-1">
+                    <img src="./res/images/lottery-tickets/red@2x.webp" alt="ticket" class="animation-layer" data-layer="1">
+                    <img src="./res/images/lottery-tickets/green@2x.webp" alt="ticket" class="animation-layer" data-layer="2">
+                </div>
+
+                <div class="animation-divider"></div> <!--IGNORE-->
+
+                <div class="animation-box moving-pancakes-top-l">
+                    <img src="./res/images/moving-pancakes/top-left-1.webp" alt="pancake" class="animation-layer" data-layer="-1">
+                    <img src="./res/images/moving-pancakes/top-left-2.webp" alt="pancake" class="animation-layer" data-layer="0">
+                    <img src="./res/images/moving-pancakes/top-left-3.webp" alt="pancake" class="animation-layer" data-layer="1">                    
+                </div>
+
+                <div class="animation-divider"></div> <!--IGNORE-->
+
+                <div class="animation-box moving-pancakes-bottom-r">
+                    <img src="./res/images/moving-pancakes/bottom-right-1.webp" alt="pancake" class="animation-layer" data-layer="-1">
+                    <img src="./res/images/moving-pancakes/bottom-right-2.webp" alt="pancake" class="animation-layer" data-layer="0">
+                    <img src="./res/images/moving-pancakes/bottom-right-3.webp" alt="pancake" class="animation-layer" data-layer="1">                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--IGNORE-->  
+<script src="./script/animations.js"></script>  
+<script>
+    function detectHexCode() {
+        const $hexBox = document.querySelectorAll('.color-box');
+        for (let i = 0; i < $hexBox.length; i++) {
+            let _hexBox = $hexBox[i];
+            let hexSpace = _hexBox.querySelectorAll('.color-hex')[0];
+            let color = _hexBox.querySelectorAll('.color')[0];
+            let colorValue = window.getComputedStyle(color).getPropertyValue('background-color');
+            colorValue = colorValue.split("(")[1].split(")")[0];
+            hexSpace.innerHTML = rgbToHex(colorValue);
+        }
+    }
+    function rgbToHex(rgb) {
+                rgb = rgb.split(",");
+                converted = rgb.map((x) => {
+                    x = parseInt(x).toString(16);
+                    return (x.length==1) ? "0"+ x : x;
+                })
+                converted = "#" + converted.join("");
+                return converted
+            }
+
+    detectHexCode();   
+</script>
+</body>
+</html>
