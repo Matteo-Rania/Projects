@@ -3,4 +3,5 @@
 
 Team project in progress:
 
-https://github.com/nico-barbieri/CODERS
+https://github.com/nico-barbieri/CODERS/tree/landingPageGame
+
